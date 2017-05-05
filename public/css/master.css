@@ -8,7 +8,7 @@ body {
     width: 100%;
     display: table;
     font-weight: 100;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Economica', sans-serif;
 }
 
 h1 {
@@ -21,22 +21,82 @@ h1 {
 
 .container {
     text-align: center;
-    display: table-cell;
+    /*display: table-cell;*/
     vertical-align: middle;
 }
 
 .content {
     text-align: center;
-    display: inline-block;
 }
-
-/*.title {
-    font-size: 96px;
-}*/
 
 .logo {
     height: 400px;
 }
 
-/*font-family: 'Oswald', sans-serif;*/
+.nav {
+  /*background-color: black;*/
+  width: 100%;
+  margin-top: -20px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-family: 'Economica', 'Arial Narrow', sans-serif;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  font-family: 'Economica', 'Arial Narrow', sans-serif;
+  font-size: 1em;
+  line-height: 30px;
+  height: 30px;
+  font-weight: 100;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+ 
+.nav a:hover {
+  color: #A2D6BF; /*change nav bar TEXT color when hovered*/
+  outline: none;
+}
+ 
+.nav a.active {
+  color: black;
+  cursor: default;
+}
+ 
+    @media screen and (min-width: 600px) {
+      .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 35px;
+        line-height: 45px;
+        font-size: 1em;
+    }
+
+    .nav li {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: .5px;
+    }
+}
+
+
+
+
+
+
+
 
