@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 12vw;
+    font-weight: 100;
+    color: #3A3B3C;
+    margin-top: -100px;
+}
+
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+/*.title {
+    font-size: 96px;
+}*/
+
+.logo {
+    height: 400px;
+}
+
+/*font-family: 'Oswald', sans-serif;*/
+
