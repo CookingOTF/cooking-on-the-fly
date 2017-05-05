@@ -1,0 +1,129 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"name": "/",
+			"folder_include_patterns":
+			[
+				// "*",
+				"app",
+					"app/Console",
+						"app/Console/Commands",
+					"app/Events",
+					"app/Exceptions",
+					"app/Http",
+						"app/Http/Controllers",
+							"app/Http/Controllers/Auth",
+						"app/Http/Middleware",
+						"app/Http/Requests",
+					"app/Jobs",
+					"app/Listeners",
+					"app/Policies",
+					"app/Providers",
+				"bootstrap",
+					"bootstrap/cache",
+				"config",
+				"database",
+					"database/factories",
+					"database/migrations",
+					"database/seeds",
+				"img",
+				"public",
+					"public/css",
+					"public/img",
+				"resources",
+					"resources/assets",
+						"resources/assets/sass",
+					"resources/lang",
+						"resources/lang/en",
+					"resources/views",
+						"resources/views/errors",
+						"resources/views/layouts",
+						"resources/views/partials",
+						"resources/views/vendor",
+				"storage",
+					"storage/app",
+					"storage/framework",
+						"storage/framework/cache",
+						"storage/framework/sessions",
+						"storage/framework/views",
+					"storage/logs",
+				"tests",
+				// "vendor"
+			],
+			"file_exclude_patterns":
+			[
+				// "*",
+				// ".env",
+				// ".env.example",
+				// ".gitattributes",
+				// ".gitignore",
+				// "artisan",
+				// "capstone_submission_draft.pdf",
+				// "capstoneidea.sdxml",
+				// "composer.json",
+				// "composer.lock",
+				// "COTF GUIDE.pages",
+				// "COTF.comDRAFT.pdf",
+				// "draft1.sdxml",
+				// "draft2.sdxml",
+				// "draft3.sdxml",
+				// "gulpfile.js",
+				// "jacob.sublime-project",
+				// "jacob.sublime-workspace",
+				// "jacob.template.sublime-project",
+				// "package.json",
+				// "phpspec.yml",
+				// "phpunit.xml",
+				// "readme.md",
+				// "server.php"
+			]
+		},
+		{
+			"path": "app/Http/Controllers",
+			"folder_include_patterns":
+			[
+				"Auth"
+			]
+		},
+		{
+			"path": "database/migrations",
+			"file_exclude_patterns":
+			[
+				".gitkeep"
+			]
+		},
+		{
+			"path": "resources/views",
+			"folder_include_patterns":
+			[
+				"errors",
+				"layouts",
+				"partials",
+				"vendor"
+			]
+		},
+		{
+			"path": "public",
+			"folder_include_patterns":
+			[
+				"css",
+				"js",
+				"img"
+			]
+		},
+		{
+			"path": "app/Http",
+			"name": "routes",
+			"folder_exclude_patterns":
+			[
+				"*"
+			],
+			"file_include_patterns":
+			[
+				"routes.php"
+			]
+		}
+	]
+}

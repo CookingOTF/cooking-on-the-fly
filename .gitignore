@@ -5,3 +5,5 @@ Homestead.json
 .env
 
 *.DS_Store
+jacob.sublime-project
+jacob.sublime-workspace
