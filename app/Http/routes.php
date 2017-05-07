@@ -11,4 +11,16 @@
 |
 */
 
+/**
+ *
+ * first things first, let's make sure that URL is all pretty
+ *
+ * if it's not already there, add a trailing slash unless any of the following characters are present: ? # %
+ *
+ */
+if (isset($_SERVER['REQUEST_URI']) and substr($_SERVER['REQUEST_URI'], -1) !== '/' and !preg_match('~[?#%]~', $_SERVER['REQUEST_URI'])) {
+    header("Location: {$_SERVER['REQUEST_URI']}/");
+    die;
+}
+
 Route::get('/', 'MainController@welcome');
