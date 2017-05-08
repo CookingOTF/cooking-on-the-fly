@@ -16,7 +16,6 @@
 						</form>
 					</div>
 				</div>
-			</article>
 		<div class="half bg"></div>
 	</section>
 @stop
