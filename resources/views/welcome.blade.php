@@ -1,9 +1,10 @@
 @extends('layouts.master')
 @section('content')
 
-<div class="content">
-    <img src="../img/logo.png" class="logo">
+<div class="content" id="logo_hp">
+	<a class="hp_login" href="/login/">LOG IN</a></li>
+	    <img src="../img/logo1.png" class="logo">
+	<a class="hp_singup" href="/signup/">SIGN UP</a></li>
     <br><br>
-    <h1>coming soon...</h1>
 </div>
 @stop
