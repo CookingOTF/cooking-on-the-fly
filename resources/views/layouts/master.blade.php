@@ -5,7 +5,7 @@
 
 		<link rel="stylesheet" type="text/css" href="/css/master.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Economica|Sacramento" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=BenchNine:300|Sofia" rel="stylesheet">
  
 	</head>
 	<body>

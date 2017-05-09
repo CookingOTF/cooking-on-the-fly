@@ -8,7 +8,7 @@ body {
 	width: 100%;
 	display: table;
 	font-weight: 100;
-	font-family: 'Economica', sans-serif;
+	font-family: 'BenchNine', sans-serif;
 	background: #EEE;
 	background-image: url('/img/background1.png');
 	/*opacity: 0.6;*/
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-	font-family: 'Sacramento', cursive;
+	font-family: 'Sofia', cursive;
 	font-size: 9vw;
 	font-weight: 100;
 	color: #3A3B3C;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Sacramento', cursive;
+	font-family: 'Sofia', cursive;
 	font-size: 9vw;
 	font-weight: 100;
 	color: #3A3B3C;
@@ -39,6 +39,7 @@ h2 {
 	text-align: center;
 	/*display: table-cell;*/
 	vertical-align: middle;
+	margin-top: -50px;
 }
 
 .content {
@@ -63,9 +64,9 @@ h2 {
 }
 
 .motto {
-	font-size: 5vw;
+	font-size: 3vw;
 	margin-bottom: 100px;
-	margin-top: 30px;
+	margin-top: 5px;
 	color: #494949;
 	font-weight: bolder;
 }
@@ -95,10 +96,10 @@ h2 {
 }
 
 .nav_hp {
-	margin-top: -20px;
+	margin-top: 50px;
 	text-transform: uppercase;
 	font-size: 1.3em;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
 	line-height: 25px;
 }
@@ -113,7 +114,7 @@ h2 {
 }
 
 .nav_hp li {
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 1em;
 	line-height: 25px;
 	height: 25px;
@@ -170,7 +171,7 @@ h2 {
 	margin-top: -20px;
 	text-transform: uppercase;
 	font-size: 1.3em;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
 .nav ul {
@@ -180,7 +181,7 @@ h2 {
 }
 
 .nav li {
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 1em;
 	line-height: 30px;
 	height: 30px;
@@ -240,20 +241,22 @@ h2 {
 /*SIGN IN PAGE*/
 
 .sign_in_container {
-	background-color: #3A3B3C;
-	margin-left: 30%;
-	width: 40%;
+	background-color: #4D4D4D;
+	margin-left: 34.5%;
+	width: 30%;
 	font-size: 1.3em;
 	font-weight: 100;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	margin-bottom: -10px;
+	border-radius: 5px;
 }
 
 .sign_in_heading {
 	color: #F4F4F4;
-	font-size: 7vw;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-size: 5vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	color: #F3F3F3;
+	padding-top: 50px;
 	margin-bottom: 100px;
 	font-weight: 100;
 }
@@ -264,35 +267,188 @@ h2 {
 }
 
 #signin_email {
-	height: 20px;
-	width: 40%;
+	height: 30px;
+	width: 50%;
 	color: #F4F4F4;
 }
 
 #signin_password {
-	height: 20px;
-	width: 40%;
+	height: 30px;
+	width: 50%;
 	color: #F4F4F4;
 }
 
 #signin_remember_me {
 	font-size: 1.3vw;
 	text-align: left;
+	margin-right: 115px;
 	color: #F4F4F4;
 }
 
 #signin_forgot_password {
-	font-size: 1.3vw;
+	font-size: 1.6vw;
+	/*margin-left: 250px;*/
+	color: white;
+	text-decoration: none;
 }
 
 .signin_submit {
 	width: 100px;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+.signin_button {
+	width: 150px;
 }
 
 
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid #A2D6BF;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid #A2D6BF;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+
+}
+
+/*SIGN UP*/
+
+.sign_up_container {
+	background-color: #4D4D4D;
+	margin-left: 34.5%;
+	width: 30%;
+	font-size: 1.3em;
+	font-weight: 100;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	margin-bottom: -10px;
+	border-radius: 5px;
+}
+
+.sign_up_heading {
+	color: #F4F4F4;
+	font-size: 5vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	color: #F3F3F3;
+	padding-top: 50px;
+	margin-bottom: 100px;
+	font-weight: 100;
+}
+
+.sign_up_content {
+	/*background-color: #823B3B;*/
+	margin-top: -70px;
+}
+
+#signup_name {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+}
+
+#signup_email {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+}
+
+#signup_password {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+}
+
+#signup_remember_me {
+	font-size: 1.3vw;
+	text-align: left;
+	color: #F4F4F4;
+}
+
+#signup_forgot_password {
+	font-size: 1.3vw;
+	color: white;
+	text-decoration: none;
+}
+
+.signup_submit {
+	width: 100px;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+.signup_button {
+	width: 150px;
+}
+
+input[type=name] {
+    border: none;
+    border-bottom: 2px solid #A2D6BF;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid #A2D6BF;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid #A2D6BF;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
 
 
+/*DASHBOARD*/
+.dashboard {
+	background-image: url('/img/cutting_board.png');
+	background-size: cover;
+	margin-left: 8%;
+	width: 85%;
+	height: 1700px;
+	margin-top: -165px;
+}
+
+.user_dashboard {
+	padding-top: .1px;
+}
+
+.my_account {
+	margin-top: 140px;
+	font-size: 6vw;
+	color: #494949;
+	margin-left: 360px;
+	/*background-color: #494949;*/
+	border-radius: 10px;
+	height: 80px;
+	width: 35%;
+	font-weight: bold;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+.user_info {
+	border: 1px solid black;
+	margin: 150px 100px 0 100px;
+	text-align: left;
+}
 
 
 
@@ -302,7 +458,7 @@ h2 {
 #footer {
 	text-transform: uppercase;
 	font-size: 1em;
-	font-family: 'Economica', 'Arial Narrow', sans-serif;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
 	color: #494949;
 }
@@ -315,3 +471,9 @@ h2 {
 
 
 
+
+
+
+
+
+/*MODAL*/

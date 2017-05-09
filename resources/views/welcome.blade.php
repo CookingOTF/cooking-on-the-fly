@@ -14,10 +14,10 @@
 
 
 <div class="content" id="logo_hp">
-	<a class="hp_signin" href="/signin/"><img src="../img/signin.png" class="hp_signin"></a>
-	<img src="../img/logo1.png" class="hp_logo">
-	<a class="hp_singup" href="/signup/"><img src="../img/signup.png" class="hp_signup"></a>
+	<a class="hp_signin" href="/signin/"><img src="/img/signin.png" class="hp_signin"></a>
+	<img src="/img/logo1.png" class="hp_logo">
+	<a class="hp_singup" href="/signup/"><img src="/img/signup.png" class="hp_signup"></a>
 	<br><br><br><br><br>
-	<h2 class="motto">Your ingredient based recipe finder</h2><br><br>
+	<h2 class="motto">Your ingredient based recipe finder</h2><br><br><br>
 </div>
 @stop
