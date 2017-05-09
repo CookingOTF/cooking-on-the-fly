@@ -9,7 +9,8 @@
  
     </head>
     <body>
-        @include('partials.nav')
+        @yield('navbar')
+        {{-- @include('partials.header') --}}
 
         <div class="container">
     		@yield('content')
