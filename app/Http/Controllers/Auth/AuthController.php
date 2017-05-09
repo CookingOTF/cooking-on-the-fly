@@ -8,8 +8,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
-class AuthController extends Controller
+class AuthController extends BaseController
 {
+    protected $loginPage = 'auth.signin';
+
+    protected $registerPage = 'auth.signup';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
@@ -61,5 +65,19 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function getLogin()
+    {
+        if (view()->exists($this->authenticatePage)) {
+            return view($this->authenticatePage);
+        }
+
+        return view($this->loginPage);
+    }
+
+    public function getRegister()
+    {
+        return view($this->registerPage);
     }
 }
