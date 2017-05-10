@@ -19,7 +19,6 @@
 						"app/Http/Requests",
 					"app/Jobs",
 					"app/Listeners",
-					"app/Models",
 					"app/Policies",
 					"app/Providers",
 				"bootstrap",
@@ -90,7 +89,12 @@
 			]
 		},
 		{
-			"path": "app/Models",
+			"path": "app",
+			"name": "Models",
+			"folder_exclude_patterns":
+			[
+				"*"
+			]
 		},
 		{
 			"path": "app/Http/Controllers",
