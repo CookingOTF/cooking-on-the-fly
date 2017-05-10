@@ -11,6 +11,75 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/**
+ *
+ * first things first, let's make sure that URL is all pretty
+ *
+ * if it's not already there, add a trailing slash unless any of the following characters are present: ? # %
+ *
+ */
+if (isset($_SERVER['REQUEST_URI']) and substr($_SERVER['REQUEST_URI'], -1) !== '/' and !preg_match('~[?#%]~', $_SERVER['REQUEST_URI'])) {
+    header("Location: {$_SERVER['REQUEST_URI']}/");
+    die;
+}
+
+/*
+|------------------------------------------------------
+| Note that all routes with closures are placeholders
+| until a proper controller is made
+|------------------------------------------------------
+*/
+
+
+/*
+|-------------
+| Home page
+|-------------
+*/
+Route::get('/', 'MainController@welcome');
+
+
+/*
+|---------------------
+| User-related pages
+|---------------------
+*/
+Route::get('/dashboard/', /*['middleware' => 'auth'], */function () {
+	return view('users.dashboard');
 });
+
+Route::get('/account/', function () {
+	return view('users.account');
+});
+
+Route::get('/fridge/', function () {
+	return view('users.fridge');
+});
+
+
+/*
+|-------------------------
+| Recipe-related pages
+|-------------------------
+*/
+Route::get('/recipes/', function () {
+	return redirect('/recipes/browse/');
+});
+Route::get('/recipes/browse/', function () {
+	return view('recipes.browse');
+});
+
+Route::get('/recipes/search/', function () {
+	return 'recipes.search';
+});
+
+/*
+|-----------------------
+| Signin/Signup pages
+|-----------------------
+*/
+Route::get('/signin/', 'Auth\AuthController@getLogin');
+Route::post('/signin/', 'Auth\AuthController@postLogin');
+
+Route::get('/signup/', 'Auth\AuthController@getRegister');
+Route::post('/signup/', 'Auth\AuthController@postRegister');
