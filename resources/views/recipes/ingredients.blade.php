@@ -5,7 +5,18 @@
 @section('content')
 <section class='text-center ingredients'>
 	<h3> Choose Your Ingredients </h3>
+<div class="veggie">
 <img class='ingredient_head' src="/img/veghead.png">
+<form action="">
+
+</form>
+</div>
+
+
+
+
+
+
 <section class='text-center'>
 
 <form name= 'sort' action="" class='text-left' method="GET">
