@@ -9,8 +9,8 @@ body {
 	display: table;
 	font-weight: 100;
 	font-family: 'BenchNine', sans-serif;
-	background: #EEE;
-	background-image: url('/img/background1.png');
+	background: #3A3B3C;
+	/*background-image: url('/img/background1.png');*/
 	/*opacity: 0.6;*/
 	background-size: 100%;
 	background-repeat: repeat-y repeat-x;
@@ -169,7 +169,7 @@ h2 {
 /*HOME PAGE TWO*/
 .hp_two {
 	background-color: #3A3B3C;
-	height: 500px;
+	height: 450px;
 	color: #F3F3F3;
 }
 
@@ -180,8 +180,9 @@ h2 {
 
 .about_COTF {
 	font-size: 5vw;
-	color: #F3F3F3;
-	/*font-family: 'BenchNine', 'Arial Narrow', sans-serif;*/
+    color: #F3F3F3;
+    /* font-family: 'BenchNine', 'Arial Narrow', sans-serif; */
+    margin-top: 30px;
 }
 
 .hp_two_text {
@@ -195,11 +196,12 @@ h2 {
 
 /*HOME PAGE THREE*/
 
-/*.hp_three {
+.hp_three {
 	background-image: url(/img/background1.png);
-	background-size: 400px 400px;
+	background-color: #F3F3F3;
+	background-size: 900px;
 	
-}*/
+}
 
 .hp_three_text_box {
 	width: 80%;
@@ -208,10 +210,10 @@ h2 {
 
 .get_started {
 	width: 125%;
-    color: #3A3B3C;
-    font-size: 4vw;
-    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    text-transform: uppercase;
+    color: #7B8489;
+    font-size: 6vw;
+    font-family: 'Sofia', cursive;
+    /*text-transform: uppercase;*/
     text-align: center;
 }
 
@@ -231,6 +233,7 @@ h2 {
 
 .sign_up_button {
 	margin-left: 23%;
+	margin-top: -100px;
 }
 
 .sign_in_button {
@@ -271,15 +274,16 @@ h2 {
 
 .nav a {
 	text-decoration: none;
-	color: #3A3B3C;
+	color: #F3F3F3;
 	display: block;
 	font-size: 2vw;
 	font-weight: 100;
 }
 
 .nav a:hover {
-	color: #A2D6BF; /*change nav bar TEXT color when hovered*/
+	color: #7B8489; /*change nav bar TEXT color when hovered*/
 	outline: none;
+	font-weight: 900;
 }
 
 .nav a.active {
@@ -385,7 +389,7 @@ h2 {
 
 input[type=email] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -394,7 +398,7 @@ input[type=email] {
 
 input[type=password] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -471,7 +475,7 @@ input[type=password] {
 
 input[type=name] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -481,7 +485,7 @@ input[type=name] {
 
 input[type=email] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -490,7 +494,7 @@ input[type=email] {
 
 input[type=password] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -500,38 +504,46 @@ input[type=password] {
 
 /*DASHBOARD*/
 .dashboard {
-	background-image: url('/img/cutting_board.png');
-	background-size: cover;
-	margin-left: 8%;
-	width: 85%;
-	height: 1700px;
-	margin-top: -165px;
+
 }
 
 .user_dashboard {
-	padding-top: .1px;
 }
 
 .my_account {
-	margin-top: 140px;
-	font-size: 6vw;
-	color: #3A3B3C;
-	margin-left: 360px;
-	/*background-color: #3A3B3C;*/
-	border-radius: 10px;
-	height: 80px;
-	width: 35%;
-	font-weight: bold;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	color: #F3F3F3;
+	font-size: 7vw;
+	font-weight: 100px;
 }
 
 .user_info {
-	border: 1px solid black;
-	margin: 150px 100px 0 100px;
-	text-align: left;
+	height: 300px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
+}
+
+.favorites {
+	height: 300px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
+}
+
+.fridge {
+	height: 300px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
 }
 
 
+.buttons {
+    margin-top: -58px;
+}
 
 
 
@@ -541,7 +553,7 @@ input[type=password] {
 	font-size: 1em;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
-	color: #3A3B3C;
+	color: #7B8489;
 }
 
 #forgot_password {

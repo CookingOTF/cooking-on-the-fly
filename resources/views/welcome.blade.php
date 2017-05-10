@@ -5,8 +5,8 @@
 	<div class="nav_hp">
 		<ul>
 			<li id="home_hp" class="home"><a href="/">HOME</a></li>
-			<li id="signin_hp" class="signin"><a href="{{action("Auth\AuthController@getLogin")}}">SIGN IN</a></li>
 			<li id="signup_hp" class="signup"><a href="{{action("Auth\AuthController@getRegister")}}">SIGN UP</a></li>
+			<li id="signin_hp" class="signin"><a href="{{action("Auth\AuthController@getLogin")}}">SIGN IN</a></li>
 			<li id="browse_hp" class="browse"><a href="/recipes/browse/">BROWSE</a></li>
 		</ul>
 	</div>
@@ -24,7 +24,7 @@
 	<div class="two">
 		<div class="hp_two_text_box">
 			<div class="hp_two_title">
-				<h2 class="about_COTF"><br>It's like calling your mom...</h2>
+				<h2 class="about_COTF">It's like calling a chef...</h2>
 			</div>
 
 			<div class="hp_two_text">
@@ -43,12 +43,12 @@
 	<div class="three">
 		<div class="hp_three_text_box">
 			<div class="hp_three_title">
-				<h2 class="get_started"><br>let's get started!</h2>
+				<h2 class="get_started">get started!</h2>
 			</div>
-			<section class="buttons">
-				<p >
-					<a class="sign_up_button" href="/signup/"><img height="300px" width="290px" float="left" src="/img/signup.png"></a>
-					<a class="sign_in_button" href="/signin/"><img height="300px" width="290px" float="right" src="/img/signin.png"></a>
+			<section class="section_buttons">
+				<p class="buttons">
+					<a class="sign_up_button" href="/signup/"><img height="230px" width="220px" float="left" src="/img/signup.png"></a>
+					<a class="sign_in_button" href="/signin/"><img height="230px" width="220px" float="right" src="/img/signin.png"></a>
 				</p>
 			</section>
 		</div>
