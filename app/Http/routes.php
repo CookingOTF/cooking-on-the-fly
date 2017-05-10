@@ -56,15 +56,15 @@ Route::get('/', 'MainController@welcome');
 | User-related pages
 |---------------------
 */
-Route::get('/dashboard/', /*['middleware' => 'auth'], */function () {
+Route::get('dashboard', /*['middleware' => 'auth'], */function () {
     return view('users.dashboard');
 });
 
-Route::get('/account/', function () {
+Route::get('account', function () {
     return view('users.account');
 });
 
-Route::get('/fridge/', function () {
+Route::get('fridge', function () {
     return view('users.fridge');
 });
 
@@ -74,21 +74,19 @@ Route::get('/fridge/', function () {
 | Recipe-related pages
 |-----------------------
 */
-Route::get('/recipes/browse/', function () {
-    return view('recipes.browse');
-});
 
-Route::get('/recipes/search/', function () {
-    return 'recipes.search';
-});
+Route::get('recipes/browse', 'RecipesController@browse');
+Route::get('recipes/search/{query?}', 'RecipesController@search');
+
+Route::resource('recipes');
 
 /*
 |----------------------
 | Signin/Signup pages
 |----------------------
 */
-Route::get('/signin/', 'Auth\AuthController@getLogin');
-Route::post('/signin/', 'Auth\AuthController@postLogin');
+Route::get('signin', 'Auth\AuthController@getLogin');
+Route::post('signin', 'Auth\AuthController@postLogin');
 
-Route::get('/signup/', 'Auth\AuthController@getRegister');
-Route::post('/signup/', 'Auth\AuthController@postRegister');
+Route::get('signup', 'Auth\AuthController@getRegister');
+Route::post('signup', 'Auth\AuthController@postRegister');
