@@ -7,16 +7,31 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class RecipesController extends Controller
+class RecipesController extends BaseController
 {
+    
+    public function index()
+    {
+        return redirect('/recipes/browse/');
+    }
+
     /**
-     * Display a listing of the resource.
+     * Browse the recipes.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function browse()
     {
-        //
+        return view('recipes.browse');
+    }
+
+    public function search($query = null)
+    {
+        if (isset($query)) {
+            return 'search results: ' . $query;
+        } else {
+            return 'recipes.search';
+        }
     }
 
     /**
@@ -26,7 +41,7 @@ class RecipesController extends Controller
      */
     public function create()
     {
-        //
+        return 'We don\'t need this page except maybe for admins only.';
     }
 
     /**
@@ -37,18 +52,18 @@ class RecipesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'Store new captured recipe in database.';
     }
 
     /**
-     * Display the specified resource.
+     * Show a single recipe on page.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        return view('recipies.show');
     }
 
     /**
@@ -59,7 +74,7 @@ class RecipesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return 'We probably don\'t need this either.';
     }
 
     /**
@@ -71,7 +86,7 @@ class RecipesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return 'Update a recipe\'s database entry.';
     }
 
     /**
@@ -82,6 +97,6 @@ class RecipesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return 'Probably unnecessary.';
     }
 }
