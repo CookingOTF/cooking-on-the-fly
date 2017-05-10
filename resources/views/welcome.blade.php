@@ -1,14 +1,6 @@
 @extends('layouts.master')
 @section('content')
 
-<!-- <<<<<<< HEAD
-<div class="content" id="logo_hp">
-	<a class="hp_signin" href="/login/"><img src="../img/signin.png" class="hp_signin"></a>
-	<img src="../img/logo1.png" class="logo">
-	<a class="hp_singup" href="/signup/"><img src="../img/signup.png" class="hp_signup"></a>
-    <br><br>
-</div>
-======= -->
 <nav>
 	<div class="nav_hp">
 		<ul>
@@ -29,5 +21,4 @@
 		<h2 class="motto">Your ingredient based recipe finder</h2><br><br><br>
 	</div>
 </section>
->>>>>>> 9ae5392c875338e46931c7f04ddf64fd830b6202
 @stop
