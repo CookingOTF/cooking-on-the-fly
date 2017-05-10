@@ -19,6 +19,7 @@
 						"app/Http/Requests",
 					"app/Jobs",
 					"app/Listeners",
+					"app/Models",
 					"app/Policies",
 					"app/Providers",
 				"bootstrap",
@@ -81,36 +82,21 @@
 			]
 		},
 		{
-			"path": "app/Http/Controllers",
-			"folder_include_patterns":
-			[
-				"Auth"
-			]
-		},
-		{
 			"path": "database/migrations",
+			"name": "Migrations",
 			"file_exclude_patterns":
 			[
 				".gitkeep"
 			]
 		},
 		{
-			"path": "resources/views",
-			"folder_include_patterns":
-			[
-				"errors",
-				"layouts",
-				"partials",
-				"vendor"
-			]
+			"path": "app/Models",
 		},
 		{
-			"path": "public",
+			"path": "app/Http/Controllers",
 			"folder_include_patterns":
 			[
-				"css",
-				"js",
-				"img"
+				"Auth"
 			]
 		},
 		{
@@ -123,6 +109,25 @@
 			"file_include_patterns":
 			[
 				"routes.php"
+			]
+		},
+		{
+			"path": "public",
+			"folder_include_patterns":
+			[
+				"css",
+				"js",
+				"img"
+			]
+		},
+		{
+			"path": "resources/views",
+			"folder_include_patterns":
+			[
+				"errors",
+				"layouts",
+				"partials",
+				"vendor"
 			]
 		}
 	]
