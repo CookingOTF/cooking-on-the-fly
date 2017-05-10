@@ -19,4 +19,19 @@
 		<h2 class="motto">your ingredient based recipe finder...</h2><br><br><br>
 	</div>
 </section>
+
+<section>
+	<div class="hp_two">
+		<div class="hp_two_text_box">
+			<div class="hp_two_title">
+				<h2 class="about_COTF"><br>It's like calling your mom...</h2>
+			</div>
+
+			<div class="hp_two_text">Without having to make the call! Just add your ingredients and Cooking on the Fly will match you to recipes that you can make with ingredients you already have! 
+
+			To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll show you what you can make with what you have, what you can make if you borrow something from a neighbor, and what you can make if you're willing to go to the store.
+			</div>
+		</div>
+	</div>
+</section>
 @stop

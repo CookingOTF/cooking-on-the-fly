@@ -136,24 +136,24 @@ h2 {
 
 .nav_hp a {
 	text-decoration: none;
-	color: #CDDBE3;
+	color: #F3F3F3;
 	letter-spacing: normal;
 }
 
 .nav_hp_a {
 	text-decoration: none;
-	color: #CDDBE3;
+	color: #F3F3F3;
 	letter-spacing: normal;
 }
 
 .nav_hp a:hover {
-	color: #A2D6BF; /*change nav_hp bar TEXT color when hovered*/
+	color: #CDDBE3; /*change nav_hp bar TEXT color when hovered*/
 	outline: none;
 	letter-spacing: normal;
 }
 
 .nav_hp a.active {
-	color: #CDDBE3;
+	color: #F3F3F3;
 	cursor: default;
 }
 
@@ -161,12 +161,22 @@ h2 {
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	color: #CDDBE3;
+	color: #F3F3F3;
 	/*background-color: #F3F3F3;*/
 	letter-spacing: normal;
 }
 
+.hp_two {
+	background-color: #3A3B3C;
+	height: 650px;
+	color: #F3F3F3;
+}
 
+.about_COTF {
+	font-size: 5vw;
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
 
 /*NAV BAR*/
 
