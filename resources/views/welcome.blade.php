@@ -14,11 +14,28 @@
 
 <section class="hp_one">
 	<div class="one" id="logo_hp">
-		<a class="hp_signin" href="/signin/"><img src="/img/signin.png" class="hp_signin"></a>
 		<img src="/img/logo1.png" class="hp_logo">
-		<a class="hp_singup" href="/signup/"><img src="/img/signup.png" class="hp_signup"></a>
 		<br><br><br><br><br>
-		<h2 class="motto">Your ingredient based recipe finder</h2><br><br><br>
+		<h2 class="motto">your ingredient based recipe finder...</h2><br><br><br>
+	</div>
+</section>
+
+<section>
+	<div class="hp_two">
+		<div class="hp_two_text_box">
+			<div class="hp_two_title">
+				<h2 class="about_COTF"><br>It's like calling your mom...</h2>
+			</div>
+
+			<div class="hp_two_text">
+			<p><text class="important_text">Without having to make the call!</text> Just add your ingredients and Cooking on the Fly<br>
+			will match you to recipes that you can make with ingredients you already have!<br></p>
+			<br><br>
+			<p>To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll<br>
+			show you what you can make with what you have, what you can make if you borrow something<br>
+			from a neighbor, and what you can make if you're willing to go to the store.<br></p>
+			</div>
+		</div>
 	</div>
 </section>
 @stop
