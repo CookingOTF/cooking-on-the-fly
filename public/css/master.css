@@ -483,11 +483,21 @@ input[type=password] {
 	text-align: left;
 }
 
+/*INGREDIENT PAGE*/
+.ingredient_head {
+	width:60%;
+}
 
-
+.ingredients{
+	height:1000px;
+	background-image: url('/img/background1.png');
+}
 
 
 /*FOOTER*/
+
+
+
 #footer {
 	text-transform: uppercase;
 	font-size: 1em;

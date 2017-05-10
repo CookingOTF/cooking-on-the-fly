@@ -69,6 +69,10 @@ Route::get('/recipes/browse/', function () {
 	return view('recipes.browse');
 });
 
+Route::get('/recipes/ingredients/', function () {
+	return view('recipes.ingredients');
+});
+
 Route::get('/recipes/search/', function () {
 	return 'recipes.search';
 });
