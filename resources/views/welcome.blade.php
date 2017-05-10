@@ -20,8 +20,8 @@
 	</div>
 </section>
 
-<section>
-	<div class="hp_two">
+<section class="hp_two">
+	<div class="two">
 		<div class="hp_two_text_box">
 			<div class="hp_two_title">
 				<h2 class="about_COTF"><br>It's like calling your mom...</h2>
@@ -30,7 +30,7 @@
 			<div class="hp_two_text">
 			<p><text class="important_text">Without having to make the call!</text> Just add your ingredients and Cooking on the Fly<br>
 			will match you to recipes that you can make with ingredients you already have!<br></p>
-			<br><br>
+			
 			<p>To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll<br>
 			show you what you can make with what you have, what you can make if you borrow something<br>
 			from a neighbor, and what you can make if you're willing to go to the store.<br></p>
@@ -38,4 +38,21 @@
 		</div>
 	</div>
 </section>
+
+<section class="hp_three">
+	<div class="three">
+		<div class="hp_three_text_box">
+			<div class="hp_three_title">
+				<h2 class="get_started"><br>let's get started!</h2>
+			</div>
+			<section class="buttons">
+				<p >
+					<a class="sign_up_button" href="/signup/"><img height="300px" width="290px" float="left" src="/img/signup.png"></a>
+					<a class="sign_in_button" href="/signin/"><img height="300px" width="290px" float="right" src="/img/signin.png"></a>
+				</p>
+			</section>
+		</div>
+	</div>
+</section>
+
 @stop

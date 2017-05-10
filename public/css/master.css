@@ -10,7 +10,7 @@ body {
 	font-weight: 100;
 	font-family: 'BenchNine', sans-serif;
 	background: #EEE;
-	/*background-image: url('/img/background1.png');*/
+	background-image: url('/img/background1.png');
 	/*opacity: 0.6;*/
 	background-size: 100%;
 	background-repeat: repeat-y repeat-x;
@@ -74,7 +74,7 @@ h2 {
 	margin-bottom: 100px;
 	margin-top: 5px;
 	margin-left: -820px;
-	color: #CDDBE3;
+	color: #F3F3F3;
 	font-weight: bolder;
 }
 
@@ -166,25 +166,16 @@ h2 {
 	letter-spacing: normal;
 }
 
-.hp_two_text_box {
-	width: 70%;
-	margin-left: 15%;
-}
-
-.important_text {
-	font-size: 2.5vw;
-	text-transform: uppercase; 
-}
-
+/*HOME PAGE TWO*/
 .hp_two {
 	background-color: #3A3B3C;
-	height: 650px;
+	height: 500px;
 	color: #F3F3F3;
 }
 
-.hp_two_text {
-	font-size: 1.8vw;
-	text-transform: uppercase; 
+.hp_two_text_box {
+	width: 70%;
+	margin-left: 15%;
 }
 
 .about_COTF {
@@ -192,6 +183,63 @@ h2 {
 	color: #F3F3F3;
 	/*font-family: 'BenchNine', 'Arial Narrow', sans-serif;*/
 }
+
+.hp_two_text {
+	font-size: 2vw;
+	/*text-transform: uppercase; */
+}
+
+.important_text {
+	font-size: 2vw;
+}
+
+/*HOME PAGE THREE*/
+
+/*.hp_three {
+	background-image: url(/img/background1.png);
+	background-size: 400px 400px;
+	
+}*/
+
+.hp_three_text_box {
+	width: 80%;
+	height: 395px;
+}
+
+.get_started {
+	width: 125%;
+    color: #3A3B3C;
+    font-size: 4vw;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hp_sign_up {
+	margin-left: 5%;
+	width: 40%;
+	position: absolute;
+	text-align: right;
+}
+
+.hp_sign_in {
+	width: 40%;
+	margin-left: 55%;
+	position: absolute;
+	text-align: left;
+}
+
+.sign_up_button {
+	margin-left: 23%;
+}
+
+.sign_in_button {
+	margin-left: 12%;
+
+}
+
+
+
 
 /*NAV BAR*/
 
