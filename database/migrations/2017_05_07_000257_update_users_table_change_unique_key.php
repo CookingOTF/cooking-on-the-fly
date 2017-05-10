@@ -26,8 +26,10 @@ class UpdateUsersTableChangeUniqueKey extends Migration
      */
     public function down()
     {
-        $table->dropUnique('username');
-        $table->renameColumn('username', 'name');
-        $table->unique('email');
+        Schema::table('users', function($table) {
+            $table->dropUnique(['username']);
+            $table->renameColumn('username', 'name');
+            $table->unique('email');
+        });
     }
 }
