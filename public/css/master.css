@@ -166,16 +166,31 @@ h2 {
 	letter-spacing: normal;
 }
 
+.hp_two_text_box {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.important_text {
+	font-size: 2.5vw;
+	text-transform: uppercase; 
+}
+
 .hp_two {
 	background-color: #3A3B3C;
 	height: 650px;
 	color: #F3F3F3;
 }
 
+.hp_two_text {
+	font-size: 1.8vw;
+	text-transform: uppercase; 
+}
+
 .about_COTF {
 	font-size: 5vw;
 	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	/*font-family: 'BenchNine', 'Arial Narrow', sans-serif;*/
 }
 
 /*NAV BAR*/
