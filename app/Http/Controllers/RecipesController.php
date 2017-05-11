@@ -85,7 +85,8 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        return view('recipies.show');
+        $recipe = Recipe::find($id);
+        return view('recipies.show', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
