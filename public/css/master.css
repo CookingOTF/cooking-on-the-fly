@@ -47,7 +47,7 @@ h2 {
 	background-image: url("/img/homepage.png");
 	/*background-position: center;*/
     background-size: 100%;
-	height: 600px;
+	height: 595px;
 	width: 110%;
 }
 
@@ -247,15 +247,17 @@ h2 {
 /*NAV BAR*/
 
 .nav_logo {
-	height: 135px;
-	align-content: left;
+    height: 135px;
+    align-content: left;
+    margin-right: 2%;
 }
 
 .nav {
-	width: 115%;
-	text-transform: uppercase;
-	font-size: 1.3em;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    width: 115%;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    margin-left: 1.3%;
 }
 
 .nav ul {
@@ -298,6 +300,32 @@ h2 {
 	text-decoration: none;
 	color: #F3F3F3;
 	letter-spacing: normal;
+}
+
+#block_container {
+    text-align:center;
+}
+#bloc1, #bloc2 {
+    display:inline;
+}
+
+.hello_user {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	line-height: 30px;
+	height: 30px;
+	font-weight: 100;
+	color: #F3F3F3;
+	margin-right: 85%;
+}
+
+.logout {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	line-height: 30px;
+	height: 30px;
+	font-weight: 100;
+	color: #F3F3F3;
 }
 
 
@@ -409,14 +437,14 @@ input[type=password] {
 /*SIGN UP*/
 
 .sign_up_container {
-	background-color: #4D4D4D;
-	margin-left: 34.5%;
-	width: 30%;
-	font-size: 1.3em;
-	font-weight: 100;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	margin-bottom: -10px;
-	border-radius: 5px;
+    background-color: #4D4D4D;
+    margin-left: 35.8%;
+    width: 30%;
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    margin-bottom: -10px;
+    border-radius: 5px;
 }
 
 .sign_up_heading {
@@ -511,7 +539,7 @@ input[type=password] {
 }
 
 .user_account_info {
-	margin-left: -900px;
+	margin-left: -90%;
 	color: #F3F3F3;
 }
 
