@@ -30,7 +30,7 @@ class RecipesController extends BaseController
         return view('recipes.browse', $this->getLocalVars(get_defined_vars()));
     }
 
-    public function search($i = null)
+    public function search($query = null)
     {
         $ingredients = Ingredient::all();
         $ingredients_by_category = [];
@@ -40,7 +40,7 @@ class RecipesController extends BaseController
         }
 
         // test this when recipe database and search page are done
-        if (isset($i)) {
+        if (isset($query)) {
             // particularly this
             $recipes = Recipe::with('ingredients')->paginate(20);
             foreach ($recipes as &$recipe) {
@@ -86,7 +86,7 @@ class RecipesController extends BaseController
     public function show($id)
     {
         $recipe = Recipe::find($id);
-        return view('recipies.show', $this->getLocalVars(get_defined_vars()));
+        return view('recipes.show', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
