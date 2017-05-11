@@ -75,11 +75,18 @@ Route::get('fridge', function () {
 |-----------------------
 */
 
+
+Route::get('/recipes/ingredients/', function () {
+	return view('recipes.ingredients');
+});
+
+Route::get('/recipes/search/', function () {
+	return 'recipes.search';
+});
 Route::get('recipes/browse', 'RecipesController@browse');
 Route::get('recipes/search/{i?}', 'RecipesController@search');
 
 // Route::resource('recipes');
-
 /*
 |----------------------
 | Signin/Signup pages
