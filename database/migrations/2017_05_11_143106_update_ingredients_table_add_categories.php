@@ -13,7 +13,7 @@ class UpdateIngredientsTableAddCategories extends Migration
     public function up()
     {
         Schema::table('ingredients', function($table) {
-            $table->string('categories');
+            $table->string('category');
         });
     }
 
@@ -25,7 +25,7 @@ class UpdateIngredientsTableAddCategories extends Migration
     public function down()
     {
         Schema::table('ingredients', function($table) {
-            $table->dropColumn('categories');
+            $table->dropColumn('category');
         });
     }
 }
