@@ -7,12 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Recipe;
+use App\Ingredient;
+
 class RecipesController extends BaseController
 {
     
     public function index()
     {
-        return redirect('/recipes/browse/');
+        return redirect('recipes/browse');
     }
 
     /**
@@ -22,16 +25,20 @@ class RecipesController extends BaseController
      */
     public function browse()
     {
+        $recipes = Recipes::paginate(20);
+
         return view('recipes.browse');
     }
 
     public function search($query = null)
     {
+        $ingredients = Ingredient::all();
+
         if (isset($query)) {
-            return 'search results: ' . $query;
-        } else {
-            return 'recipes.search';
+
         }
+
+        return view('recipes.search', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
