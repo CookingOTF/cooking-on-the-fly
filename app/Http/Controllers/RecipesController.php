@@ -25,17 +25,32 @@ class RecipesController extends BaseController
      */
     public function browse()
     {
-        $recipes = Recipes::paginate(20);
+        $recipes = Recipe::paginate(20);
 
-        return view('recipes.browse');
+        return view('recipes.browse', $this->getLocalVars(get_defined_vars()));
     }
 
-    public function search($query = null)
+    public function search($i = null)
     {
         $ingredients = Ingredient::all();
+        $ingredients_by_category = [];
 
-        if (isset($query)) {
+        foreach ($ingredients as $ingredient) {
+            $ingredients_by_category[$ingredient->category][] = $ingredient;
+        }
 
+        // test this when recipe database and search page are done
+        if (isset($i)) {
+            // particularly this
+            $recipes = Recipe::all()->with('ingredients')->get();
+            foreach ($recipes as &$recipe) {
+                foreach ($recipe->ingredient->name /* and this */ as $ingredient) {
+                    if (!in_array($ingredient, $i)) {
+                        unset($recipe);
+                        break;
+                    }
+                }
+            }
         }
 
         return view('recipes.search', $this->getLocalVars(get_defined_vars()));

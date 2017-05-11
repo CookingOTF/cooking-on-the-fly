@@ -603,8 +603,15 @@ input[type=password] {
 	/*margin-top: 10px;*/
 }
 
+/*INGREDIENT PAGE*/
+.ingredient_head {
+	width:60%;
+}
 
-
+.ingredients{
+	height:1000px;
+	background-image: url('/img/background1.png');
+}
 
 
 
@@ -615,6 +622,9 @@ input[type=password] {
 
 
 /*FOOTER*/
+
+
+
 #footer {
 	text-transform: uppercase;
 	font-size: 1em;

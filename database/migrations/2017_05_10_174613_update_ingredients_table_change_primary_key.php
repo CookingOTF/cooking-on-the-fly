@@ -38,5 +38,10 @@ class UpdateIngredientsTableChangePrimaryKey extends Migration
         Schema::table('ingredients', function($table) {
             $table->increments('id');
         });
+        Schema::table('recipe_ingredients', function($table) {
+            $table->integer('ingredient_id')->unsigned()->references('ingredients')->on('id');
+            $table->dropColumn('ingredient_name');
+            $table->renameColumn('display_in_recipe', 'display_name');
+        });
     }
 }

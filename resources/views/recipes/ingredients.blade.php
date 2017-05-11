@@ -3,23 +3,22 @@
 @include('partials.nav')
 @stop
 @section('content')
+<section class='text-center ingredients'>
+	<h3> Choose Your Ingredients </h3>
+<div class="veggie">
+<img class='ingredient_head' src="/img/veghead.png">
+<form action="">
+
+</form>
+</div>
+
+
+
+
+
+
 <section class='text-center'>
-	<h3> All Recipes </h3>
-</section>
- the at sign and for each here!! foreach($recipes as $recipe)
 
-
- 		<div class='text'></a>
- 			<p> Image Displayed here!</p>
-			<p> Recipe Name</p>
-			<p>Instructions</p>
-			<p> cook time!</p>
-
-		</div>
-	</div>
-at sign and end foreach here
-<section class='text-center'>
-</section>
 <form name= 'sort' action="" class='text-left' method="GET">
 	<div class="form-group sortform">
   		<label for="sel1">Sort By:</label>
@@ -29,7 +28,7 @@ at sign and end foreach here
  		</select><button type="submit" class="btn btn-primary">Sort</button>
 	</div>
 </form>
-
+</section>
 
 
 
