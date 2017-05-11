@@ -9,7 +9,7 @@ body {
 	display: table;
 	font-weight: 100;
 	font-family: 'BenchNine', sans-serif;
-	background: #EEE;
+	background: #3A3B3C;
 	/*background-image: url('/img/background1.png');*/
 	/*opacity: 0.6;*/
 	background-size: 100%;
@@ -47,7 +47,7 @@ h2 {
 	background-image: url("/img/homepage.png");
 	/*background-position: center;*/
     background-size: 100%;
-	height: 600px;
+	height: 595px;
 	width: 110%;
 }
 
@@ -74,7 +74,7 @@ h2 {
 	margin-bottom: 100px;
 	margin-top: 5px;
 	margin-left: -820px;
-	color: #CDDBE3;
+	color: #F3F3F3;
 	font-weight: bolder;
 }
 
@@ -166,45 +166,98 @@ h2 {
 	letter-spacing: normal;
 }
 
+/*HOME PAGE TWO*/
+.hp_two {
+	background-color: #3A3B3C;
+	height: 450px;
+	color: #F3F3F3;
+}
+
 .hp_two_text_box {
 	width: 70%;
 	margin-left: 15%;
 }
 
-.important_text {
-	font-size: 2.5vw;
-	text-transform: uppercase; 
-}
-
-.hp_two {
-	background-color: #3A3B3C;
-	height: 650px;
-	color: #F3F3F3;
+.about_COTF {
+	font-size: 5vw;
+    color: #F3F3F3;
+    /* font-family: 'BenchNine', 'Arial Narrow', sans-serif; */
+    margin-top: 30px;
 }
 
 .hp_two_text {
-	font-size: 1.8vw;
-	text-transform: uppercase; 
+	font-size: 2vw;
+	/*text-transform: uppercase; */
 }
 
-.about_COTF {
-	font-size: 5vw;
-	color: #F3F3F3;
-	/*font-family: 'BenchNine', 'Arial Narrow', sans-serif;*/
+.important_text {
+	font-size: 2vw;
 }
+
+/*HOME PAGE THREE*/
+
+.hp_three {
+	background-image: url(/img/background1.png);
+	background-color: #F3F3F3;
+	background-size: 900px;
+	
+}
+
+.hp_three_text_box {
+	width: 80%;
+	height: 395px;
+}
+
+.get_started {
+	width: 125%;
+    color: #7B8489;
+    font-size: 6vw;
+    font-family: 'Sofia', cursive;
+    /*text-transform: uppercase;*/
+    text-align: center;
+}
+
+.hp_sign_up {
+	margin-left: 5%;
+	width: 40%;
+	position: absolute;
+	text-align: right;
+}
+
+.hp_sign_in {
+	width: 40%;
+	margin-left: 55%;
+	position: absolute;
+	text-align: left;
+}
+
+.sign_up_button {
+	margin-left: 23%;
+	margin-top: -100px;
+}
+
+.sign_in_button {
+	margin-left: 12%;
+
+}
+
+
+
 
 /*NAV BAR*/
 
 .nav_logo {
-	height: 135px;
-	align-content: left;
+    height: 135px;
+    align-content: left;
+    margin-right: 2%;
 }
 
 .nav {
-	width: 115%;
-	text-transform: uppercase;
-	font-size: 1.3em;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    width: 115%;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    margin-left: 1.3%;
 }
 
 .nav ul {
@@ -223,15 +276,16 @@ h2 {
 
 .nav a {
 	text-decoration: none;
-	color: #3A3B3C;
+	color: #F3F3F3;
 	display: block;
 	font-size: 2vw;
 	font-weight: 100;
 }
 
 .nav a:hover {
-	color: #A2D6BF; /*change nav bar TEXT color when hovered*/
+	color: #7B8489; /*change nav bar TEXT color when hovered*/
 	outline: none;
+	font-weight: 900;
 }
 
 .nav a.active {
@@ -246,6 +300,32 @@ h2 {
 	text-decoration: none;
 	color: #F3F3F3;
 	letter-spacing: normal;
+}
+
+#block_container {
+    text-align:center;
+}
+#bloc1, #bloc2 {
+    display:inline;
+}
+
+.hello_user {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	line-height: 30px;
+	height: 30px;
+	font-weight: 100;
+	color: #F3F3F3;
+	margin-right: 85%;
+}
+
+.logout {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	line-height: 30px;
+	height: 30px;
+	font-weight: 100;
+	color: #F3F3F3;
 }
 
 
@@ -337,7 +417,7 @@ h2 {
 
 input[type=email] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -346,7 +426,7 @@ input[type=email] {
 
 input[type=password] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -357,14 +437,14 @@ input[type=password] {
 /*SIGN UP*/
 
 .sign_up_container {
-	background-color: #4D4D4D;
-	margin-left: 34.5%;
-	width: 30%;
-	font-size: 1.3em;
-	font-weight: 100;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	margin-bottom: -10px;
-	border-radius: 5px;
+    background-color: #4D4D4D;
+    margin-left: 35.8%;
+    width: 30%;
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    margin-bottom: -10px;
+    border-radius: 5px;
 }
 
 .sign_up_heading {
@@ -423,7 +503,7 @@ input[type=password] {
 
 input[type=name] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -433,7 +513,7 @@ input[type=name] {
 
 input[type=email] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -442,7 +522,7 @@ input[type=email] {
 
 input[type=password] {
     border: none;
-    border-bottom: 2px solid #A2D6BF;
+    border-bottom: 2px solid #CDDBE3;
     background-color: #3A3B3C;
     color: white;
 	font-size: 1.2vw;
@@ -452,35 +532,75 @@ input[type=password] {
 
 /*DASHBOARD*/
 .dashboard {
-	background-image: url('/img/cutting_board.png');
-	background-size: cover;
-	margin-left: 8%;
-	width: 85%;
-	height: 1700px;
-	margin-top: -165px;
+
 }
 
 .user_dashboard {
-	padding-top: .1px;
+}
+
+.user_account_info {
+	margin-left: -90%;
+	color: #F3F3F3;
 }
 
 .my_account {
-	margin-top: 140px;
-	font-size: 6vw;
-	color: #3A3B3C;
-	margin-left: 360px;
-	/*background-color: #3A3B3C;*/
-	border-radius: 10px;
-	height: 80px;
-	width: 35%;
-	font-weight: bold;
+	color: #F3F3F3;
+	font-size: 8vw;
+	font-weight: 100px;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
 .user_info {
-	border: 1px solid black;
-	margin: 150px 100px 0 100px;
+	height: 300px;
+	margin-top: -75px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
+}
+
+.favorites {
+	height: 300px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
+}
+
+.fridge {
+	height: 300px;
+	margin-left: 10%;
+	width: 80%;
+	background-color: #7B8489;
+	border-radius: 30px;
+}
+
+/*DASHBOARD TEXT*/
+.my_account_info {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
 	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
+}
+
+.favorite_recipes {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
+}
+
+.my_fridge {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
 }
 
 /*INGREDIENT PAGE*/
@@ -494,6 +614,45 @@ input[type=password] {
 }
 
 
+
+.buttons {
+    margin-top: -58px;
+}
+
+/*BROWSE PAGE*/
+
+table {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.browse_table{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #4D4D4D;
+	background-color: #4D4D4D;
+	margin-left: 50px;
+}
+
+.browse_image {
+	height: 12vw;
+
+}
+
+.browse_name {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	color: #F3F3F3;
+}
+
+
+
+
+
+
+
+
 /*FOOTER*/
 
 
@@ -503,7 +662,7 @@ input[type=password] {
 	font-size: 1em;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
-	color: #3A3B3C;
+	color: #7B8489;
 }
 
 #forgot_password {

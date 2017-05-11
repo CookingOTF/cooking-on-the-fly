@@ -3,22 +3,29 @@
 @include('partials.nav')
 @stop
 @section('content')
-<section class='text-center'>
+<section>
 	<h3> All Recipes </h3>
 </section>
- the at sign and for each here!! foreach($recipes as $recipe)
+<table>
+ 
+ @foreach($recipes as $index=>$recipe)
+ 	@if ($index % 4 == 0)
+ 		<tr>
+ 	@endif
+		<td class='browse_table'>
+			<p><img class="browse_image" src="/img/{{$recipe->image}}"></p>
+			<p class="browse_name"> {{$recipe->name}}</p>
+			{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
+			{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
+		</td>
+	@if ($index % 4 == 3)
+		</tr>
+	@endif
+@endforeach
 
+</table>
 
- 		<div class='text'></a>
- 			<p> Image Displayed here!</p>
-			<p> Recipe Name</p>
-			<p>Instructions</p>
-			<p> cook time!</p>
-
-		</div>
-	</div>
-at sign and end foreach here
-<section class='text-center'>
+{{-- <section class='text-center'>
 </section>
 <form name= 'sort' action="" class='text-left' method="GET">
 	<div class="form-group sortform">
@@ -29,7 +36,7 @@ at sign and end foreach here
  		</select><button type="submit" class="btn btn-primary">Sort</button>
 	</div>
 </form>
-
+ --}}
 
 
 
