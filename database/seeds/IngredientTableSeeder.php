@@ -68,7 +68,6 @@ class IngredientTableSeeder extends Seeder
             Ingredient::create(['name' => 'sweet potato', 'display_name' => 'Sweet Potato']),
             Ingredient::create(['name' => 'kale', 'display_name' => 'Kale']),
             Ingredient::create(['name' => 'corn', 'display_name' => 'Corn']),
-            Ingredient::create(['name' => 'broccoli', 'display_name' => 'Broccoli']),
             Ingredient::create(['name' => 'green beans', 'display_name' => 'Green Beans']),
             Ingredient::create(['name' => 'squash', 'display_name' => 'Squash']),
             Ingredient::create(['name' => 'mushroom', 'display_name' => 'Mushroom']),
