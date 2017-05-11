@@ -33,9 +33,14 @@ class RecipesController extends BaseController
     public function search($query = null)
     {
         $ingredients = Ingredient::all();
+        $ingredients_by_category = [];
+
+        foreach ($ingredients as $ingredient) {
+            $ingredients_by_category[$ingredient->category][] = $ingredient;
+        }
 
         if (isset($query)) {
-
+            
         }
 
         return view('recipes.search', $this->getLocalVars(get_defined_vars()));
