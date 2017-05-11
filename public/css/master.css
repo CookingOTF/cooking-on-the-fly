@@ -619,6 +619,38 @@ input[type=password] {
     margin-top: -58px;
 }
 
+/*BROWSE PAGE*/
+
+table {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.browse_table{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #4D4D4D;
+	background-color: #4D4D4D;
+	margin-left: 50px;
+}
+
+.browse_image {
+	height: 12vw;
+
+}
+
+.browse_name {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	color: #F3F3F3;
+}
+
+
+
+
+
+
 
 
 /*FOOTER*/

@@ -17,7 +17,7 @@
 			<li id="home" class="home"><a href="/">DASHBOARD</a></li>&nbsp;
 			<li id="home" class="home"><a href="/">$USER</a></li>&nbsp;
 			<li class="nav_logo"><a href="/"><img src="/img/logo1.png" class="nav_logo"></a></li>&nbsp;
-			<li id="browse" class="browse"><a href="recipes/browse/">BROWSE</a></li>
+			<li id="browse" class="browse"><a href="/recipes/browse/">BROWSE</a></li>
 			<li id="home" class="home"><a href="/">SEARCH</a></li>&nbsp;
 			<li id="home" class="home"><a href="/">LOG OUT</a></li>&nbsp;
 		</ul>
