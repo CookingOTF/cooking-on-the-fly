@@ -42,7 +42,7 @@ class RecipesController extends BaseController
         // test this when recipe database and search page are done
         if (isset($i)) {
             // particularly this
-            $recipes = Recipe::all()->with('ingredients')->get();
+            $recipes = Recipe::with('ingredients')->paginate(20);
             foreach ($recipes as &$recipe) {
                 foreach ($recipe->ingredient->name /* and this */ as $ingredient) {
                     if (!in_array($ingredient, $i)) {
@@ -85,7 +85,8 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        return view('recipies.show');
+        $recipe = Recipe::find($id);
+        return view('recipies.show', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
