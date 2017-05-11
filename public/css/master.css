@@ -510,14 +510,21 @@ input[type=password] {
 .user_dashboard {
 }
 
+.user_account_info {
+	margin-left: -900px;
+	color: #F3F3F3;
+}
+
 .my_account {
 	color: #F3F3F3;
-	font-size: 7vw;
+	font-size: 8vw;
 	font-weight: 100px;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
 .user_info {
 	height: 300px;
+	margin-top: -75px;
 	margin-left: 10%;
 	width: 80%;
 	background-color: #7B8489;
@@ -539,6 +546,38 @@ input[type=password] {
 	background-color: #7B8489;
 	border-radius: 30px;
 }
+
+/*DASHBOARD TEXT*/
+.my_account_info {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
+}
+
+.favorite_recipes {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
+}
+
+.my_fridge {
+	color: #F3F3F3;
+	font-size: 3vw;
+	font-weight: lighter;
+	text-align: left;
+	margin-left: 25px;
+	/*margin-top: 10px;*/
+}
+
+
+
+
 
 
 .buttons {
