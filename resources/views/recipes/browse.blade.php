@@ -13,10 +13,13 @@
  		<tr>
  	@endif
 		<td class='browse_table'>
-			<p><img class="browse_image" src="/img/{{$recipe->image}}"></p>
-			<p class="browse_name"> {{$recipe->name}}</p>
-			{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
-			{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
+			<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
+				<p>
+					<img class="browse_image" src="/img/{{$recipe->image}}"></p>
+				<p class="browse_name"> {{$recipe->name}}</p>
+				{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
+				{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
+			</a>
 		</td>
 	@if ($index % 4 == 3)
 		</tr>
