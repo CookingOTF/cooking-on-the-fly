@@ -28,7 +28,7 @@ class Recipe extends Model
 
     protected function hoursToSeconds($time)
     {
-        if (is_string($value)) {
+        if (is_string($time)) {
             $parts = [];
             if (!preg_match('~(?<h>\d+)(?::(?<m>[0-5]\d)(?::(?<s>[0-5]\d))?)?~', $time, $parts)) {
                 if (!preg_match('~(?=.*(?:h|m|sec))(?:(?<h>\d+)\s*hours?,?\s*)?(?:(?<m>[0-5]\d)\s*minutes?,?\s*)?(?:(?<s>[0-5]\d)\s*seconds?)?~', $time, $parts)) {
