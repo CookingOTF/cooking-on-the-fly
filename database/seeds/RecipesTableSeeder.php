@@ -87,11 +87,11 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'info' => [
-                    'name' => 'NAME',
-                    'description' => 'DESCRIPTION',
-                    'image' => 'IMAGE',/* If you delete this line (the *whole* line, not just the value), it'll use the default image */
-                    'prep_time' => 1,
-                    'cook_time' => 1
+                    'name' => NAME,
+                    'description' => DESCRIPTION,
+                    'image' => IMAGE,/* If you delete this line (the *whole* line, not just the value), it'll use the default image */
+                    'prep_time' => PREP_TIME,
+                    'cook_time' => COOK_TIME
                 ],
                 /*
                 |====================================================
@@ -118,9 +118,9 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'directions' => [
-                    'step1',
-                    'step2',
-                    'step3'/*
+                    STEP1,
+                    STEP2,
+                    STEP3/*
                     add as many as you want, just make
                     sure no comma on the last one of course :P
                     */
@@ -160,51 +160,55 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'ingredients' => [
-                    'asparagus' => 'DISPLAY_IN_RECIPE',
-                    'corn' => 'DISPLAY_IN_RECIPE',
-                    'carrot' => 'DISPLAY_IN_RECIPE'/*
+                    NAME => DISPLAY_IN_RECIPE,
+                    NAME => DISPLAY_IN_RECIPE,
+                    NAME => DISPLAY_IN_RECIPE/*
                     same as before, no comma on last one :P
                     */
                 ]
-            ]
+            ],
             /*
             |========================================================
             |                     ##  END  ##
             |========================================================
             |
             | That's it! Now just make as many copies as you need!
-            | (Preferably copy the one below though...)
             |
+            | (Preferably copy the one below, though, unless you
+            | want these massive comment blocks on all of them...)
             |
             */
-            // [
-            //     'name' => NAME,
-            //     'description' => DESCRIPTION,
-            //     'image' => IMAGE,
-            //     'prep_time' => PREP_TIME,
-            //     'cook_time' => COOK_TIME,
-            //     'directions' => [
-            //         step1
-            //     ]
-            // ],
-            // [
-            //     'name' => NAME,
-            //     'description' => DESCRIPTION,
-            //     'image' => IMAGE,
-            //     'prep_time' => PREP_TIME,
-            //     'cook_time' => COOK_TIME
-            // ],
-            // # more as needed...
-            // [
-            //     'name' => NAME,
-            //     'description' => DESCRIPTION,
-            //     'image' => IMAGE,
-            //     'prep_time' => PREP_TIME,
-            //     'cook_time' => COOK_TIME,
-            //     [
-            //         step1
-            //     ]
-            // ]/* no comma after the last one ofc :P */
+            [
+                'info' => [
+                    'name' => NAME,
+                    'description' => DESCRIPTION,
+                    'image' => IMAGE,
+                    'prep_time' => PREP_TIME,
+                    'cook_time' => COOK_TIME
+                ],
+                'directions' => [
+                    STEP1
+                ],
+                'ingredients' => [
+                    NAME => DISPLAY_IN_RECIPE
+                ]
+            ],
+            # more as needed...
+            [
+                'info' => [
+                    'name' => NAME,
+                    'description' => DESCRIPTION,
+                    'image' => IMAGE,
+                    'prep_time' => PREP_TIME,
+                    'cook_time' => COOK_TIME
+                ],
+                'directions' => [
+                    STEP1
+                ],
+                'ingredients' => [
+                    NAME => DISPLAY_IN_RECIPE
+                ]
+            ]/* no comma after the last one ofc :P */
         ];
 
         /*
@@ -224,14 +228,14 @@ class RecipesTableSeeder extends Seeder
 
 
             foreach ($recipe['directions'] as $index => $content) {
-                $recipe->directions()->create([
+                $newRecipe->directions()->create([
                     'step_no' => ++$index, /* incrementing the index so that the steps start at 1 */
                     'content' => $content
                 ]);
             }
 
             foreach ($recipe['ingredients'] as $name => $displayInRecipe) {
-                $recipe->ingredients()->attach($name, [
+                $newRecipe->ingredients()->attach($name, [
                     'display_in_recipe' => $displayInRecipe
                 ]);
             }
