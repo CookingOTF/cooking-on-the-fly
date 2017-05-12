@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Recipe;
+use App\Description;
+
 class RecipesTableSeeder extends Seeder
 {
     /**
@@ -18,7 +21,15 @@ class RecipesTableSeeder extends Seeder
                 'description' => DESCRIPTION,
                 'image' => IMAGE,
                 'prep_time' => PREP_TIME,
-                'cook_time' => COOK_TIME
+                'cook_time' => COOK_TIME,
+                'directions' => [
+                    step1,
+                    step2,
+                    step3/*
+                    you can add as many as you want, but make
+                    sure no comma on the last one of course :P
+                    */
+                ]
             ],
             /* end here */
             [
@@ -26,7 +37,10 @@ class RecipesTableSeeder extends Seeder
                 'description' => DESCRIPTION,
                 'image' => IMAGE,
                 'prep_time' => PREP_TIME,
-                'cook_time' => COOK_TIME
+                'cook_time' => COOK_TIME,
+                'directions' => [
+                    step1
+                ]
             ],
             [
                 'name' => NAME,
@@ -41,12 +55,26 @@ class RecipesTableSeeder extends Seeder
                 'description' => DESCRIPTION,
                 'image' => IMAGE,
                 'prep_time' => PREP_TIME,
-                'cook_time' => COOK_TIME
+                'cook_time' => COOK_TIME,
+                [
+                    step1
+                ]
             ]/* no comma after the last one ofc :P */
         ];
 
         foreach ($recipes as $recipe) {
-            Recipe::create($recipe)->save();
+            $directions = $recipe['directions'];
+            unset($recipe['directions']);
+
+            $ingredients = $recipe['ingredients'];
+            unset($recipe['ingredients']);
+
+            $recipe = Recipe::create($recipe);
+
+            foreach ($directions as $step => $content) {
+                $recipe->directions()->save(['step_no' => $step, 'content' => $content]);
+            }
+
         }
     }
 }
