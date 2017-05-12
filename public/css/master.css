@@ -33,6 +33,8 @@ a {
 
 .container {
 	text-align: center;
+	background-image: url('/img/signupin.png');
+	background-size: cover;
 }
 
 .hp_one {
@@ -60,7 +62,7 @@ a {
 	font-weight: bolder;
 }
 
-.nav_hp {
+/*.nav_hp {
 	text-transform: uppercase;
 	font-size: 1.3vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -98,15 +100,16 @@ a {
 	text-decoration: none;
 	color: #F3F3F3;
 	letter-spacing: normal;
-}
+}*/
 
-.nav_hp a:hover {
-	color: #CDDBE3; /*change nav_hp bar TEXT color when hovered*/
+/*.nav_hp a:hover {
+	color: #CDDBE3; change nav_hp bar TEXT color when hovered
 	outline: none;
+	text-decoration: none !important;
 	letter-spacing: normal;
-}
+}*/
 
-.nav_hp a.active {
+/*.nav_hp a.active {
 	color: #F3F3F3;
 	cursor: default;
 }
@@ -117,7 +120,7 @@ a {
 	text-decoration: none;
 	color: #F3F3F3;
 	letter-spacing: normal;
-}
+}*/
 
 /*HOME PAGE TWO*/
 #hp_two {
@@ -202,6 +205,7 @@ a {
 	color: #F3F3F3 !important;
     font-size: 1.3em;
     font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+    margin-bottom: 0px !important;
 }
 
 .navbar li {
@@ -211,6 +215,7 @@ a {
 	height: 30px;
 	font-weight: 100;
 	color: #F3F3F3;
+	text-decoration: none;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -233,6 +238,7 @@ a {
 .navbar a:hover {
 	color: #7B8489; /*change nav bar TEXT color when hovered*/
 	outline: none;
+	text-decoration: none !important;
 	font-weight: 900;
 }
 
@@ -241,6 +247,11 @@ a {
 
 
 /*SIGN IN PAGE*/
+
+.sign_in_page {
+	background-image: url('/img/blueberries.png');
+	background-size: cover;
+}
 
 #sign_in_container {
 	background-color: #4D4D4D;
@@ -259,10 +270,15 @@ a {
 	color: #F3F3F3;
 	/*padding-top: 50px;*/
 	font-weight: 100;
+	height: 100%;
 }
 
 .sign_in_content {
 	/*background-color: #823B3B;*/
+}
+
+.sign_in_top {
+	margin-top: 8%;
 }
 
 #signin_email {
@@ -342,6 +358,10 @@ input[type=password] {
 
 .sign_up_content {
 	/*background-color: #823B3B;*/
+}
+
+.sign_up_top {
+	margin-top: 6%;
 }
 
 #signup_name {
@@ -532,11 +552,14 @@ table {
 }
 
 .thumbnail {
-	border-style: solid;
+    border-style: solid;
     border-width: 2px;
     /* height: 100px; */
-    border-color: #4D4D4D;
+    border-color: #4D4D4D !important;
     background-color: #4D4D4D !important;
+    border-radius: 0px !important;
+    text-align: center;
+    padding-top: 20px !important;
 }
 
 
@@ -544,14 +567,16 @@ table {
 
 /*FOOTER*/
 
-
-
-#footer {
+.footer {
 	text-transform: uppercase;
 	font-size: 1em;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
+	width: 100%;
+/*	height: 50px;*/
 	color: #7B8489;
+	float: left;
+	background-color: #3A3B3C;
 }
 
 #forgot_password {
@@ -560,7 +585,7 @@ table {
 }
 
 .content_container {
-	min-height: 60vh;
+	min-height: 80vh;
 }
 
 

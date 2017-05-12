@@ -2,11 +2,24 @@
 @section('navbar')
 @include('partials.nav')
 @stop
+
+@section('custom_css')
+	<style type="text/css">
+		body {
+			background-image: url('/img/pasta.png');
+			background-size: 100%;
+			opacity: 0.5;
+		}
+	</style>
+@stop
+
 @section('content')
 
+<section class="sign_in_top">
+	
+</section>
 
-
-<section id="sign_in_container" class="col-xs-8 col-xs-offset-4">
+<section id="sign_in_container" class="col-xs-5 col-xs-offset-7">
 
 	<h2 class="sign_in_heading">SIGN IN</h2>
 	<div class="sign_in">
@@ -42,5 +55,6 @@
 		</div>
 	</div>
 </section>
+
 
 @stop

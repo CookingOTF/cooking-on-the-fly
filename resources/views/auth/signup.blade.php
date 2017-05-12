@@ -2,9 +2,22 @@
 @section('navbar')
 @include('partials.nav')
 @stop
+
+@section('custom_css')
+	<style type="text/css">
+		body {
+			background-image: url('/img/spaghetti.png');
+			background-size: cover;
+		}
+	</style>
+@stop
+
 @section('content')
 
-	<section id="sign_up_container" class="col-xs-8 col-xs-offset-4">
+	<section class="sign_up_top">
+		
+	</section>
+	<section id="sign_up_container" class="col-xs-11 col-xs-offset-1">
 
 		<h2 class="sign_up_heading">SIGN UP</h2>
 		<div class="sign_up">
