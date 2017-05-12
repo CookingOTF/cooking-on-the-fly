@@ -42,7 +42,9 @@ class RecipesController extends BaseController
         // test this when recipe database and search page are done
         if (isset($query)) {
             // particularly this
-            $recipes = Recipe::with('ingredients')->paginate(20);
+            $recipes = Recipe::select('id', 'name', 'description', 'image')
+                ->with('ingredients')
+                ->paginate(20);
             foreach ($recipes as &$recipe) {
                 foreach ($recipe->ingredient->name /* and this */ as $ingredient) {
                     if (!in_array($ingredient, $i)) {
