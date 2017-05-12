@@ -1,9 +1,19 @@
 {
 	"folders":
 	[
+		/*
+		|============
+		| !! All !!
+		|============
+		*/
 		{
 			"path": ".",
 			"name": "/",
+			/*
+			|----------------
+			| .. Folders ..
+			|----------------
+			*/
 			"folder_include_patterns":
 			[
 				// "*",
@@ -52,6 +62,11 @@
 				"tests",
 				// "vendor"
 			],
+			/*
+			|--------------
+			| .. Files ..
+			|--------------
+			*/
 			"file_exclude_patterns":
 			[
 				// "*",
@@ -80,32 +95,64 @@
 				// "server.php"
 			]
 		},
+		/*
+		|=================
+		| !! Database !!
+		|=================
+		*/
 		{
-			"path": "database/migrations",
-			"name": "Migrations",
+			"path": "database",
+			"name": "Database",
+
+			"folder_include_patterns":
+			[
+				// "database/factories",
+				"database/migrations",
+				"database/seeds"
+			],
+
 			"file_exclude_patterns":
 			[
-				".gitkeep"
+				".gitignore",
+				"*.gitkeep"
 			]
 		},
+		/*
+		|===============
+		| !! Models !!
+		|===============
+		*/
 		{
 			"path": "app",
 			"name": "Models",
+
 			"folder_exclude_patterns":
 			[
 				"*"
 			]
 		},
+		/*
+		|====================
+		| !! Controllers !!
+		|====================
+		*/
 		{
 			"path": "app/Http/Controllers",
+
 			"folder_include_patterns":
 			[
 				"Auth"
 			]
 		},
+		/*
+		|===============
+		| !! routes !!
+		|===============
+		*/
 		{
 			"path": "app/Http",
 			"name": "routes",
+
 			"folder_exclude_patterns":
 			[
 				"*"
@@ -115,8 +162,14 @@
 				"routes.php"
 			]
 		},
+		/*
+		|===============
+		| !! public !!
+		|===============
+		*/
 		{
 			"path": "public",
+
 			"folder_include_patterns":
 			[
 				"css",
@@ -124,8 +177,14 @@
 				"img"
 			]
 		},
+		/*
+		|==============
+		| !! views !!
+		|==============
+		*/
 		{
 			"path": "resources/views",
+			
 			"folder_include_patterns":
 			[
 				"errors",
