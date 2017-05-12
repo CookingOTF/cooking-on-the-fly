@@ -10,10 +10,14 @@ class Ingredient extends Model
 
     protected $fillable = ['name', 'display_name'];
 
+    protected $primaryKey = 'name';
+
+    public $incrementing = false;
+
     public $timestamps = false;
 
     public function recipes()
     {
-        return $this->belongsToMany('App\Recipe', 'recipe_ingredients')->withPivot('display_in_recipe');
+        return $this->belongsToMany('App\Recipe', 'recipe_ingredients', 'ingredient_name', 'recipe_id')->withPivot('display_in_recipe');
     }
 }

@@ -14,9 +14,22 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
+        // DB::table('users')->truncate();
+
+        // DB::table('ingredients')->truncate();
+
+        // All 3 of these are for Recipes table seeder
+        DB::table('recipe_ingredients')->truncate();
+        DB::table('directions')->truncate();
+        DB::table('recipes')->truncate();
+
         // $this->call(UserTableSeeder::class);
 
-        $this->call(IngredientTableSeeder::class);
+        // $this->call(IngredientTableSeeder::class);
+
+        $this->call(RecipesTableSeeder::class);
+
+        // $this->call(TestSeeder::class);
 
         Model::reguard();
     }
