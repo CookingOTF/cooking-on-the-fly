@@ -486,6 +486,10 @@ input[type=password] {
 
 }
 
+.single_ingredient{
+	margin-right:20%;
+}
+
 
 
 
@@ -502,6 +506,7 @@ input[type=password] {
 	width: 35%;
 	font-size: 1.3em;
 	font-weight: 100;
+	color:#ECECEC;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;

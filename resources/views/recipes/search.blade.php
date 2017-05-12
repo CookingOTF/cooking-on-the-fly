@@ -15,80 +15,85 @@
 <div class="indredient_box col-xs-8 col-xs-offset-2">
 <form action="">
 
- @foreach ($ingredients_by_category as $category => $ingredients)
-	<fieldset>
-		<legend>{{ $category }}</legend>
-		@foreach ($ingredients as $ingredient)
-			<label>
-				<input type="checkbox" name="i[]" value="{{ $ingredient->name }}">
-				{{ $ingredient->display_name }}
-			</label>
-		@endforeach
-	</fieldset>
-@endforeach
-</form>
+
+<fieldset>
+	<legend>Category Name Here</legend>
+	@foreach ($ingredients['vegetable'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}"
+				@if (in_array($ingredient->name, $q))
+					checked
+				@endif>
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 </div>
 
 <img class='ingredient_head' src="/img/fruithead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 <img class='ingredient_head' src="/img/dairyhead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 <img class='ingredient_head' src="/img/meathead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 <img class='ingredient_head' src="/img/breadhead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 
 
 <img class='ingredient_head' src="/img/oilhead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 
 
 <img class='ingredient_head' src="/img/seasoninghead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 
 <img class='ingredient_head' src="/img/snackhead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
-</form>
+
 </div>
 
 <img class='ingredient_head' src="/img/beverageshead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
-<form action="">
+
 
  PUT FOR EACH HERE
+   <input type="submit" value="Submit">
 </form>
 </div>
 
