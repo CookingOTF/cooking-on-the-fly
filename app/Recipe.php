@@ -12,4 +12,9 @@ class Recipe extends Model
     {
         return $this->belongsToMany('App\Ingredient', 'recipe_ingredients')->withPivot('display_in_recipe');
     }
+
+    public function directions()
+    {
+        return $this->hasMany('App\Directions');
+    }
 }
