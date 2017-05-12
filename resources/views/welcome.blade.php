@@ -13,8 +13,8 @@
 </nav>
 
 <section class="hp_one">
-	<div class="one" id="logo_hp">
-		<img src="/img/logo1.png" class="hp_logo">
+	<div class="one" id="logo_hp"><br>
+		<img src="/img/logo1.png" class="col-xs-5 id="hp_logo">
 	</div>
 </section>
 

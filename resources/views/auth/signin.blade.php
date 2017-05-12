@@ -6,7 +6,7 @@
 
 
 
-<section class="sign_in_container">
+<section id="sign_in_container" class="col-xs-8 col-xs-offset-4">
 
 	<h2 class="sign_in_heading">SIGN IN</h2>
 	<div class="sign_in">
