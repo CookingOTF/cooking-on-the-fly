@@ -4,7 +4,7 @@
 @stop
 @section('content')
 
-	<section class="sign_up_container">
+	<section id="sign_up_container" class="col-xs-8 col-xs-offset-4">
 
 		<h2 class="sign_up_heading">SIGN UP</h2>
 		<div class="sign_up">
@@ -35,7 +35,8 @@
 					<div class="submit-area">
 					<a href=""> <img class="signin_button" src="/img/submit.png"></a>
 
-				<br><br>
+					<a href="/signin/">Or click here to Sign In!</a>
+
 					</div>
 				</form>
 			</div>

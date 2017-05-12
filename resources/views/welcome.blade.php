@@ -13,21 +13,19 @@
 </nav>
 
 <section class="hp_one">
-	<div class="one" id="logo_hp">
-		<img src="/img/logo1.png" class="hp_logo">
-		<br><br><br><br><br>
-		<h2 class="motto">your ingredient based recipe finder...</h2><br><br><br>
+	<div class="one" id="logo_hp"><br>
+		<img src="/img/logo1.png" class="col-xs-5 id="hp_logo">
 	</div>
 </section>
 
-<section class="hp_two">
-	<div class="two">
+<section id="hp_two">
+	<div class="col-xs-12" class="two">
 		<div class="hp_two_text_box">
 			<div class="hp_two_title">
 				<h2 class="about_COTF">It's like calling a chef...</h2>
 			</div>
 
-			<div class="hp_two_text">
+			<div id="hp_two_text">
 			<p><text class="important_text">Without having to make the call!</text> Just add your ingredients and Cooking on the Fly<br>
 			will match you to recipes that you can make with ingredients you already have!<br></p>
 			
@@ -42,13 +40,13 @@
 <section class="hp_three">
 	<div class="three">
 		<div class="hp_three_text_box">
-			<div class="hp_three_title">
+{{-- 			<div class="hp_three_title">
 				<h2 class="get_started">get started!</h2>
-			</div>
+			</div> --}}
 			<section class="section_buttons">
 				<p class="buttons">
-					<a class="sign_up_button" href="/signup/"><img height="230px" width="220px" float="left" src="/img/signup.png"></a>
-					<a class="sign_in_button" href="/signin/"><img height="230px" width="220px" float="right" src="/img/signin.png"></a>
+					<a class="col-xs-7 col-xs-offset-1" id="sign_up_button" href="/signup/"><img height="300px" width="290px" float="left" src="/img/signup.png"></a>
+					<a class="col-xs-4" id="sign_in_button" href="/signin/"><img height="300px" width="290px" float="right" src="/img/signin.png"></a>
 				</p>
 			</section>
 		</div>
