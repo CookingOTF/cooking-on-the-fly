@@ -18,6 +18,6 @@ class Ingredient extends Model
 
     public function recipes()
     {
-        return $this->belongsToMany('App\Recipe', 'recipe_ingredients', 'ingredient_name')->withPivot('display_in_recipe');
+        return $this->belongsToMany('App\Recipe', 'recipe_ingredients', 'ingredient_name', 'recipe_id')->withPivot('display_in_recipe');
     }
 }

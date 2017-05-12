@@ -18,7 +18,7 @@ class Recipe extends Model
 
     public function ingredients()
     {
-        return $this->belongsToMany('App\Ingredient', 'recipe_ingredients')->withPivot('display_in_recipe');
+        return $this->belongsToMany('App\Ingredient', 'recipe_ingredients', 'recipe_id', 'ingredient_name')->withPivot('display_in_recipe');
     }
 
     public function directions()
@@ -30,7 +30,7 @@ class Recipe extends Model
     {
         if (is_string($time)) {
             $parts = [];
-            if (!preg_match('~(?<h>\d+)(?::(?<m>[0-5]\d)(?::(?<s>[0-5]\d))?)?~', $time, $parts)) {
+            if (!preg_match('~(?<h>\d+)(?:\s*:\s*(?<m>[0-5]\d)(?:\s*:\s*(?<s>[0-5]\d))?)?~', $time, $parts)) {
                 if (!preg_match('~(?=.*(?:h|m|sec))(?:(?<h>\d+)\s*hours?,?\s*)?(?:(?<m>[0-5]\d)\s*minutes?,?\s*)?(?:(?<s>[0-5]\d)\s*seconds?)?~', $time, $parts)) {
                     return false;
                 }
