@@ -28,26 +28,33 @@ class Recipe extends Model
 
     protected function hoursToSeconds($time)
     {
-        $parts = [];
-        preg_match('~(?<hours>\d+)(?::(?<minutes>[0-5]\d)(?::(?<seconds>[0-5]\d))?)?~', $time, $parts)
-            or preg_match('~(?:(?<hours>\d+) hours,?\s*)?(?:(?<minutes>[0-5]\d) minutes,?\s*)?(?:(?<seconds>[0-5]\d))?\.?~', $time, $parts);
-        extract($parts);
+        if (is_string($value)) {
+            $parts = [];
+            if (!preg_match('~(?<h>\d+)(?::(?<m>[0-5]\d)(?::(?<s>[0-5]\d))?)?~', $time, $parts)) {
+                if (!preg_match('~(?=.*(?:h|m|sec))(?:(?<h>\d+)\s*hours?,?\s*)?(?:(?<m>[0-5]\d)\s*minutes?,?\s*)?(?:(?<s>[0-5]\d)\s*seconds?)?~', $time, $parts)) {
+                    return false;
+                }
+            } else {
+                extract($parts);
 
-        return $seconds + (60 * $minutes) + (3600 * $hours);
+                return $s + (60 * $m) + (3600 * $h);
+            }
+        }
     }
 
-    protected function secondsToHours($time)
+    protected function secondsToHours($value)
     {
+        $time = '';
         if (($hours = floor($value / 3600)) > 0) {
-            $time .= "$hours hours, ";
+            $time .= "$hours hour" . ($hours > 1 ? 's' : '' ) . ', ';
             $value -= $hours * 3600;
         }
         if (($minutes = floor($value / 60)) > 0) {
-            $time .= "$minutes minutes, ";
+            $time .= "$minutes minute" . ($minutes > 1 ? 's' : '' ) . ', ';
             $value -= $minutes * 60;
         }
         if (($seconds = $value) > 0) {
-            $time .= "$seconds seconds, ";
+            $time .= "$seconds second" . ($seconds > 1 ? 's' : '' ) . ', ';
         }
         $time = substr($time, 0, -2) . '.';
 
@@ -56,16 +63,12 @@ class Recipe extends Model
 
     public function setCookTimeAttribute($value)
     {
-        if (is_string($value)) {
-            $this->attributes['cook_time'] = hoursToSeconds($value);
-        }
+        $this->attributes['cook_time'] = hoursToSeconds($value);
     }
 
     public function setPrepTimeAttribute($value)
     {
-        if (is_string($value)) {
-            $this->attributes['prep_time'] = hoursToSeconds($value);
-        }
+        $this->attributes['prep_time'] = hoursToSeconds($value);
     }
 
     public function getCookTimeAttribute($value)
