@@ -3,8 +3,9 @@
 @include('partials.nav')
 @stop
 @section('content')
+
 <section>
-	<h3> All Recipes </h3>
+	<h3 class="all_recipes"> Browse All Recipes </h3>
 </section>
 <table>
  

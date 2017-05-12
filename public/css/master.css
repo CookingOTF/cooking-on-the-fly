@@ -1,19 +1,11 @@
 html, body {
-	height: 100%;
+	/*height: 100%;*/
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: table;
 	font-weight: 100;
 	font-family: 'BenchNine', sans-serif;
-	background: #3A3B3C;
-	/*background-image: url('/img/background1.png');*/
-	/*opacity: 0.6;*/
-	background-size: 100%;
-	background-repeat: repeat-y repeat-x;
+	background-color: #3A3B3C;
 }
 
 h1 {
@@ -21,7 +13,6 @@ h1 {
 	font-size: 9vw;
 	font-weight: 100;
 	color: #3A3B3C;
-	/*margin-top: -7px;*/
 }
 
 h2 {
@@ -29,7 +20,10 @@ h2 {
 	font-size: 9vw;
 	font-weight: 100;
 	color: #3A3B3C;
-	margin-top: -7px;
+}
+
+a {
+	text-decoration: none;
 }
 
 
@@ -37,89 +31,47 @@ h2 {
 
 .container {
 	text-align: center;
-	/*display: table-cell;*/
-	vertical-align: middle;
-	margin-top: -50px;
 }
 
 .hp_one {
 	/*text-align: center;*/
 	background-image: url("/img/homepage.png");
+	background-repeat: no-repeat;
 	/*background-position: center;*/
     background-size: 100%;
-	height: 595px;
-	width: 110%;
+	height: 540px;
+	/*width: 110%;*/
 }
 
-/*.header {
-	text-align: center;
-}*/
 
-#logo_hp {
-	margin-top: -16px;
-}
 
 .hp_logo {
 	height: 450px;
-	margin-top: 75px;
-	margin-bottom: -105px;
-	margin-left: -800px;
 	position: relative;
 	top: auto;
 }
 
-.motto {
+#motto {
 	font-size: 3vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	margin-bottom: 100px;
-	margin-top: 5px;
-	margin-left: -820px;
 	color: #F3F3F3;
 	font-weight: bolder;
 }
 
-/*.hp_signin {
-	width: 275px;
-	margin-left: -700px;
-	margin-top: 70px;
-	position: absolute;
-}
-
-.hp_signin a {
-	width: 50px;
-	text-decoration: none;
-	display: block;
-}
-
-.hp_signup {
-	width: 275px;
-	margin-left: -100px;
-	margin-bottom: -15px;
-}
-
-.hp_signup a {
-	text-decoration: none;
-	display: block;*/
-}
-
 .nav_hp {
-	margin-top: 50px;
 	text-transform: uppercase;
-	font-size: 2vw;
+	font-size: 1.3vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
 	line-height: 25px;
 }
 
 .nav_hp ul {
-    margin-left: -70px;
-    margin-top: 50px;
+    margin-bottom: -10px;
     list-style: none;
     text-align: center;
     background-color: #3A3B3C;
     color: black;
-    width: 110%;
-    height: 30px;
 }
 
 .nav_hp li {
@@ -162,32 +114,31 @@ h2 {
 	text-align: center;
 	text-decoration: none;
 	color: #F3F3F3;
-	/*background-color: #F3F3F3;*/
 	letter-spacing: normal;
 }
 
 /*HOME PAGE TWO*/
-.hp_two {
-	background-color: #3A3B3C;
-	height: 450px;
-	color: #F3F3F3;
+#hp_two {
+    background-color: #3A3B3C;
+    border: white solid 2px;
+    height: 325px;
+    color: #F3F3F3;
+    text-align: center;
 }
 
 .hp_two_text_box {
-	width: 70%;
-	margin-left: 15%;
+	/*width: 70%;*/
 }
 
 .about_COTF {
 	font-size: 5vw;
     color: #F3F3F3;
-    /* font-family: 'BenchNine', 'Arial Narrow', sans-serif; */
-    margin-top: 30px;
+    font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
 }
 
-.hp_two_text {
+#hp_two_text {
 	font-size: 2vw;
-	/*text-transform: uppercase; */
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
 }
 
 .important_text {
@@ -197,47 +148,48 @@ h2 {
 /*HOME PAGE THREE*/
 
 .hp_three {
-	background-image: url(/img/background1.png);
+	background-image: url(/img/despizza.jpeg);
 	background-color: #F3F3F3;
-	background-size: 900px;
+	background-size: 100%;
+	height: 500px;
 	
 }
 
 .hp_three_text_box {
-	width: 80%;
+	/*width: 80%;*/
 	height: 395px;
 }
 
 .get_started {
-	width: 125%;
+	/*width: 125;%*/
     color: #7B8489;
     font-size: 6vw;
     font-family: 'Sofia', cursive;
-    /*text-transform: uppercase;*/
     text-align: center;
 }
 
 .hp_sign_up {
-	margin-left: 5%;
-	width: 40%;
+	/*width: 40%;*/
 	position: absolute;
 	text-align: right;
 }
 
 .hp_sign_in {
-	width: 40%;
-	margin-left: 55%;
+	/*width: 40%;*/
 	position: absolute;
 	text-align: left;
 }
 
-.sign_up_button {
-	margin-left: 23%;
-	margin-top: -100px;
+.buttons {
+	
 }
 
-.sign_in_button {
-	margin-left: 12%;
+#sign_up_button {
+	margin-top: 13%;
+}
+
+#sign_in_button {
+	margin-top: 13%;
 
 }
 
@@ -249,19 +201,17 @@ h2 {
 .nav_logo {
     height: 135px;
     align-content: left;
-    margin-right: 2%;
 }
 
 .nav {
-    width: 115%;
+    /*width: 115%;*/
     text-transform: uppercase;
     font-size: 1.3em;
     font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    margin-left: 1.3%;
 }
 
 .nav ul {
-	width: 80%;
+	/*width: 80%;*/
 	list-style: none;
 	text-align: center;
 }
@@ -316,7 +266,6 @@ h2 {
 	height: 30px;
 	font-weight: 100;
 	color: #F3F3F3;
-	margin-right: 85%;
 }
 
 .logout {
@@ -329,25 +278,25 @@ h2 {
 }
 
 
-	@media screen and (min-width: 600px) {
+/*	@media screen and (min-width: 600px) {
 		.nav li {
-			width: 120px;
-			border-bottom: none;
+			/*width: 120px;*/
+			/*border-bottom: none;
 			height: 35px;
 			line-height: 45px;
 			font-size: 1em;
 			font-weight: 100;
 			display: inline-block;
 		}
-	}
+	}*/
 
-	@media (min-width: 768px) {
+	/*@media (min-width: 768px) {
 		.navbar-custom {
 		padding: 20px 0;
 		border-bottom: none;
 		letter-spacing: .5px;
 		}
-	}
+	}*/
 
 
 
@@ -355,12 +304,10 @@ h2 {
 
 .sign_in_container {
 	background-color: #4D4D4D;
-	margin-left: 34.5%;
 	width: 30%;
 	font-size: 1.3em;
 	font-weight: 100;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	margin-bottom: -10px;
 	border-radius: 5px;
 }
 
@@ -370,13 +317,11 @@ h2 {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	color: #F3F3F3;
 	padding-top: 50px;
-	margin-bottom: 100px;
 	font-weight: 100;
 }
 
 .sign_in_content {
 	/*background-color: #823B3B;*/
-	margin-top: -70px;
 }
 
 #signin_email {
@@ -394,13 +339,11 @@ h2 {
 #signin_remember_me {
 	font-size: 1.3vw;
 	text-align: left;
-	margin-right: 115px;
 	color: #F4F4F4;
 }
 
 #signin_forgot_password {
 	font-size: 1.6vw;
-	/*margin-left: 250px;*/
 	color: white;
 	text-decoration: none;
 }
@@ -438,12 +381,10 @@ input[type=password] {
 
 .sign_up_container {
     background-color: #4D4D4D;
-    margin-left: 35.8%;
     width: 30%;
     font-size: 1.3em;
     font-weight: 100;
     font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    margin-bottom: -10px;
     border-radius: 5px;
 }
 
@@ -453,13 +394,11 @@ input[type=password] {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	color: #F3F3F3;
 	padding-top: 50px;
-	margin-bottom: 100px;
 	font-weight: 100;
 }
 
 .sign_up_content {
 	/*background-color: #823B3B;*/
-	margin-top: -70px;
 }
 
 #signup_name {
@@ -539,7 +478,6 @@ input[type=password] {
 }
 
 .user_account_info {
-	margin-left: -90%;
 	color: #F3F3F3;
 }
 
@@ -552,8 +490,6 @@ input[type=password] {
 
 .user_info {
 	height: 300px;
-	margin-top: -75px;
-	margin-left: 10%;
 	width: 80%;
 	background-color: #7B8489;
 	border-radius: 30px;
@@ -561,7 +497,6 @@ input[type=password] {
 
 .favorites {
 	height: 300px;
-	margin-left: 10%;
 	width: 80%;
 	background-color: #7B8489;
 	border-radius: 30px;
@@ -569,7 +504,6 @@ input[type=password] {
 
 .fridge {
 	height: 300px;
-	margin-left: 10%;
 	width: 80%;
 	background-color: #7B8489;
 	border-radius: 30px;
@@ -581,8 +515,6 @@ input[type=password] {
 	font-size: 3vw;
 	font-weight: lighter;
 	text-align: left;
-	margin-left: 25px;
-	/*margin-top: 10px;*/
 }
 
 .favorite_recipes {
@@ -590,8 +522,6 @@ input[type=password] {
 	font-size: 3vw;
 	font-weight: lighter;
 	text-align: left;
-	margin-left: 25px;
-	/*margin-top: 10px;*/
 }
 
 .my_fridge {
@@ -599,8 +529,6 @@ input[type=password] {
 	font-size: 3vw;
 	font-weight: lighter;
 	text-align: left;
-	margin-left: 25px;
-	/*margin-top: 10px;*/
 }
 
 /*INGREDIENT PAGE*/
@@ -616,14 +544,17 @@ input[type=password] {
 
 
 .buttons {
-    margin-top: -58px;
 }
 
 /*BROWSE PAGE*/
 
 table {
 	width: 80%;
-	margin-left: 10%;
+}
+
+.all_recipes {
+	font-size: 4vw;
+	color: #F3F3F3;
 }
 
 .browse_table{
@@ -631,11 +562,11 @@ table {
 	border-width: 2px;
 	border-color: #4D4D4D;
 	background-color: #4D4D4D;
-	margin-left: 50px;
 }
 
 .browse_image {
 	height: 12vw;
+	width: 17vw;
 
 }
 
