@@ -84,9 +84,9 @@ Route::get('/recipes/search/', function () {
 	return 'recipes.search';
 });
 Route::get('recipes/browse', 'RecipesController@browse');
-Route::get('recipes/search/{query?}', 'RecipesController@search');
+Route::get('recipes/search/{i?}', 'RecipesController@search');
 
-// Route::resource('recipes');
+Route::resource('recipes', 'RecipesController');
 /*
 |----------------------
 | Signin/Signup pages

@@ -7,12 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Recipe;
+use App\Ingredient;
+
 class RecipesController extends BaseController
 {
     
     public function index()
     {
-        return redirect('/recipes/browse/');
+        return redirect('recipes/browse');
     }
 
     /**
@@ -22,16 +25,35 @@ class RecipesController extends BaseController
      */
     public function browse()
     {
-        return view('recipes.browse');
+        $recipes = Recipe::paginate(20);
+
+        return view('recipes.browse', $this->getLocalVars(get_defined_vars()));
     }
 
     public function search($query = null)
     {
-        if (isset($query)) {
-            return 'search results: ' . $query;
-        } else {
-            return 'recipes.search';
+        $ingredients = Ingredient::all();
+        $ingredients_by_category = [];
+
+        foreach ($ingredients as $ingredient) {
+            $ingredients_by_category[$ingredient->category][] = $ingredient;
         }
+
+        // test this when recipe database and search page are done
+        if (isset($query)) {
+            // particularly this
+            $recipes = Recipe::with('ingredients')->paginate(20);
+            foreach ($recipes as &$recipe) {
+                foreach ($recipe->ingredient->name /* and this */ as $ingredient) {
+                    if (!in_array($ingredient, $i)) {
+                        unset($recipe);
+                        break;
+                    }
+                }
+            }
+        }
+
+        return view('recipes.search', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
@@ -63,7 +85,8 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        return view('recipies.show');
+        $recipe = Recipe::find($id);
+        return view('recipes.show', $this->getLocalVars(get_defined_vars()));
     }
 
     /**
