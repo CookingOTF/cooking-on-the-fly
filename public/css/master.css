@@ -299,6 +299,17 @@ a {
 	color: #F4F4F4;
 }
 
+#signin_checkbox {
+	align-content: center;
+}
+
+.checkbox, .radio {
+    position: relative;
+     display: inline-block; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #signin_forgot_password {
 	font-size: 1.6vw;
 	color: white;
@@ -569,7 +580,7 @@ table {
 
 .footer {
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
 	width: 100%;
