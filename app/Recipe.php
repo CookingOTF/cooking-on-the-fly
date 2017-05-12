@@ -63,12 +63,12 @@ class Recipe extends Model
 
     public function setCookTimeAttribute($value)
     {
-        $this->attributes['cook_time'] = hoursToSeconds($value);
+        $this->attributes['cook_time'] = $this->hoursToSeconds($value);
     }
 
     public function setPrepTimeAttribute($value)
     {
-        $this->attributes['prep_time'] = hoursToSeconds($value);
+        $this->attributes['prep_time'] = $this->hoursToSeconds($value);
     }
 
     public function getCookTimeAttribute($value)
