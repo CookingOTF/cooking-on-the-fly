@@ -39,6 +39,8 @@ class Recipe extends Model
 
                 return $s + (60 * $m) + (3600 * $h);
             }
+        } else {
+            return $time;
         }
     }
 
@@ -56,7 +58,7 @@ class Recipe extends Model
         if (($seconds = $value) > 0) {
             $time .= "$seconds second" . ($seconds > 1 ? 's' : '' ) . ', ';
         }
-        $time = substr($time, 0, -2) . '.';
+        $time = substr($time, 0, -2);
 
         return $time;
     }
