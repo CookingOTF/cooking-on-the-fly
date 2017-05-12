@@ -10,6 +10,10 @@ class Ingredient extends Model
 
     protected $fillable = ['name', 'display_name'];
 
+    protected $primaryKey = 'name';
+
+    public $incrementing = false;
+
     public $timestamps = false;
 
     public function recipes()
