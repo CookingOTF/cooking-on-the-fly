@@ -32,12 +32,7 @@ class RecipesController extends BaseController
 
     public function search($query = null)
     {
-        $ingredients = Ingredient::all();
-        $ingredients_by_category = [];
-
-        foreach ($ingredients as $ingredient) {
-            $ingredients_by_category[$ingredient->category][] = $ingredient;
-        }
+        $ingredients = Ingredient::byCategory();
 
         // test this when recipe database and search page are done
         if (isset($query)) {

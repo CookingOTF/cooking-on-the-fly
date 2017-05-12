@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ingredient extends Model
 {
+	public static function byCategory()
+	{
+		foreach (self::all() as $ingredient) {
+			$categorized[$ingredient->category][] = $ingredient;
+		}
+		return $categorized;
+	}
+
     protected $table = 'ingredients';
 
     protected $fillable = ['name', 'display_name'];
