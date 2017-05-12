@@ -18,6 +18,7 @@ class TestSeeder extends Seeder
         $extraAttributes->name = 'hi';
         $extraAttributes->display_name = 'no';
         $extraAttributes->iBetThisWillError = 'WOOOOOO';
+        // (I was right)
 
         $extraAttributes->save();
     }
