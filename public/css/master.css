@@ -1,5 +1,4 @@
 html, body {
-	/*height: 100%;*/
 }
 
 body {
@@ -38,13 +37,10 @@ a {
 }
 
 .hp_one {
-	/*text-align: center;*/
 	background-image: url("/img/homepage.png");
 	background-repeat: no-repeat;
-	/*background-position: center;*/
     background-size: 100%;
 	height: 540px;
-	/*width: 110%;*/
 }
 
 
@@ -62,66 +58,6 @@ a {
 	font-weight: bolder;
 }
 
-/*.nav_hp {
-	text-transform: uppercase;
-	font-size: 1.3vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-	line-height: 25px;
-}
-
-.nav_hp ul {
-    margin-bottom: -10px;
-    list-style: none;
-    text-align: center;
-    background-color: #3A3B3C;
-    color: black;
-}
-
-.nav_hp li {
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 1.5em;
-	line-height: 35px;
-	height: 35px;
-	font-weight: 100;
-	color: #F3F3F3;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0 75px 0 0;
-}
-
-.nav_hp a {
-	text-decoration: none;
-	color: #F3F3F3;
-	letter-spacing: normal;
-}
-
-.nav_hp_a {
-	text-decoration: none;
-	color: #F3F3F3;
-	letter-spacing: normal;
-}*/
-
-/*.nav_hp a:hover {
-	color: #CDDBE3; change nav_hp bar TEXT color when hovered
-	outline: none;
-	text-decoration: none !important;
-	letter-spacing: normal;
-}*/
-
-/*.nav_hp a.active {
-	color: #F3F3F3;
-	cursor: default;
-}
-
-#home_hp, #signin_hp, #signup_hp, #browse_hp {
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	color: #F3F3F3;
-	letter-spacing: normal;
-}*/
-
 /*HOME PAGE TWO*/
 #hp_two {
     background-color: #3A3B3C;
@@ -131,7 +67,6 @@ a {
 }
 
 .hp_two_text_box {
-	/*width: 70%;*/
 }
 
 .about_COTF {
@@ -160,32 +95,14 @@ a {
 }
 
 .hp_three_text_box {
-	/*width: 80%;*/
 	height: 395px;
 }
 
 .get_started {
-	/*width: 125;%*/
     color: #7B8489;
     font-size: 6vw;
     font-family: 'Sofia', cursive;
     text-align: center;
-}
-
-.hp_sign_up {
-	/*width: 40%;*/
-/*	position: absolute;
-	text-align: right;*/
-}
-
-.hp_sign_in {
-	/*width: 40%;*/
-/*	position: absolute;
-	text-align: left;*/
-}
-
-.buttons {
-	
 }
 
 #sign_up_button {
@@ -268,13 +185,8 @@ a {
 	font-size: 5vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	color: #F3F3F3;
-	/*padding-top: 50px;*/
 	font-weight: 100;
 	height: 100%;
-}
-
-.sign_in_content {
-	/*background-color: #823B3B;*/
 }
 
 .sign_in_top {
@@ -342,7 +254,6 @@ input[type=password] {
     color: white;
 	font-size: 1.2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
 }
 
 /*SIGN UP*/
@@ -363,12 +274,7 @@ input[type=password] {
 	font-size: 5vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	color: #F3F3F3;
-	/*padding-top: 50px;*/
 	font-weight: 100;
-}
-
-.sign_up_content {
-	/*background-color: #823B3B;*/
 }
 
 .sign_up_top {
@@ -565,7 +471,6 @@ table {
 .thumbnail {
     border-style: solid;
     border-width: 2px;
-    /* height: 100px; */
     border-color: #7B8489 !important;
     background-color: #7B8489 !important;
     border-radius: 30px !important;
@@ -580,18 +485,18 @@ table {
 	font-size: 5vw;
 	text-align: center;
 	margin-top: 4%;
+	margin-left: 10%;
 }
 
 .single_recipe_box {
 	background-color: #7B8489;
 	height: 0 auto;
-	width: 83%;
+	width: 68%;
 	border-radius: 30px;
 	position: relative;
 	color: #F3F3F3;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
-
 }
 
 .single_recipe_box_tab {
@@ -600,7 +505,7 @@ table {
     width: 18%;
     border-radius: 33px;
     position: absolute;
-    margin-left: 214px;
+    margin-left: 25%;
     margin-top: -37px;
 }
 
@@ -612,7 +517,8 @@ table {
 
 .single_recipe_title {
 	font-family: 'Sofia', cursive;
-	font-size: 4vw;
+	font-size: 4.5vw;
+	text-align: center;
 	font-weight: 100;
 	color: #3A3B3C;
 }
@@ -621,12 +527,36 @@ table {
 	color: #F3F3F3;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
+	text-align: center;
 }
 
 .single_recipe_cook_time {
 	color: #F3F3F3;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
+	text-align: center;
+}
+
+.single_recipe_total_time {
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.directions_title {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 3vw;
+	font-weight: 100px;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.recipe_ingredients {
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2.5vw;
+	text-align: left;
 }
 
 .single_recipe_directions {
@@ -635,8 +565,12 @@ table {
 	font-size: 2.5vw;
 }
 
+.recipe_info {
+	height: 0 auto;
+}
 
-
+.recipe_directions {
+}
 
 
 /*TIER RECIPE PAGE*/
@@ -688,7 +622,6 @@ table {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	text-align: center;
 	width: 100%;
-/*	height: 50px;*/
 	color: #7B8489;
 	float: left;
 	background-color: #3A3B3C;
