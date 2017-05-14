@@ -566,14 +566,118 @@ table {
     border-style: solid;
     border-width: 2px;
     /* height: 100px; */
-    border-color: #4D4D4D !important;
-    background-color: #4D4D4D !important;
-    border-radius: 0px !important;
+    border-color: #7B8489 !important;
+    background-color: #7B8489 !important;
+    border-radius: 30px !important;
     text-align: center;
     padding-top: 20px !important;
 }
 
+/*SINGLE RECIPE PAGE*/
 
+.recipe_name {
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+	margin-top: 4%;
+}
+
+.single_recipe_box {
+	background-color: #7B8489;
+	height: 0 auto;
+	width: 83%;
+	border-radius: 30px;
+	position: relative;
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2.5vw;
+
+}
+
+.single_recipe_box_tab {
+    background-color: #7B8489;
+    height: 200px;
+    width: 18%;
+    border-radius: 33px;
+    position: absolute;
+    margin-left: 214px;
+    margin-top: -37px;
+}
+
+.single_recipe_photo {
+	height: 22vw;
+	width: 22vw;
+	border: solid #F3F3F3 2px;
+}
+
+.single_recipe_title {
+	font-family: 'Sofia', cursive;
+	font-size: 4vw;
+	font-weight: 100;
+	color: #3A3B3C;
+}
+
+.single_recipe_prep_time {
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+}
+
+.single_recipe_cook_time {
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+}
+
+.single_recipe_directions {
+	color: #F3F3F3;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2.5vw;
+}
+
+
+
+
+
+/*TIER RECIPE PAGE*/
+
+.recipes_results {
+	margin-bottom: 10%;
+	font-family: 'Sofia', cursive;
+	font-size: 4vw;
+	text-align: center;
+	color: #F3F3F3;
+}
+
+.tier_one {
+	background-color: #7B8489;
+	border-radius: 30px;
+	margin-bottom: 1%;
+	font-size: 2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	text-align: center;
+	color: #F3F3F3;
+}
+
+.tier_two {
+	background-color: #7B8489;
+	border-radius: 30px;
+	margin-bottom: 1%;
+	font-size: 2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	text-align: center;
+	color: #F3F3F3;
+}
+
+.tier_three {
+	background-color: #7B8489;
+	border-radius: 30px;
+	margin-bottom: 1%;
+	font-size: 2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	text-align: center;
+	color: #F3F3F3;
+}
 
 
 /*FOOTER*/
@@ -598,9 +702,6 @@ table {
 .content_container {
 	min-height: 80vh;
 }
-
-
-
 
 
 
