@@ -25,4 +25,9 @@ class BaseController extends Controller
 
         return $vars;
     }
+
+    protected function view($path, $vars)
+    {
+        return view($path, $this->getLocalVars($vars))
+    }
 }
