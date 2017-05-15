@@ -27,6 +27,7 @@
 @section('content')
 
 <?php var_dump($_POST); ?>
+<?php echo $pancakes; ?>
 
 
 
