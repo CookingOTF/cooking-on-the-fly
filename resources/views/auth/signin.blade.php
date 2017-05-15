@@ -39,11 +39,11 @@
 
 		<div class="sign_in_content">
 
-			<form action="{{action('AuthController@postRegister')}}" method="post">
+			<form action="/signin/" method="post">
 			{!! csrf_field() !!}
 			{{-- <br> --}}
 				{{-- <label for="email" id="signin_email">Your email</label> --}}
-				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME">
+				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME" value="{{ old('username') }}">
 
 				<br><br>
 
@@ -65,6 +65,7 @@
 
 				<a href="#" class="more" id="signin_forgot_password">Forgot your password?</a><br>
 				</div>
+				<br>
 			</form>
 		</div>
 	</div>
