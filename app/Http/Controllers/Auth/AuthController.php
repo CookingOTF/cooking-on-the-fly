@@ -41,7 +41,7 @@ class AuthController extends BaseController
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
-    /**
+    /*
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -49,11 +49,7 @@ class AuthController extends BaseController
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'username' => 'required|string|min:3|max:255',
-            'email' => 'required|string|email|max:255',
-            'password' => 'required|string|confirmed|max:255|min:8',
-        ]);
+        return Validator::make($data, User::getSignupRules());
     }
 
     /**

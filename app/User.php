@@ -16,6 +16,30 @@ class User extends Model implements AuthenticatableContract,
 {
     use Authenticatable, Authorizable, CanResetPassword;
 
+    protected static $rules = [
+        'username' => 'string|min:3|max:255|unique:users',
+        'email' => 'string|email|max:255',
+        'password' => 'string|confirmed|min:8|max:255'
+    ];
+
+    public static function getSignupRules()
+    {
+        foreach (self::$rules as $field => $rules) {
+            $signupRules[$field] = 'required|' . $rules;
+        }
+
+        return $signupRules;
+    }
+
+    public static function getUpdateRules($user_id)
+    {
+        $rules = self::$rules;
+
+        $rules['current_password'] = 'required|string|exists:users,' . $user_id;
+
+        return $rules;
+    }
+
     /**
      * The database table used by the model.
      *
