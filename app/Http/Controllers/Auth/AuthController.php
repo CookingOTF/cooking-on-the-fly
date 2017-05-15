@@ -14,6 +14,10 @@ class AuthController extends BaseController
 
     protected $registerPage = 'auth.signup';
 
+    protected $redirectPath = '/dashboard/';
+
+    protected $loginPath = '/signin/';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
