@@ -77,11 +77,11 @@ class AuthController extends BaseController
             return view($this->authenticatePage);
         }
 
-        return view($this->loginPage, ['pancakes' => 'You made a GET request.']);
+        return view($this->loginPage);
     }
 
     public function getRegister()
     {
-        return view($this->registerPage);
+        return view($this->registerPage, ['pancakes' => 'You made a GET request.']);
     }
 }
