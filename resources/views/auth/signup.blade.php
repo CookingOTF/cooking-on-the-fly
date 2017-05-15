@@ -26,22 +26,42 @@
 
 @section('content')
 
+<?php var_dump($_POST); ?>
+
+
+
 	<section class="sign_up_top">
 	</section>
-	
+
 	<section id="sign_up_container" class="col-xs-11 col-xs-offset-1">
 
 		<h2 class="sign_up_heading">SIGN UP</h2>
 		<div class="sign_up">
 
 			<div class="sign_up_content">
-				<form action="Auth\AuthController@postRegister" method="post" enctype="multipart/form-data">
+				<form action="{{action('Auth\AuthController@postRegister')}}" method="post" enctype="multipart/form-data">
 				{!! csrf_field() !!}
 
-						{{-- <label for="name">Your name</label><br> --}}
-					<input type="name" name="name" id="signup_name" class="inpt" required="required" placeholder="FULL NAME" value="{{ old('name') }}">
+				@if ($errors->has('name'))
+				    {{ $errors->first('name') }}
+				@endif
+				@if ($errors->has('email'))
+				    {{ $errors->first('email') }}
+				@endif
+				@if ($errors->has('username'))
+				    {{ $errors->first('username') }}
+				@endif
+				@if ($errors->has('password'))
+				    {{ $errors->first('password') }}
+				@endif
+				@if ($errors->has('password_confirmation'))
+				    {{ $errors->first('password_confirmation') }}
+				@endif
 
-					<br><br>
+						{{-- <label for="name">Your name</label><br> --}}
+					{{-- <input type="name" name="name" id="signup_name" class="inpt" required="required" placeholder="FULL NAME" value="{{ old('name') }}">
+
+					<br><br> --}}
 
 						{{-- <label for="email">Your email</label><br> --}}
 					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL" value="{{ old('email') }}">
@@ -63,7 +83,7 @@
 					<br><br>
 
 					<div class="submit-area">
-					<a href=""> <img class="signin_button" src="/img/submit.png"></a>
+					<button type="submit" class="btn btn-default">Submit</button>
 					<br>
 					<a class="or_sign_in" href="/signin/">(OR SIGN IN)</a>
 
