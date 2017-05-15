@@ -27,7 +27,6 @@
 @section('content')
 
 <?php var_dump($_POST); ?>
-<?php echo $pancakes; ?>
 
 
 
@@ -40,7 +39,7 @@
 		<div class="sign_up">
 
 			<div class="sign_up_content">
-				<form action="{{action('Auth\AuthController@postRegister')}}" method="post" enctype="multipart/form-data">
+				<form action="{{action('Auth\AuthController@postRegister')}}" method="POST" enctype="multipart/form-data">
 				{!! csrf_field() !!}
 
 				@if ($errors->has('name'))
