@@ -58,6 +58,34 @@ a {
 	font-weight: bolder;
 }
 
+@media screen and (min-width: 800px) {
+	.container {
+	text-align: center;
+	background-image: url('/img/signupin.png');
+	background-size: cover;
+}
+
+	.hp_one {
+	background-image: url("/img/homepage.png");
+	background-repeat: no-repeat;
+    background-size: 100%;
+	height: 540px;
+	}
+
+	#hp_logo {
+		height: 450px;
+		position: relative;
+		top: auto;
+	}
+
+	#motto {
+		font-size: 3vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		color: #F3F3F3;
+		font-weight: bolder;
+	}
+}
+
 /*HOME PAGE TWO*/
 #hp_two {
     background-color: #3A3B3C;
@@ -193,7 +221,7 @@ a {
 	margin-top: 8%;
 }
 
-#signin_email {
+#signin_username {
 	height: 30px;
 	width: 50%;
 	color: #F4F4F4;
@@ -237,6 +265,10 @@ a {
 	width: 150px;
 }
 
+.or_sign_in {
+	text-align: right;
+}
+
 
 input[type=email] {
     border: none;
@@ -256,16 +288,25 @@ input[type=password] {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
+input[type=confirm] {
+    border: none;
+    border-bottom: 2px solid #CDDBE3;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
 /*SIGN UP*/
 
 #sign_up_container {
     background-color: #4D4D4D;
     width: 35%;
-    height: 390px;
+    height: 0 auto;
     font-size: 1.3em;
     font-weight: 100;
     font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -278,7 +319,7 @@ input[type=password] {
 }
 
 .sign_up_top {
-	margin-top: 6%;
+	margin-top: 5%;
 }
 
 #signup_name {
@@ -293,7 +334,19 @@ input[type=password] {
 	color: #F4F4F4;
 }
 
+#signup_username {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+}
+
 #signup_password {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+}
+
+#signup_confirm_password {
 	height: 30px;
 	width: 50%;
 	color: #F4F4F4;
@@ -339,6 +392,16 @@ input[type=email] {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
+input[type=username] {
+    border: none;
+    border-bottom: 2px solid #CDDBE3;
+    background-color: #3A3B3C;
+    color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+
+}
+
 input[type=password] {
     border: none;
     border-bottom: 2px solid #CDDBE3;
@@ -373,7 +436,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 4%;
 }
 
@@ -381,7 +444,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 4%;
 }
 
@@ -389,7 +452,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 4%;
 }
 
@@ -435,12 +498,12 @@ input[type=password] {
 	margin-bottom: -4px;
 	width:66.7%;
 }
- .indredient_box{
+ .ingredient_box{
  	background-color: #4D4D4D;
  	height:400px;
  	margin-bottom: 24px;
  	margin-top: -2px;
-	width: 35%;
+	width: 66.7%;
 	font-size: 1.3em;
 	font-weight: 100;
 	color:#ECECEC;
@@ -498,7 +561,7 @@ table {
     border-width: 2px;
     border-color: #7B8489 !important;
     background-color: #7B8489 !important;
-    border-radius: 30px !important;
+    border-radius: 10px !important;
     text-align: center;
     padding-top: 20px !important;
 }
@@ -517,7 +580,7 @@ table {
 	background-color: #7B8489;
 	height: 0 auto;
 	width: 68%;
-	border-radius: 30px;
+	border-radius: 10px;
 	position: relative;
 	color: #F3F3F3;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -543,7 +606,7 @@ table {
 
 .single_recipe_title {
 	font-family: 'Sofia', cursive;
-	font-size: 4.5vw;
+	font-size: 5vw;
 	text-align: center;
 	font-weight: 100;
 	color: #3A3B3C;
@@ -572,7 +635,17 @@ table {
 
 .directions_title {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 3vw;
+	font-size: 4vw;
+	color: #3A3B3C;
+	font-weight: 100px;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.ingredients_title {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 4vw;
+	color: #3A3B3C;
 	font-weight: 100px;
 	margin-top: 5%;
 	text-align: center;
@@ -611,7 +684,7 @@ table {
 
 .tier_one {
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -621,7 +694,7 @@ table {
 
 .tier_two {
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -631,7 +704,7 @@ table {
 
 .tier_three {
 	background-color: #7B8489;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
