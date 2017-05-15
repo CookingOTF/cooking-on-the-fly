@@ -512,6 +512,7 @@ table {
 .single_recipe_photo {
 	height: 22vw;
 	width: 22vw;
+	margin-left: 5.3%;
 	border: solid #F3F3F3 2px;
 }
 
