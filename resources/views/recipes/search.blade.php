@@ -3,48 +3,91 @@
 @include('partials.nav')
 @stop
 @section('content')
-@extends('layouts.master')
-@section('navbar')
-@include('partials.nav')
-@stop
-@section('content')
+<form action="">
 <section class='text-center ingredients'>
 	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
 
 <img class='ingredient_head' src="/img/veghead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
-<form action="">
 
+<fieldset>
+	@foreach ($ingredients['vegetable'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
 
 </div>
 
 <img class='ingredient_head' src="/img/fruithead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
-
-
- PUT FOR EACH HERE
+<fieldset>
+	@foreach ($ingredients['fruit'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
 </div>
 <img class='ingredient_head' src="/img/dairyhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
 
- PUT FOR EACH HERE
+<fieldset>
+	@foreach ($ingredients['dairy'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
+
 
 </div>
 <img class='ingredient_head' src="/img/meathead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
-
-
- PUT FOR EACH HERE
+<fieldset>
+	@foreach ($ingredients['meats'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
 </div>
 <img class='ingredient_head' src="/img/breadhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
 
- PUT FOR EACH HERE
+ <fieldset>
+	@foreach ($ingredients['grains'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
 </div>
 
@@ -52,7 +95,18 @@
 <img class='ingredient_head' src="/img/oilhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
- PUT FOR EACH HERE
+
+ <fieldset>
+	@foreach ($ingredients['oils'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
 </div>
 
@@ -61,26 +115,77 @@
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
 
- PUT FOR EACH HERE
-
+ 
+ <fieldset>
+	@foreach ($ingredients['seasonings'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
+	@foreach ($ingredients['condiments'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
 </div>
 
 <img class='ingredient_head' src="/img/snackhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
+<fieldset>
+	@foreach ($ingredients['snacks'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
- PUT FOR EACH HERE
-
+<fieldset>
+	@foreach ($ingredients['nuts'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 </div>
 
 <img class='ingredient_head' src="/img/beverageshead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
+<fieldset>
+	@foreach ($ingredients['beverages'] as $ingredient)
+		<label>
+			<input
+				type="checkbox"
+				name="q[]"
+				value="{{ $ingredient->name }}">
+			{{ $ingredient->display_name }}
+		</label>
+	@endforeach
+</fieldset>
 
- PUT FOR EACH HERE
-   <input type="submit" value="Submit">
-</form>
+
 </div>
+
+   <input type="submit" value="Submit">
+</form>   
 
 
 

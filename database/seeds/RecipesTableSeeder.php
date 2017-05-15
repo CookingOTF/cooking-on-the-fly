@@ -173,23 +173,29 @@ class RecipesTableSeeder extends Seeder
             [
                 'info' => [
                     'name' => 'Lasagna',
-                    'description' => "An italian favorite",
-                    'image' => 'pbj.png',
-                    'prep_time' => '00:05:00'
-                ],
+                    'description' => "An easy delicous recipe for an italian favorite",
+                    'image' => 'lasagna.jpg',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '01:10:00'
+                    ],
                 'directions' => [
-                    "Place 2 slices of bread on flat surface. Dispense peanut butter with a buttter knife and spread it evenly on one of the 2 bread slices. Repeat this step with jelly on the other slice of bread. Place the 2 slices together so that the sides with peanut butter and jelly are facing each other. Your sandwich is ready to eat!"
+                    "Stir the ricotta cheese, mozzarella cheese, 1/2 cup Parmesan cheese and eggs in a medium bowl and set it aside. In a 3-quart saucepan over medium-high heat, cook the beef until it's well browned, stirring often to break up the meat. Pour off any fat. Stir the sauce in the saucepan. Spoon 1 cup meat mixture in each of two 2-quart shallow baking dishes. Top each with 2 lasagna noodles and about 1 1/4 cups cheese mixture. Repeat the layers. Top with the remaining 2 lasagna noodles, remaining meat mixture and the Parmesan cheese. Bake at 400°F. for 30 minutes or it's until hot and bubbling. Let stand for 10 minutes."
                 ],
                 'ingredients' => [
-                    'peanut butter' => 'Peanut Butter - 1 tbsp'
-                    'jelly' => 'Jelly - 1 tbsp'
-                    'sliced bread' => 'Sliced Bread - 2 Slices'
+                    'ricotta' => 'Ricotta Cheese - 3 cups',
+                    'mozzarella' => 'Shredded Mozzarella Cheese - 12 oz',
+                    'parmesan' => 'Grated Parmesan - 3/4 cup',
+                    'ground beef'=> 'Ground Beef - 1 lb',
+                    'tomato sauce'=> 'Italian Tomato Sauce - 1 jar (45 oz)',
+                    'lasagna'=> 'Lasagna Noodles - 12 (cooked and drained)'
+
+
                 ]
             ]
             # more as needed...
             [
                 'info' => [
-                    'name' => NAME,
+                    'name' => '',
                     'description' => DESCRIPTION,
                     'image' => IMAGE,
                     'prep_time' => PREP_TIME,
