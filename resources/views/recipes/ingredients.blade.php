@@ -4,11 +4,76 @@
 @stop
 @section('content')
 <section class='text-center ingredients'>
-	<h3> Choose Your Ingredients </h3>
-<div class="veggie">
-<img class='ingredient_head' src="/img/veghead.png">
+	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
+
+<img class='ingredient_head' src="/img/veghead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
 <form action="">
 
+ PUT FOR EACH HERE
+</form>
+</div>
+
+<img class='ingredient_head' src="/img/fruithead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+<img class='ingredient_head' src="/img/dairyhead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+<img class='ingredient_head' src="/img/meathead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+<img class='ingredient_head' src="/img/breadhead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+
+
+<img class='ingredient_head' src="/img/oilhead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+
+
+<img class='ingredient_head' src="/img/seasoninghead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+
+<img class='ingredient_head' src="/img/snackhead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
+</form>
+</div>
+
+<img class='ingredient_head' src="/img/beverageshead.png">	
+<div class="indredient_box col-xs-8 col-xs-offset-2">
+<form action="">
+
+ PUT FOR EACH HERE
 </form>
 </div>
 
@@ -16,8 +81,7 @@
 
 
 
-
-<section class='text-center'>
+<!-- <section class='text-center'>
 
 <form name= 'sort' action="" class='text-left' method="GET">
 	<div class="form-group sortform">
@@ -30,7 +94,7 @@
 </form>
 </section>
 
-
+ -->
 
 
 @stop
