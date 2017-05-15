@@ -27,23 +27,28 @@
 @section('content')
 
 	<section class="sign_up_top">
-		
 	</section>
+	
 	<section id="sign_up_container" class="col-xs-11 col-xs-offset-1">
 
 		<h2 class="sign_up_heading">SIGN UP</h2>
 		<div class="sign_up">
 
 			<div class="sign_up_content">
-				<form action="#" method="post" enctype="multipart/form-data">
+				<form action="Auth\AuthController@postRegister" method="post" enctype="multipart/form-data">
+				{!! csrf_field() !!}
 
 						{{-- <label for="name">Your name</label><br> --}}
-					<input type="name" name="name" id="signup_name" class="inpt" required="required" placeholder="FULL NAME">
+					<input type="name" name="name" id="signup_name" class="inpt" required="required" placeholder="FULL NAME" value="{{ old('name') }}">
 
 					<br><br>
 
 						{{-- <label for="email">Your email</label><br> --}}
-					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL">
+					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL" value="{{ old('email') }}">
+
+					<br><br>
+
+					<input type="username" name="username" id="signup_username" class="inpt" required="required" placeholder="USERNAME" value="{{ old('username') }}">
 
 					<br><br>
 
@@ -53,16 +58,17 @@
 					<br><br>
 
 						{{-- <label for="password">Your password</label><br> --}}
-					{{-- <input type="confirm" name="password" id="signup_confirm_password" class="inpt" required="required" placeholder="PASSWORD"> --}}
+					<input type="password" name="password_confirmation" id="signup_confirm_password" class="inpt" required="required" placeholder="CONFIRM PASSWORD">
 
 					<br><br>
 
 					<div class="submit-area">
 					<a href=""> <img class="signin_button" src="/img/submit.png"></a>
-
-					<a href="/signin/">Or click here to Sign In!</a>
+					<br>
+					<a class="or_sign_in" href="/signin/">(OR SIGN IN)</a>
 
 					</div>
+					<br>
 				</form>
 			</div>
 		</div>

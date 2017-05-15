@@ -29,7 +29,7 @@
 
 		<div class="row">
 		<div class="recipe_ingredients col-xs-5">
-			<div class="directions_title">Ingredients needed:</div>
+			<div class="ingredients_title">Ingredients:</div>
 			<div class="ingredients_list">
 			1. Chicken<br>
 			2. Lemon<br>
