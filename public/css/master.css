@@ -193,7 +193,7 @@ a {
 	margin-top: 8%;
 }
 
-#signin_email {
+#signin_username {
 	height: 30px;
 	width: 50%;
 	color: #F4F4F4;
@@ -281,7 +281,7 @@ input[type=password] {
 	margin-top: 6%;
 }
 
-#signup_name {
+#signup_username {
 	height: 30px;
 	width: 50%;
 	color: #F4F4F4;

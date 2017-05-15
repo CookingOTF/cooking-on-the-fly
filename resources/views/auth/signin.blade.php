@@ -39,10 +39,11 @@
 
 		<div class="sign_in_content">
 
-			<form action="#" method="post">
+			<form action="{{action('AuthController@postRegister')}}" method="post">
+			{!! csrf_field() !!}
 			{{-- <br> --}}
 				{{-- <label for="email" id="signin_email">Your email</label> --}}
-				<input type="email" name="email" id="signin_email" class="inpt" required="required" placeholder="EMAIL">
+				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME">
 
 				<br><br>
 

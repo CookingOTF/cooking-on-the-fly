@@ -35,7 +35,8 @@
 		<div class="sign_up">
 
 			<div class="sign_up_content">
-				<form action="#" method="post" enctype="multipart/form-data">
+				<form action="{{action('AuthController@postRegister')}}" method="post" enctype="multipart/form-data">
+				{!! csrf_field() !!}
 
 						{{-- <label for="name">Your name</label><br> --}}
 					<input type="name" name="name" id="signup_name" class="inpt" required="required" placeholder="FULL NAME">
@@ -44,6 +45,10 @@
 
 						{{-- <label for="email">Your email</label><br> --}}
 					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL">
+
+					<br><br>
+
+					<input type="username" name="username" id="signup_username" class="inpt" required="required" placeholder="USERNAME">
 
 					<br><br>
 
