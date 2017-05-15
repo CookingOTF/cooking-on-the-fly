@@ -49,7 +49,7 @@ class AuthController extends BaseController
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, User::getRules());
+        return Validator::make($data, User::getSignupRules());
     }
 
     /**

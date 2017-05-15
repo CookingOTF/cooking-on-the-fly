@@ -35,8 +35,18 @@ class UsersController extends BaseController
         return view('users.edit');
     }
 
-    public function update()
+    public function update(Request $request)
     {
+        $user = Auth::user();
+
+        $this->validate($request, User::getUpdateRules());
+
+        foreach ($request->all() as $attribute => $value) {
+            $user[$attribute] = $value;
+        }
+
+        $user->save();
+
         return redirect('account');
     }
 }

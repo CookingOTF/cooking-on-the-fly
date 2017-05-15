@@ -17,18 +17,27 @@ class User extends Model implements AuthenticatableContract,
     use Authenticatable, Authorizable, CanResetPassword;
 
     protected static $rules = [
-        'username' => 'required|string|min:3|max:255',
-        'email' => 'required|string|email|max:255',
-        'password' => 'required|string|confirmed|max:255|min:8'
+        'username' => 'string|min:3|max:255|unique:users',
+        'email' => 'string|email|max:255',
+        'password' => 'string|confirmed|min:8|max:255'
     ];
 
-    public static function getRules($attribute = NULL)
+    public static function getSignupRules()
     {
-        if (!isset($attribute)) {
-            return $this->rules;
-        } else {
-            return $this->rules[$attribute];
+        foreach (self::$rules as $field => $rules) {
+            $signupRules[$field] = 'required|' . $rules;
         }
+
+        return $signupRules;
+    }
+
+    public static function getUpdateRules($user_id)
+    {
+        $rules = self::$rules;
+
+        $rules['current_password'] = 'required|string|exists:users,' . $user_id;
+
+        return $rules;
     }
 
     /**

@@ -53,6 +53,7 @@ Route::get('dashboard', 'UsersController@dashboard');
 Route::get('account', 'UsersController@account');
 
 Route::get('account/edit', 'UsersController@edit');
+Route::put('account/edit', 'UsersController@update');
 
 
 /*
