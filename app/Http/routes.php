@@ -59,9 +59,9 @@ Route::get('/', 'MainController@welcome');
 |---------------------
 */
 
-Route::get('dashboard', /*['middleware' => 'auth'], */function () {
+Route::get('dashboard', ['middleware' => 'auth', function () {
     return view('users.dashboard');
-});
+}]);
 
 Route::get('account', function () {
     return view('users.account');
