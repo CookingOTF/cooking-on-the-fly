@@ -3,15 +3,20 @@
 @include('partials.nav')
 @stop
 @section('content')
+
 <form action="">
+
 <section class='text-center ingredients'>
 	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
 
 <img class='ingredient_head' src="/img/veghead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
+
 <fieldset>
+
 	@foreach ($ingredients['vegetable'] as $ingredient)
+
 		<label>
 			<input
 				type="checkbox"
@@ -21,12 +26,12 @@
 		</label>
 	@endforeach
 </fieldset>
-
-
 </div>
+
 
 <img class='ingredient_head' src="/img/fruithead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
+
 <fieldset>
 	@foreach ($ingredients['fruit'] as $ingredient)
 		<label>
@@ -73,6 +78,8 @@
 </fieldset>
 
 </div>
+
+
 <img class='ingredient_head' src="/img/breadhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
@@ -95,7 +102,6 @@
 <img class='ingredient_head' src="/img/oilhead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 
-
  <fieldset>
 	@foreach ($ingredients['oils'] as $ingredient)
 		<label>
@@ -113,7 +119,6 @@
 
 <img class='ingredient_head' src="/img/seasoninghead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
-
 
  
  <fieldset>

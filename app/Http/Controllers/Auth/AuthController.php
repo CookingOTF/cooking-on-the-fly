@@ -14,6 +14,10 @@ class AuthController extends BaseController
 
     protected $registerPage = 'auth.signup';
 
+    protected $redirectPath = '/dashboard/';
+
+    protected $loginPath = '/signin/';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
@@ -46,9 +50,9 @@ class AuthController extends BaseController
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'username' => 'required|string|min:3|max:255',
+            'email' => 'required|string|email|max:255',
+            'password' => 'required|string|confirmed|max:255|min:8',
         ]);
     }
 
@@ -61,7 +65,7 @@ class AuthController extends BaseController
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
@@ -78,6 +82,6 @@ class AuthController extends BaseController
 
     public function getRegister()
     {
-        return view($this->registerPage);
+        return view($this->registerPage, ['pancakes' => 'You made a GET request.']);
     }
 }
