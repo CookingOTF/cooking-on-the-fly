@@ -14,6 +14,10 @@ class AuthController extends BaseController
 
     protected $registerPage = 'auth.signup';
 
+    protected $redirectPath = '/dashboard/';
+
+    protected $loginPath = '/signin/';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
@@ -78,6 +82,6 @@ class AuthController extends BaseController
 
     public function getRegister()
     {
-        return view($this->registerPage);
+        return view($this->registerPage, ['pancakes' => 'You made a GET request.']);
     }
 }
