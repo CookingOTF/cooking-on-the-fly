@@ -435,12 +435,12 @@ input[type=password] {
 	margin-bottom: -4px;
 	width:66.7%;
 }
- .indredient_box{
+ .ingredient_box{
  	background-color: #4D4D4D;
  	height:400px;
  	margin-bottom: 24px;
  	margin-top: -2px;
-	width: 35%;
+	width: 66.7%;
 	font-size: 1.3em;
 	font-weight: 100;
 	color:#ECECEC;
@@ -543,7 +543,7 @@ table {
 
 .single_recipe_title {
 	font-family: 'Sofia', cursive;
-	font-size: 4.5vw;
+	font-size: 5vw;
 	text-align: center;
 	font-weight: 100;
 	color: #3A3B3C;
@@ -572,7 +572,17 @@ table {
 
 .directions_title {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 3vw;
+	font-size: 4vw;
+	color: #3A3B3C;
+	font-weight: 100px;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.ingredients_title {
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 4vw;
+	color: #3A3B3C;
 	font-weight: 100px;
 	margin-top: 5%;
 	text-align: center;
