@@ -66,7 +66,6 @@
 <img class='ingredient_head' src="/img/oilhead.png">	
 <div class="indredient_box col-xs-8 col-xs-offset-2">
 
-
  PUT FOR EACH HERE
 
 </div>
@@ -114,8 +113,26 @@
 </form>
 </section>
 
- -->
 
+<section class="recipes_by_tier">
 
-@stop
+	<div class="recipes_results"> Recipe Results:
+	</div>
+
+	<div class="tier_one">
+		<div> What you can make with what you have!
+		</div>
+	</div>
+
+	<div class="tier_two">
+		<div> What you can make if you borrow from a neighbor!
+		</div>
+	</div>
+
+	<div class="tier_three">
+		<div> What you can make if you go to the store! (ALL RECIPES)
+		</div>
+	</div>
+	
+</section>
 @stop
