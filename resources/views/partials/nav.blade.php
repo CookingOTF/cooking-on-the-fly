@@ -29,7 +29,7 @@
               <li><a href="/dashboard/">DASHBOARD</a></li>
               <li><a href="#">ABOUT?</a></li>
         	  <li><a href="/recipes/browse/">BROWSE</a></li>
-        	  <li><a href="/">SEARCH</a></li>
+        	  <li><a href="/recipes/search/">SEARCH</a></li>
         	</ul>
 
         	<ul class="nav navbar-nav navbar-right">

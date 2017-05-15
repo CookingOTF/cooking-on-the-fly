@@ -2,6 +2,7 @@
 @section('navbar')
 @include('partials.nav')
 @stop
+
 @section('content')
 
 <section>
