@@ -34,48 +34,31 @@ if (    isset($_SERVER['REQUEST_URI'])
 */
 
 /*
-|---------------------------------------------
-| Note
-|---------------------------------------------
-| All routes with closures are placeholders
-| until a proper controller is made.
-|
-*/
-
-Route::get('test', 'RecipesController@search');
-
-/*
-|------------
-| Home page
-|------------
+|-----------
+| ~ HOME ~
+|-----------
 */
 
 Route::get('/', 'MainController@welcome');
 
 
 /*
-|---------------------
-| User-related pages
-|---------------------
+|------------
+| ~ USERS ~
+|------------
 */
 
-Route::get('dashboard', ['middleware' => 'auth', function () {
-    return view('users.dashboard');
-}]);
+Route::get('dashboard', 'UsersController@dashboard');
 
-Route::get('account', function () {
-    return view('users.account');
-});
+Route::get('account', 'UsersController@account');
 
-Route::get('fridge', function () {
-    return view('users.fridge');
-});
+Route::get('account/edit', 'UsersController@edit');
 
 
 /*
-|-----------------------
-| Recipe-related pages
-|-----------------------
+|--------------
+| ~ RECIPES ~
+|--------------
 */
 
 Route::get('recipes/browse', 'RecipesController@browse');
@@ -86,9 +69,9 @@ Route::resource('recipes', 'RecipesController');
 
 
 /*
-|--------------------
-| SIGNING IN/UP/OUT
-|--------------------
+|------------------------
+| ~ SIGNING IN/UP/OUT ~
+|------------------------
 */
 
 Route::get('signin', 'Auth\AuthController@getLogin');
