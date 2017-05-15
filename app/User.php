@@ -16,6 +16,21 @@ class User extends Model implements AuthenticatableContract,
 {
     use Authenticatable, Authorizable, CanResetPassword;
 
+    protected static $rules = [
+        'username' => 'required|string|min:3|max:255',
+        'email' => 'required|string|email|max:255',
+        'password' => 'required|string|confirmed|max:255|min:8'
+    ];
+
+    public static function getRules($attribute = NULL)
+    {
+        if (!isset($attribute)) {
+            return $this->rules;
+        } else {
+            return $this->rules[$attribute];
+        }
+    }
+
     /**
      * The database table used by the model.
      *
