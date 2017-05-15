@@ -3,11 +3,6 @@
 @include('partials.nav')
 @stop
 @section('content')
-@extends('layouts.master')
-@section('navbar')
-@include('partials.nav')
-@stop
-@section('content')
 <section class='text-center ingredients'>
 	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
 
@@ -18,7 +13,7 @@
 
 <fieldset>
 	<legend>Category Name Here</legend>
-	@foreach ($ingredients['vegetable'] as $ingredient)
+	{{-- @foreach ($ingredients['vegetable'] as $ingredient)
 		<label>
 			<input
 				type="checkbox"
@@ -29,7 +24,7 @@
 				@endif>
 			{{ $ingredient->display_name }}
 		</label>
-	@endforeach
+	@endforeach --}}
 </fieldset>
 </div>
 
