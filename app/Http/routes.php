@@ -59,9 +59,9 @@ Route::get('/', 'MainController@welcome');
 |---------------------
 */
 
-Route::get('dashboard', /*['middleware' => 'auth'], */function () {
+Route::get('dashboard', ['middleware' => 'auth', function () {
     return view('users.dashboard');
-});
+}]);
 
 Route::get('account', function () {
     return view('users.account');
@@ -79,20 +79,22 @@ Route::get('fridge', function () {
 */
 
 Route::get('recipes/browse', 'RecipesController@browse');
-Route::get('recipes/search/', 'RecipesController@search');
+Route::get('recipes/search', 'RecipesController@search');
 Route::get('recipes/search/{q}', 'RecipesController@searchResults');
 
 Route::resource('recipes', 'RecipesController');
 
 
 /*
-|----------------------
-| Signin/Signup pages
-|----------------------
+|--------------------
+| SIGNING IN/UP/OUT
+|--------------------
 */
 
 Route::get('signin', 'Auth\AuthController@getLogin');
 Route::post('signin', 'Auth\AuthController@postLogin');
+
+Route::get('signout', 'Auth\AuthController@getLogout');
 
 Route::get('signup', 'Auth\AuthController@getRegister');
 Route::post('signup', 'Auth\AuthController@postRegister');
