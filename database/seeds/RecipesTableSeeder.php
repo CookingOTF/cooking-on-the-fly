@@ -87,11 +87,10 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'info' => [
-                    'name' => NAME,
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,/* If you delete this line (the *whole* line, not just the value), it'll use the default image */
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
+                    'name' => 'Peanut Butter and Jelly Sandwich',
+                    'description' => "An easy, classic lunch favorite",
+                    'image' => 'pbj.png',
+                    'prep_time' => '00:05:00'
                 ],
                 /*
                 |====================================================
@@ -118,12 +117,7 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'directions' => [
-                    STEP1,
-                    STEP2,
-                    STEP3/*
-                    add as many as you want, just make
-                    sure no comma on the last one of course :P
-                    */
+                    "Place 2 slices of bread on flat surface. Dispense peanut butter with a buttter knife and spread it evenly on one of the 2 bread slices. Repeat this step with jelly on the other slice of bread. Place the 2 slices together so that the sides with peanut butter and jelly are facing each other. Your sandwich is ready to eat!"
                 ],
                 /*
                 |====================================================
@@ -159,12 +153,10 @@ class RecipesTableSeeder extends Seeder
                 | too long to fit in the database.
                 |
                 */
-                'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE,
-                    NAME => DISPLAY_IN_RECIPE,
-                    NAME => DISPLAY_IN_RECIPE/*
-                    same as before, no comma on last one :P
-                    */
+                 'ingredients' => [
+                    'peanut butter' => 'Peanut Butter - 1 tbsp',
+                    'jelly' => 'Jelly - 1 tbsp',
+                    'sliced bread' => 'Sliced Bread - 2 Slices'
                 ]
             ],
             /*
@@ -180,19 +172,20 @@ class RecipesTableSeeder extends Seeder
             */
             [
                 'info' => [
-                    'name' => NAME,
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
+                    'name' => 'Lasagna',
+                    'description' => "An italian favorite",
+                    'image' => 'pbj.png',
+                    'prep_time' => '00:05:00'
                 ],
                 'directions' => [
-                    STEP1
+                    "Place 2 slices of bread on flat surface. Dispense peanut butter with a buttter knife and spread it evenly on one of the 2 bread slices. Repeat this step with jelly on the other slice of bread. Place the 2 slices together so that the sides with peanut butter and jelly are facing each other. Your sandwich is ready to eat!"
                 ],
                 'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE
+                    'peanut butter' => 'Peanut Butter - 1 tbsp'
+                    'jelly' => 'Jelly - 1 tbsp'
+                    'sliced bread' => 'Sliced Bread - 2 Slices'
                 ]
-            ],
+            ]
             # more as needed...
             [
                 'info' => [
