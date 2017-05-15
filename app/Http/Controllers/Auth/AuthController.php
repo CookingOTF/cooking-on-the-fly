@@ -77,7 +77,7 @@ class AuthController extends BaseController
             return view($this->authenticatePage);
         }
 
-        return view($this->loginPage);
+        return view($this->loginPage, ['pancakes' => 'You made a GET request.']);
     }
 
     public function getRegister()
