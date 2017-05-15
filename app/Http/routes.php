@@ -79,7 +79,8 @@ Route::get('fridge', function () {
 */
 
 Route::get('recipes/browse', 'RecipesController@browse');
-Route::get('recipes/search/{i?}', 'RecipesController@search');
+Route::get('recipes/search/', 'RecipesController@search');
+Route::get('recipes/search/{q}', 'RecipesController@searchResults');
 
 Route::resource('recipes', 'RecipesController');
 
