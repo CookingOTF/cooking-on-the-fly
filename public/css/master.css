@@ -479,6 +479,9 @@ input[type=password] {
 }
 
 /*INGREDIENT PAGE*/
+
+
+
 .ingredient_title{
 	padding-top:40px;
 	color:#ECECEC;
@@ -487,7 +490,7 @@ input[type=password] {
 }
 
 .single_ingredient{
-	margin-right:20%;
+	
 }
 
 
@@ -495,7 +498,7 @@ input[type=password] {
 
 .ingredient_head {
 	margin-top: 15px;
-	margin-bottom: -4px;
+	margin-bottom: -2px;
 	width:66.7%;
 }
  .ingredient_box{
