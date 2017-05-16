@@ -16,6 +16,11 @@ class Recipe extends Model
         'cook_time'
     ];
 
+    public function __construct()
+    {
+        $this->attributes['total_time'] = $this->attributes['prep_time'] + $this->attributes['cook_time'];
+    }
+
     public function ingredients()
     {
         return $this->belongsToMany('App\Ingredient', 'recipe_ingredients', 'recipe_id', 'ingredient_name')->withPivot('display_in_recipe');
@@ -81,5 +86,10 @@ class Recipe extends Model
     public function getPrepTimeAttribute($value)
     {
         return $this->secondsToHours($value);
+    }
+
+    public function getTotalTimeAttribute($value)
+    {
+        $return $this->secondsToHours($value);
     }
 }
