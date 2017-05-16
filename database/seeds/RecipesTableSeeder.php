@@ -191,21 +191,79 @@ class RecipesTableSeeder extends Seeder
 
 
                 ]
-            ]
+            ],
             # more as needed...
             [
                 'info' => [
-                    'name' => '',
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
+                    'name' => 'Asian Chicken Strifry',
+                    'description' => 'Chicken cooked with colorful veggies and tossed in a flavorful garlic sauce',
+                    'image' => 'stirfry.png',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '00:13:00',
+                    'servings' =>'4'
                 ],
                 'directions' => [
-                    STEP1
+                    "Place 1 teaspoon of oil in a large pan and heat over medium high heat.Add the broccoli, mushrooms and bell pepper to the pan. Cook for 5-6 minutes or until vegetables are tender.",
+
+"Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
+"Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
+"Add the chicken to the pan in a single layer and season with salt and pepper to taste.
+Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
+"Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
+"In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch,
+Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
+"Serve immediately, with steamed rice if desired."
                 ],
                 'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE
+                    'oil' => 'Vegetable Oil - 1 tsp',
+                    'broccoli' => 'Broccoli Florets - 1 cup',
+                    'mushrooms' => 'Sliced Mushrooms - 1 cup',
+                    'bell pepper' => 'Sliced Bell Pepper - 1',
+                    'chicken' => 'Chicken Breast - 1 lb',
+                    'garlic'=> 'Minced Garlic - 4 cloves',
+                    'chicken broth'=>'Chicken Broth - 3/4 cup',
+                    'sugar'=> 'Sugar - 1 1/2 tsp',
+                    'soy'=>'Soy Sauce - 1 tbsp',
+                    'sesame oil' => 'Sesame Oil - 2 tsp',
+                    'cornstarch' => 'Cornstarch - 2 tsp'
+
+                ],
+
+
+    [
+                'info' => [
+                    'name' => 'Asian Chicken Strifry',
+                    'description' => 'Chicken cooked with colorful veggies and tossed in a flavorful garlic sauce',
+                    'image' => 'stirfry.png',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '00:13:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                    "Place 1 teaspoon of oil in a large pan and heat over medium high heat.Add the broccoli, mushrooms and bell pepper to the pan. Cook for 5-6 minutes or until vegetables are tender.",
+
+"Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
+"Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
+"Add the chicken to the pan in a single layer and season with salt and pepper to taste.
+Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
+"Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
+"In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch,
+Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
+"Serve immediately, with steamed rice if desired."
+                ],
+                'ingredients' => [
+                    'oil' => 'Vegetable Oil - 1 tsp',
+                    'broccoli' => 'Broccoli Florets - 1 cup',
+                    'mushrooms' => 'Sliced Mushrooms - 1 cup',
+                    'bell pepper' => 'Sliced Bell Pepper - 1',
+                    'chicken' => 'Chicken Breast - 1 lb',
+                    'garlic'=> 'Minced Garlic - 4 cloves',
+                    'chicken broth'=>'Chicken Broth - 3/4 cup',
+                    'sugar'=> 'Sugar - 1 1/2 tsp',
+                    'soy'=>'Soy Sauce - 1 tbsp',
+                    'sesame oil' => 'Sesame Oil - 2 tsp',
+                    'cornstarch' => 'Cornstarch - 2 tsp'
+
                 ]
             ]/* no comma after the last one ofc :P */
         ];
