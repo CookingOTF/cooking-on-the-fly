@@ -3,9 +3,34 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use DB;
 
 class Recipe extends Model
 {
+    public static function getCard($id)
+    {
+        return [
+            'recipe' => self::select(
+                'name',
+                'description',
+                'image',
+                'prep_time',
+                'cook_time'
+            )->where('id', $id)
+                ->first(),
+
+            'directions' => Directions::select('content')
+                ->where('recipe_id', $id)
+                ->orderBy('step_no')
+                ->lists('content'),
+
+            'ingredients' => DB::table('recipe_ingredients')
+                ->select('display_in_recipe')
+                ->where('recipe_id', $id)
+                ->lists('display_in_recipe')
+        ];
+    }
+
     protected $table = 'recipes';
 
     protected $fillable = [
