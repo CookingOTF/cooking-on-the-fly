@@ -8,12 +8,6 @@
 	<h1 class="recipe_name"></h1>
 </section>
 
-
-
-
-
-
-
 <div class="single_recipe_box_tab"></div>
 
 <div class="row">
