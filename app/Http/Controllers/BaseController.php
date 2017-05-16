@@ -28,6 +28,6 @@ class BaseController extends Controller
 
     protected function view($path, $vars)
     {
-        return view($path, $this->getLocalVars($vars))
+        return view($path, $this->getLocalVars($vars));
     }
 }
