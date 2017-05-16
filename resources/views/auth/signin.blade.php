@@ -16,7 +16,7 @@
 		    position: absolute;
 		    top: 0;
 		    left: 0;
-			background-image: url('/img/pasta.png');
+			background-image: url('/img/pasta.png') !important;
 			background-size: cover;
 			width: 100%;
     		height: 100%;
@@ -43,7 +43,7 @@
 			{!! csrf_field() !!}
 			{{-- <br> --}}
 				{{-- <label for="email" id="signin_email">Your email</label> --}}
-				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME" value="{{old('username')}}/">
+				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME" value="{{old('username')}}">
 
 				<br><br>
 
@@ -58,8 +58,7 @@
 				</div>
 				<br><br>
 
-				<div class="submit-area">
-					<a href=""> <img class="signin_button" src="/img/submit.png"></a>
+				<button type="submit" class="btn btn-default">Submit</button>
 
 				<br><br>
 

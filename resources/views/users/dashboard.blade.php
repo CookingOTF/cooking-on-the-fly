@@ -7,7 +7,7 @@
 
 <section class="dashboard">
 	<div class="user_dashboard">
-		<h1 class="my_account">Welcome, $user!</h1>
+		<h1 class="my_account">Welcome, {{Auth::user()->username}}!</h1>
 
 		<section id="user_info" class="col-xs-11 col-xs-offset-1">
 			<h3 class="my_account_info">User Account</h3>
