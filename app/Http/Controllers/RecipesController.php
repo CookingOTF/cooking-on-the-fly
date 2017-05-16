@@ -87,7 +87,15 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        $recipe = Recipe::find($id);
+        $recipe = Recipe::select('id', 'name', 'description', 'image', 'prep_time', 'cook_time')->with('directions')->where('id', $id)->first();
+        $directions = $recipe->directions()->orderBy('step_no')->lists('content');
+        dd($directions);
+        foreach ($recipe->ingredients() as $key => $value) {
+            # code...
+        }
+        $recipe->ingredients()->pivot;
+        dd($ingredients);
+
         return view('recipes.show', $this->getLocalVars(get_defined_vars()));
     }
 
