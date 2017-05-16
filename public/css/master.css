@@ -1,79 +1,98 @@
-html, body {
-}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
 
-body {
-	font-weight: 100;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	background-color: #3A3B3C !important;
-}
+	html, body {
+	}
 
-h1 {
-	font-family: 'Sofia', cursive;
-	font-size: 9vw;
-	font-weight: 100;
-	color: #3A3B3C;
-}
+	body {
+		font-weight: 100;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		background-color: #3A3B3C !important;
+	}
 
-h2 {
-	font-family: 'Sofia', cursive;
-	font-size: 9vw;
-	font-weight: 100;
-	color: #3A3B3C;
-}
+	h1 {
+		font-family: 'Sofia', cursive;
+		font-size: 9vw;
+		font-weight: 100;
+		color: #3A3B3C;
+	}
 
-a {
-	text-decoration: none;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	color: #F3F3F3;
-}
+	h2 {
+		font-family: 'Sofia', cursive;
+		font-size: 9vw;
+		font-weight: 100;
+		color: #3A3B3C;
+	}
 
+	a {
+		text-decoration: none;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		color: #F3F3F3;
+	}
 
-/*HOME PAGE*/
+	/*NAV BAR*/ 
+	.navbar {
+		text-transform: uppercase;
+		background-color: #3A3B3C !important;
+		border-color: #3A3B3C !important;
+		color: #F3F3F3 !important;
+		font-size: 1.3em;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		margin-bottom: 0px !important;
+	}
 
-.container {
-	text-align: center;
-	background-image: url('/img/signupin.png');
-	background-size: cover;
-}
+	.navbar li {
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 1.4em;
+		line-height: 30px;
+		height: 30px;
+		font-weight: 100;
+		color: #F3F3F3;
+		text-decoration: none;
+	}
 
-.hp_one {
-	background-image: url("/img/homepage.png");
-	background-repeat: no-repeat;
-    background-size: 100%;
-	height: 540px;
-}
+	.navbar-default .navbar-nav>li>a {
+		color: #F3F3F3 !important;
+	}
 
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+		color: #555;
+		background-color: #3A3B3C !important;
+	}
 
+	.navbar a {
+		text-decoration: none;
+		color: #F3F3F3;
+		display: inline-block;
+		font-size: 2vw;
+		font-weight: 100;
+	}
 
-#hp_logo {
-	height: 450px;
-	position: relative;
-	top: auto;
-}
+	.navbar a:hover {
+		color: #7B8489; /*change nav bar TEXT color when hovered*/
+		outline: none;
+		text-decoration: none !important;
+		font-weight: 900;
+	}
 
-#motto {
-	font-size: 3vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	color: #F3F3F3;
-	font-weight: bolder;
-}
+	/*HOME PAGE*/
 
-@media screen and (min-width: 800px) {
 	.container {
-	text-align: center;
-	background-image: url('/img/signupin.png');
-	background-size: cover;
-}
+		text-align: center;
+		background-image: url('/img/signupin.png');
+		background-size: cover;
+	}
 
 	.hp_one {
-	background-image: url("/img/homepage.png");
-	background-repeat: no-repeat;
-    background-size: 100%;
-	height: 540px;
+		background-image: url("/img/homepage.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 570px;
 	}
 
 	#hp_logo {
-		height: 450px;
+		height: 42%;
+		width: 42%;
 		position: relative;
 		top: auto;
 	}
@@ -84,658 +103,608 @@ a {
 		color: #F3F3F3;
 		font-weight: bolder;
 	}
-}
-
-/*HOME PAGE TWO*/
-#hp_two {
-    background-color: #3A3B3C;
-    height: 325px;
-    color: #F3F3F3;
-    text-align: center;
-}
-
-.hp_two_text_box {
-}
-
-.about_COTF {
-	font-size: 5vw;
-    color: #F3F3F3;
-    font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
-}
-
-#hp_two_text {
-	font-size: 2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
-}
-
-.important_text {
-	font-size: 2vw;
-}
-
-/*HOME PAGE THREE*/
-
-.hp_three {
-	background-image: url(/img/despizza.jpeg);
-	background-color: #F3F3F3;
-	background-size: 100%;
-	height: 500px;
-	
-}
-
-.hp_three_text_box {
-	height: 395px;
-}
-
-.get_started {
-    color: #7B8489;
-    font-size: 6vw;
-    font-family: 'Sofia', cursive;
-    text-align: center;
-}
-
-#sign_up_button {
-	margin-top: 13%;
-}
-
-#sign_in_button {
-	margin-top: 13%;
-
-}
-
-/*NAV BAR*/ 
-.navbar {
-	text-transform: uppercase;
-	background-color: #3A3B3C !important;
-	border-color: #3A3B3C !important;
-	color: #F3F3F3 !important;
-    font-size: 1.3em;
-    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    margin-bottom: 0px !important;
-}
-
-.navbar li {
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 1.4em;
-	line-height: 30px;
-	height: 30px;
-	font-weight: 100;
-	color: #F3F3F3;
-	text-decoration: none;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #F3F3F3 !important;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #3A3B3C !important;
-}
-
-.navbar a {
-	text-decoration: none;
-	color: #F3F3F3;
-	display: inline-block;
-	font-size: 2vw;
-	font-weight: 100;
-}
-
-.navbar a:hover {
-	color: #7B8489; /*change nav bar TEXT color when hovered*/
-	outline: none;
-	text-decoration: none !important;
-	font-weight: 900;
-}
-
-
-
-
-
-/*SIGN IN PAGE*/
-
-.sign_in_page {
-	background-image: url('/img/blueberries.png');
-	background-size: cover;
-}
-
-#sign_in_container {
-	background-color: #4D4D4D;
-	width: 35%;
-	font-size: 1.3em;
-	font-weight: 100;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	border-radius: 5px;
-	text-align: center;
-}
-
-.sign_in_heading {
-	color: #F4F4F4;
-	font-size: 5vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	color: #F3F3F3;
-	font-weight: 100;
-	height: 100%;
-}
-
-.sign_in_top {
-	margin-top: 8%;
-}
-
-#signin_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signin_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signin_remember_me {
-	font-size: 1.3vw;
-	text-align: center;
-	color: #F4F4F4;
-}
-
-#signin_checkbox {
-	align-content: center;
-}
-
-.checkbox, .radio {
-    position: relative;
-     display: inline-block; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#signin_forgot_password {
-	font-size: 1.6vw;
-	color: white;
-	text-decoration: none;
-}
-
-.signin_submit {
-	width: 100px;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-.signin_button {
-	width: 150px;
-}
-
-.or_sign_in {
-	text-align: right;
-}
-
-
-input[type=email] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=password] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=confirm] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-/*SIGN UP*/
-
-#sign_up_container {
-    background-color: #4D4D4D;
-    width: 35%;
-    height: 0 auto;
-    font-size: 1.3em;
-    font-weight: 100;
-    font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.sign_up_heading {
-	color: #F4F4F4;
-	font-size: 5vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	color: #F3F3F3;
-	font-weight: 100;
-}
-
-.sign_up_top {
-	margin-top: 5%;
-}
-
-#signup_name {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_email {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_confirm_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_remember_me {
-	font-size: 1.3vw;
-	text-align: left;
-	color: #F4F4F4;
-}
-
-#signup_forgot_password {
-	font-size: 1.3vw;
-	color: white;
-	text-decoration: none;
-}
-
-.signup_submit {
-	width: 100px;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-.signup_button {
-	width: 10%;
-}
-
-input[type=name] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=email] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=username] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=password] {
-    border: none;
-    border-bottom: 2px solid #CDDBE3;
-    background-color: #3A3B3C;
-    color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-
-/*DASHBOARD*/
-.dashboard {
-
-}
-
-.user_dashboard {
-}
-
-.user_account_info {
-	color: #F3F3F3;
-}
-
-.my_account {
-	color: #F3F3F3;
-	font-size: 8vw;
-	font-weight: 100px;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-}
-
-#user_info {
-	height: 300px;
-	width: 85%;
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 4%;
-}
-
-#favorites {
-	height: 300px;
-	width: 85%;
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 4%;
-}
-
-#fridge {
-	height: 300px;
-	width: 85%;
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 4%;
-}
-
-/*DASHBOARD TEXT*/
-.my_account_info {
-	color: #F3F3F3;
-	font-size: 3vw;
-	font-weight: lighter;
-	text-align: left;
-}
-
-.favorite_recipes {
-	color: #F3F3F3;
-	font-size: 3vw;
-	font-weight: lighter;
-	text-align: left;
-}
-
-.my_fridge {
-	color: #F3F3F3;
-	font-size: 3vw;
-	font-weight: lighter;
-	text-align: left;
-}
-
-/*INGREDIENT PAGE*/
-.ingredient_title{
-	padding-top:40px;
-	color:#ECECEC;
-	font-size:20px;
-
-}
-
-.single_ingredient{
-	margin-right:20%;
-}
-
-
-
-
-.ingredient_head {
-	margin-top: 15px;
-	margin-bottom: -4px;
-	width:66.7%;
-}
- .ingredient_box{
- 	background-color: #4D4D4D;
- 	height:400px;
- 	margin-bottom: 24px;
- 	margin-top: -2px;
-	width: 66.7%;
-	font-size: 1.3em;
-	font-weight: 100;
-	color:#ECECEC;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	text-align: center;
- }
-
-
-
-.buttons {
-}
-
-/*BROWSE PAGE*/
-
-table {
-	width: 100%;
-}
-
-.all_recipes {
-	font-size: 5vw;
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-}
-
-#browse_table {
-    text-align: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-}
-
-.browse_image {
-	height: 12vw;
-	width: 17vw;
-
-}
-
-.browse_name {
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.5vw;
-	text-transform: uppercase;
-	color: #F3F3F3;
-}
-
-.browse_table_row {
-	margin-left: 10%;
-}
-
-.thumbnail {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #7B8489 !important;
-    background-color: #7B8489 !important;
-    border-radius: 10px !important;
-    text-align: center;
-    padding-top: 20px !important;
-}
-
-/*SINGLE RECIPE PAGE*/
-
-.recipe_name {
-	color: white;
-	font-size: 5vw;
-	text-align: center;
-	margin-top: 4%;
-	margin-left: 10%;
-}
-
-.single_recipe_box {
-	background-color: #7B8489;
-	height: 0 auto;
-	width: 68%;
-	border-radius: 10px;
-	position: relative;
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.5vw;
-}
-
-.single_recipe_box_tab {
-    background-color: #7B8489;
-    height: 200px;
-    width: 18%;
-    border-radius: 33px;
-    position: absolute;
-    margin-left: 25%;
-    margin-top: -37px;
-}
-
-.single_recipe_photo {
-	height: 22vw;
-	width: 22vw;
-	margin-left: 5.3%;
-	border: solid #F3F3F3 2px;
-}
-
-.single_recipe_title {
-	font-family: 'Sofia', cursive;
-	font-size: 5vw;
-	text-align: center;
-	font-weight: 100;
-	color: #3A3B3C;
-}
-
-.single_recipe_prep_time {
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2vw;
-	text-align: center;
-}
-
-.single_recipe_cook_time {
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2vw;
-	text-align: center;
-}
-
-.single_recipe_total_time {
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2vw;
-	text-align: center;
-}
-
-.directions_title {
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 4vw;
-	color: #3A3B3C;
-	font-weight: 100px;
-	margin-top: 5%;
-	text-align: center;
-}
-
-.ingredients_title {
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 4vw;
-	color: #3A3B3C;
-	font-weight: 100px;
-	margin-top: 5%;
-	text-align: center;
-}
 
-.recipe_ingredients {
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.5vw;
-	text-align: left;
-}
-
-.single_recipe_directions {
-	color: #F3F3F3;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.5vw;
-}
-
-.recipe_info {
-	height: 0 auto;
-}
-
-.recipe_directions {
-}
-
-
-/*TIER RECIPE PAGE*/
-
-.recipes_results {
-	margin-bottom: 10%;
-	font-family: 'Sofia', cursive;
-	font-size: 4vw;
-	text-align: center;
-	color: #F3F3F3;
-}
-
-.tier_one {
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 1%;
-	font-size: 2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-	color: #F3F3F3;
-}
-
-.tier_two {
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 1%;
-	font-size: 2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-	color: #F3F3F3;
-}
-
-.tier_three {
-	background-color: #7B8489;
-	border-radius: 10px;
-	margin-bottom: 1%;
-	font-size: 2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-	color: #F3F3F3;
-}
-
+	/*HOME PAGE TWO*/
+	#hp_two {
+		background-color: #3A3B3C;
+		height: 26vw;
+		color: #F3F3F3;
+		text-align: center;
+	}
+
+	.hp_two_text_box {
+	}
+
+	.about_COTF {
+		font-size: 7vw;
+		color: #CDDBE3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
+	}
+
+	#hp_two_text {
+		font-size: 2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
+	}
+
+	.important_text {
+		font-size: 2.2vw;
+	}
+
+	/*HOME PAGE THREE*/
+
+	.hp_three {
+		background-image: url(/img/despizza.jpeg);
+		background-color: #F3F3F3;
+		background-size: 100%;
+		height: 500px;
+		
+	}
+
+	.hp_three_text_box {
+		height: 395px;
+	}
+
+	.get_started {
+		color: #7B8489;
+		font-size: 6vw;
+		font-family: 'Sofia', cursive;
+		text-align: center;
+	}
+
+	#sign_up_button {
+		margin-top: 13%;
+	}
+
+	#sign_in_button {
+		margin-top: 13%;
+
+	}
+
+
+
+	/*SIGN IN PAGE*/
+
+	.sign_in_page {
+		background-image: url('/img/blueberries.png');
+		background-size: cover;
+	}
+
+	#sign_in_container {
+		background-color: #4D4D4D;
+		width: 35%;
+		font-size: 1.3em;
+		font-weight: 100;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	.sign_in_heading {
+		color: #F4F4F4;
+		font-size: 5vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		color: #F3F3F3;
+		font-weight: 100;
+		height: 100%;
+	}
+
+	.sign_in_top {
+		margin-top: 8%;
+	}
+
+	#signin_username {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signin_password {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signin_remember_me {
+		font-size: 1.3vw;
+		text-align: center;
+		color: #F4F4F4;
+	}
+
+	#signin_checkbox {
+		align-content: center;
+	}
+
+	.checkbox, .radio {
+		position: relative;
+		 display: inline-block; 
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#signin_forgot_password {
+		font-size: 1.6vw;
+		color: white;
+		text-decoration: none;
+	}
+
+	.signin_submit {
+		width: 100px;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	.signin_button {
+		width: 150px;
+	}
+
+	.or_sign_in {
+		text-align: right;
+	}
+
+
+	input[type=email] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	input[type=password] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	input[type=confirm] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	/*SIGN UP*/
+
+	#sign_up_container {
+		background-color: #4D4D4D;
+		width: 35%;
+		height: 0 auto;
+		font-size: 1.3em;
+		font-weight: 100;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.sign_up_heading {
+		color: #F4F4F4;
+		font-size: 5vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		color: #F3F3F3;
+		font-weight: 100;
+	}
+
+	.sign_up_top {
+		margin-top: 5%;
+	}
+
+	#signup_name {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signup_email {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signup_username {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signup_password {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signup_confirm_password {
+		height: 30px;
+		width: 50%;
+		color: #F4F4F4;
+	}
+
+	#signup_remember_me {
+		font-size: 1.3vw;
+		text-align: left;
+		color: #F4F4F4;
+	}
+
+	#signup_forgot_password {
+		font-size: 1.3vw;
+		color: white;
+		text-decoration: none;
+	}
+
+	.signup_submit {
+		width: 100px;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	.signup_button {
+		width: 10%;
+	}
+
+	input[type=name] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+
+	}
+
+	input[type=email] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+	input[type=username] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+
+	}
+
+	input[type=password] {
+		border: none;
+		border-bottom: 2px solid #CDDBE3;
+		background-color: #3A3B3C;
+		color: white;
+		font-size: 1.2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	}
+
+
+	/*DASHBOARD*/
+	.dashboard {
+
+	}
+
+	.user_dashboard {
+	}
+
+	.user_account_info {
+		color: #F3F3F3;
+	}
+
+	.my_account {
+		color: #F3F3F3;
+		font-size: 8vw;
+		font-weight: 100px;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+	}
+
+	#user_info {
+		height: 300px;
+		width: 85%;
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 4%;
+	}
+
+	#favorites {
+		height: 300px;
+		width: 85%;
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 4%;
+	}
+
+	#fridge {
+		height: 300px;
+		width: 85%;
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 4%;
+	}
+
+	/*DASHBOARD TEXT*/
+	.my_account_info {
+		color: #F3F3F3;
+		font-size: 3vw;
+		font-weight: lighter;
+		text-align: left;
+	}
+
+	.favorite_recipes {
+		color: #F3F3F3;
+		font-size: 3vw;
+		font-weight: lighter;
+		text-align: left;
+	}
+
+	.my_fridge {
+		color: #F3F3F3;
+		font-size: 3vw;
+		font-weight: lighter;
+		text-align: left;
+	}
+
+	/*INGREDIENT PAGE*/
+	.ingredient_title{
+		padding-top:40px;
+		color:#ECECEC;
+		font-size:20px;
+
+	}
+
+	.single_ingredient{
+		margin-right:20%;
+	}
+
+
+
+
+	.ingredient_head {
+		margin-top: 15px;
+		margin-bottom: -4px;
+		width:66.7%;
+	}
+	 .ingredient_box{
+		background-color: #4D4D4D;
+		height:400px;
+		margin-bottom: 24px;
+		margin-top: -2px;
+		width: 66.7%;
+		font-size: 1.3em;
+		font-weight: 100;
+		color:#ECECEC;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		text-align: center;
+	 }
+
+
+
+	.buttons {
+	}
+
+	/*BROWSE PAGE*/
+
+	table {
+		width: 100%;
+	}
+
+	.all_recipes {
+		font-size: 5vw;
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+	}
+
+	#browse_table {
+		text-align: center;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+
+	.browse_image {
+		height: 12vw;
+		width: 17vw;
+
+	}
+
+	.browse_name {
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2.5vw;
+		text-transform: uppercase;
+		color: #F3F3F3;
+	}
+
+	.browse_table_row {
+		margin-left: 10%;
+	}
+
+	.thumbnail {
+		border-style: solid;
+		border-width: 2px;
+		border-color: #7B8489 !important;
+		background-color: #7B8489 !important;
+		border-radius: 10px !important;
+		text-align: center;
+		padding-top: 20px !important;
+	}
+
+	/*SINGLE RECIPE PAGE*/
+
+	.recipe_name {
+		color: white;
+		font-size: 5vw;
+		text-align: center;
+		margin-top: 4%;
+		margin-left: 10%;
+	}
+
+	.single_recipe_box {
+		background-color: #7B8489;
+		height: 0 auto;
+		width: 68%;
+		border-radius: 10px;
+		position: relative;
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2.5vw;
+	}
+
+	.single_recipe_box_tab {
+		background-color: #7B8489;
+		height: 200px;
+		width: 18%;
+		border-radius: 33px;
+		position: absolute;
+		margin-left: 25%;
+		margin-top: -37px;
+	}
+
+	.single_recipe_photo {
+		height: 22vw;
+		width: 22vw;
+		margin-left: 5.3%;
+		border: solid #F3F3F3 2px;
+	}
+
+	.single_recipe_title {
+		font-family: 'Sofia', cursive;
+		font-size: 5vw;
+		text-align: center;
+		font-weight: 100;
+		color: #3A3B3C;
+	}
+
+	.single_recipe_prep_time {
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2vw;
+		text-align: center;
+	}
+
+	.single_recipe_cook_time {
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2vw;
+		text-align: center;
+	}
+
+	.single_recipe_total_time {
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2vw;
+		text-align: center;
+	}
+
+	.directions_title {
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 4vw;
+		color: #3A3B3C;
+		font-weight: 100px;
+		margin-top: 5%;
+		text-align: left;
+	}
+
+	.ingredients_title {
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 4vw;
+		color: #3A3B3C;
+		font-weight: 100px;
+		margin-top: 5%;
+		text-align: left;
+	}
+
+	.recipe_ingredients {
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2.5vw;
+		text-align: left;
+	}
+
+	.single_recipe_directions {
+		color: #F3F3F3;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		font-size: 2.5vw;
+	}
+
+	.recipe_info {
+		height: 0 auto;
+	}
+
+	.recipe_directions {
+	}
+
+
+	/*TIER RECIPE PAGE*/
+
+	.recipes_results {
+		margin-bottom: 10%;
+		font-family: 'Sofia', cursive;
+		font-size: 4vw;
+		text-align: center;
+		color: #F3F3F3;
+	}
+
+	.tier_one {
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 1%;
+		font-size: 2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+		color: #F3F3F3;
+	}
+
+	.tier_two {
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 1%;
+		font-size: 2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+		color: #F3F3F3;
+	}
+
+	.tier_three {
+		background-color: #7B8489;
+		border-radius: 10px;
+		margin-bottom: 1%;
+		font-size: 2vw;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+		color: #F3F3F3;
+	}
+
+
+	/*FOOTER*/
+
+	.footer {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+		text-align: center;
+		width: 100%;
+		color: #7B8489;
+		float: left;
+		background-color: #3A3B3C;
+	}
+
+	#forgot_password {
+		color: #F4F4F4;
+		text-decoration: none;
+	}
+
+	.content_container {
+		min-height: 80vw;
+	}
 
-/*FOOTER*/
-
-.footer {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	text-align: center;
-	width: 100%;
-	color: #7B8489;
-	float: left;
-	background-color: #3A3B3C;
 }
-
-#forgot_password {
-	color: #F4F4F4;
-	text-decoration: none;
-}
-
-.content_container {
-	min-height: 80vh;
-}
-
-
-
 
-/*MODAL*/

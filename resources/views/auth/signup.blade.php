@@ -26,10 +26,6 @@
 
 @section('content')
 
-{{-- <?php var_dump($_POST); ?> --}}
-
-
-
 	<section class="sign_up_top">
 	</section>
 
@@ -64,11 +60,11 @@
 					<br><br> --}}
 
 						{{-- <label for="email">Your email</label><br> --}}
-					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL" value="{{ old('email') }}">
+					<input type="email" name="email" id="signup_email" class="inpt" required="required" placeholder="EMAIL" value="{{old('email')}}">
 
 					<br><br>
 
-					<input type="username" name="username" id="signup_username" class="inpt" required="required" placeholder="USERNAME" value="{{ old('username') }}">
+					<input type="username" name="username" id="signup_username" class="inpt" required="required" placeholder="USERNAME" value="{{old('username')}}">
 
 					<br><br>
 

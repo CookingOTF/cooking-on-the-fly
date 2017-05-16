@@ -33,7 +33,7 @@
         	</ul>
 
         	<ul class="nav navbar-nav navbar-right">
-        	  <li><a href="/">LOG OUT</a></li>
+        	  <li><a href="/signout/">LOG OUT</a></li>
             </ul>
             
           </div><!--/.nav-collapse -->
