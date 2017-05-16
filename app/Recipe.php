@@ -14,6 +14,7 @@ class Recipe extends Model
                 'name',
                 'description',
                 'image',
+                'servings',
                 'prep_time',
                 'cook_time'
             )->where('id', $id)
@@ -104,7 +105,8 @@ class Recipe extends Model
 
     public function getCookTimeAttribute($value)
     {
-        return $this->secondsToHours($value);
+
+        return $value ? $this->secondsToHours($value) : NULL;
     }
 
     public function getPrepTimeAttribute($value)
