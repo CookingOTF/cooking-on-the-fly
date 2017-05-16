@@ -81,7 +81,7 @@
 						<button type="submit" class="btn btn-default">Submit</button>
 						<br>
 						<a class="or_sign_in" href="/signin/">(OR SIGN IN)</a>
-
+						<br><br>
 						</div>
 					</form>
 				</div>

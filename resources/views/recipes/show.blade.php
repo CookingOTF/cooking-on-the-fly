@@ -28,8 +28,12 @@
 			<div class="single_recipe_information col-xs-7">
 			<p class="single_recipe_title">{{$recipe->name}}</p>
 			<p class="single_recipe_prep_time">Prep Time: {{$recipe->prep_time}}</p>
-			<p class="single_recipe_cook_time">Cook Time: {{$recipe->cook_time}}</p>
+			
+			@if($recipe->cook_time)
+				<p class="single_recipe_cook_time">Cook Time: {{$recipe->cook_time}}</p>
+
 			<p class="single_recipe_total_time">Total Time: {{$recipe->total_time}}</p>
+			@endif
 			</div>
 		</div>
 
