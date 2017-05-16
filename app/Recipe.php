@@ -105,13 +105,24 @@ class Recipe extends Model
 
     public function getCookTimeAttribute($value)
     {
-
-        return $value ? $this->secondsToHours($value) : NULL;
+        if ($value > 0) {
+            $this->secondsToHours($value);
+        } elseif ($value === 0) {
+            return NULL;
+        } else {
+            return 'You\'ll somehow finish ' . $this->secondsToHours(-$value) . ' before you started.';
+        }
     }
 
     public function getPrepTimeAttribute($value)
     {
-        return $this->secondsToHours($value);
+        if ($value > 0) {
+            return $this->secondsToHours($value);
+        } elseif ($value === 0) {
+            return 'Instant.';
+        } else {
+            return 'You\'ll somehow finish ' . $this->secondsToHours(-$value) . ' before you started.';
+        }
     }
 
     public function getTotalTimeAttribute()
