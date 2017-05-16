@@ -106,11 +106,11 @@ class Recipe extends Model
     public function getCookTimeAttribute($value)
     {
         if ($value > 0) {
-            $this->secondsToHours($value);
+            return $this->secondsToHours($value);
         } elseif ($value === 0) {
             return NULL;
         } else {
-            return 'You\'ll somehow finish ' . $this->secondsToHours(-$value) . ' before you started.';
+            return 'You\'ll somehow finish ' . preg_replace(['~(\d+ (?:hours?|minutes?|hours?, \d{1,2} minutes?,)),? (\d{1,2} (?:minutes?|seconds?))$~'], '$1 and $2', $this->secondsToHours(-$value)) . ' before you started.';
         }
     }
 
@@ -121,13 +121,13 @@ class Recipe extends Model
         } elseif ($value === 0) {
             return 'Instant.';
         } else {
-            return 'You\'ll somehow finish ' . $this->secondsToHours(-$value) . ' before you started.';
+            return 'You\'ll somehow finish ' . preg_replace(['~(\d+ (?:hours?|minutes?|hours?, \d{1,2} minutes?,)),? (\d{1,2} (?:minutes?|seconds?))$~'], '$1 and $2', $this->secondsToHours(-$value)) . ' before you started.';
         }
     }
 
     public function getTotalTimeAttribute()
     {
-        if (!isset($this->attributes['prep_time'])) {
+        if (!$this->attributes['cook_time'] || !$this->attributes['prep_time']) {
             return NULL;
         }
 
