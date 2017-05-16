@@ -16,7 +16,7 @@
 		    position: absolute;
 		    top: 0;
 		    left: 0;
-			background-image: url('/img/pasta.png');
+			background-image: url('/img/pasta.png') !important;
 			background-size: cover;
 			width: 100%;
     		height: 100%;

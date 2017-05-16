@@ -87,11 +87,10 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'info' => [
-                    'name' => NAME,
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,/* If you delete this line (the *whole* line, not just the value), it'll use the default image */
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
+                    'name' => 'Peanut Butter and Jelly Sandwich',
+                    'description' => "An easy, classic lunch favorite",
+                    'image' => 'pbj.png',
+                    'prep_time' => '00:05:00'
                 ],
                 /*
                 |====================================================
@@ -118,12 +117,7 @@ class RecipesTableSeeder extends Seeder
                 |
                 */
                 'directions' => [
-                    STEP1,
-                    STEP2,
-                    STEP3/*
-                    add as many as you want, just make
-                    sure no comma on the last one of course :P
-                    */
+                    "Place 2 slices of bread on flat surface. Dispense peanut butter with a buttter knife and spread it evenly on one of the 2 bread slices. Repeat this step with jelly on the other slice of bread. Place the 2 slices together so that the sides with peanut butter and jelly are facing each other. Your sandwich is ready to eat!"
                 ],
                 /*
                 |====================================================
@@ -159,12 +153,10 @@ class RecipesTableSeeder extends Seeder
                 | too long to fit in the database.
                 |
                 */
-                'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE,
-                    NAME => DISPLAY_IN_RECIPE,
-                    NAME => DISPLAY_IN_RECIPE/*
-                    same as before, no comma on last one :P
-                    */
+                 'ingredients' => [
+                    'peanut butter' => 'Peanut Butter - 1 tbsp',
+                    'jelly' => 'Jelly - 1 tbsp',
+                    'sliced bread' => 'Sliced Bread - 2 Slices'
                 ]
             ],
             /*
@@ -180,33 +172,98 @@ class RecipesTableSeeder extends Seeder
             */
             [
                 'info' => [
-                    'name' => NAME,
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
-                ],
+                    'name' => 'Lasagna',
+                    'description' => "An easy delicous recipe for an italian favorite",
+                    'image' => 'lasagna.jpg',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '01:10:00'
+                    ],
                 'directions' => [
-                    STEP1
+                    "Stir the ricotta cheese, mozzarella cheese, 1/2 cup Parmesan cheese and eggs in a medium bowl and set it aside. In a 3-quart saucepan over medium-high heat, cook the beef until it's well browned, stirring often to break up the meat. Pour off any fat. Stir the sauce in the saucepan. Spoon 1 cup meat mixture in each of two 2-quart shallow baking dishes. Top each with 2 lasagna noodles and about 1 1/4 cups cheese mixture. Repeat the layers. Top with the remaining 2 lasagna noodles, remaining meat mixture and the Parmesan cheese. Bake at 400°F. for 30 minutes or it's until hot and bubbling. Let stand for 10 minutes."
                 ],
                 'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE
+                    'ricotta' => 'Ricotta Cheese - 3 cups',
+                    'mozzarella' => 'Shredded Mozzarella Cheese - 12 oz',
+                    'parmesan' => 'Grated Parmesan - 3/4 cup',
+                    'ground beef'=> 'Ground Beef - 1 lb',
+                    'tomato sauce'=> 'Italian Tomato Sauce - 1 jar (45 oz)',
+                    'lasagna'=> 'Lasagna Noodles - 12 (cooked and drained)'
+
+
                 ]
             ],
             # more as needed...
             [
                 'info' => [
-                    'name' => NAME,
-                    'description' => DESCRIPTION,
-                    'image' => IMAGE,
-                    'prep_time' => PREP_TIME,
-                    'cook_time' => COOK_TIME
+                    'name' => 'Asian Chicken Strifry',
+                    'description' => 'Chicken cooked with colorful veggies and tossed in a flavorful garlic sauce',
+                    'image' => 'stirfry.png',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '00:13:00',
+                    'servings' =>'4'
                 ],
                 'directions' => [
-                    STEP1
+                    "Place 1 teaspoon of oil in a large pan and heat over medium high heat.Add the broccoli, mushrooms and bell pepper to the pan. Cook for 5-6 minutes or until vegetables are tender.",
+
+"Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
+"Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
+"Add the chicken to the pan in a single layer and season with salt and pepper to taste.
+Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
+"Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
+"In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch,
+Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
+"Serve immediately, with steamed rice if desired."
                 ],
                 'ingredients' => [
-                    NAME => DISPLAY_IN_RECIPE
+                    'oil' => 'Vegetable Oil - 1 tsp',
+                    'broccoli' => 'Broccoli Florets - 1 cup',
+                    'mushrooms' => 'Sliced Mushrooms - 1 cup',
+                    'bell pepper' => 'Sliced Bell Pepper - 1',
+                    'chicken' => 'Chicken Breast - 1 lb',
+                    'garlic'=> 'Minced Garlic - 4 cloves',
+                    'chicken broth'=>'Chicken Broth - 3/4 cup',
+                    'sugar'=> 'Sugar - 1 1/2 tsp',
+                    'soy'=>'Soy Sauce - 1 tbsp',
+                    'sesame oil' => 'Sesame Oil - 2 tsp',
+                    'cornstarch' => 'Cornstarch - 2 tsp'
+
+                ],
+
+
+    [
+                'info' => [
+                    'name' => 'Asian Chicken Strifry',
+                    'description' => 'Chicken cooked with colorful veggies and tossed in a flavorful garlic sauce',
+                    'image' => 'stirfry.png',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '00:13:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                    "Place 1 teaspoon of oil in a large pan and heat over medium high heat.Add the broccoli, mushrooms and bell pepper to the pan. Cook for 5-6 minutes or until vegetables are tender.",
+
+"Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
+"Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
+"Add the chicken to the pan in a single layer and season with salt and pepper to taste.
+Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
+"Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
+"In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch,
+Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
+"Serve immediately, with steamed rice if desired."
+                ],
+                'ingredients' => [
+                    'oil' => 'Vegetable Oil - 1 tsp',
+                    'broccoli' => 'Broccoli Florets - 1 cup',
+                    'mushrooms' => 'Sliced Mushrooms - 1 cup',
+                    'bell pepper' => 'Sliced Bell Pepper - 1',
+                    'chicken' => 'Chicken Breast - 1 lb',
+                    'garlic'=> 'Minced Garlic - 4 cloves',
+                    'chicken broth'=>'Chicken Broth - 3/4 cup',
+                    'sugar'=> 'Sugar - 1 1/2 tsp',
+                    'soy'=>'Soy Sauce - 1 tbsp',
+                    'sesame oil' => 'Sesame Oil - 2 tsp',
+                    'cornstarch' => 'Cornstarch - 2 tsp'
+
                 ]
             ]/* no comma after the last one ofc :P */
         ];
