@@ -16,10 +16,9 @@ class Recipe extends Model
         'cook_time'
     ];
 
-    public function __construct()
-    {
-        $this->attributes['total_time'] = $this->attributes['prep_time'] + $this->attributes['cook_time'];
-    }
+    protected $appends = [
+        'total_time'
+    ];
 
     public function ingredients()
     {
@@ -88,8 +87,12 @@ class Recipe extends Model
         return $this->secondsToHours($value);
     }
 
-    public function getTotalTimeAttribute($value)
+    public function getTotalTimeAttribute()
     {
-        $return $this->secondsToHours($value);
+        if (!isset($this->attributes['prep_time'])) {
+            return NULL;
+        }
+
+        return $this->secondsToHours($this->attributes['total_time'] = $this->attributes['prep_time'] + $this->attributes['cook_time']);
     }
 }
