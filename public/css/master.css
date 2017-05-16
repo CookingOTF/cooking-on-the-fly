@@ -166,11 +166,6 @@ a {
 
 /*SIGN IN PAGE*/
 
-.sign_in_page {
-	background-image: url('/img/blueberries.png');
-	background-size: cover;
-}
-
 #sign_in_container {
 	background-color: #4D4D4D;
 	width: 35%;
