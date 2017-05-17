@@ -17,19 +17,24 @@ class Recipe extends Model
         foreach ($recipes as $index => $recipe) {
             $ingredients = $recipe
                 ->ingredients()
-                ->lists('name')
+                ->lists('name', 'display_name')
                 ->all();
 
             $lacking = array_diff($ingredients, $q);
 
-            if (empty($lacking)) {
-                dump($recipe->name);
+            if (empty($lacking)) { /* Do you have all the ingredients you need? */
                 $onhand[] = $recipe;
-                continue;
+            } elseif ( /* Would you have what you needed if you borrowed a little this or that from a neighbor? */
+                sizeof($lacking) <= 2 /* We don't recommend you ask to borrow too many things at once */
+                and array_diff($lacking, Ingredient::BORROWABLE) /* We also don't recommend you try asking for something like a flying, polka-dotted slice of cherry pie with a moustache */
+            ) {
+                $lacking = array_keys($lacking);
+                sort($lacking);
+                $borrow[implode('and ', $lacking)] = $recipe;
             }
         }
 
-        return $onhand;
+        return ['onhand' => $onhand, 'borrow' => $borrow];
     }
 
     public static function getCard($id)
