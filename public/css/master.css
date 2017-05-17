@@ -397,7 +397,7 @@ input[type=password] {
 }
 
 .user_account_info {
-	color: #F3F3F3;
+	color: #3A3B3C;
 }
 
 .my_account {
@@ -419,7 +419,7 @@ input[type=password] {
 #favorites {
 	height: 300px;
 	width: 85%;
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	border-radius: 10px;
 	margin-bottom: 4%;
 }
@@ -445,6 +445,7 @@ input[type=password] {
 	font-size: 3vw;
 	font-weight: lighter;
 	text-align: left;
+	color: #3A3B3C;
 }
 
 .my_fridge {
@@ -469,23 +470,23 @@ input[type=password] {
 /*BROWSE PAGE*/
 
 .ingredient_head {
-margin-top: 15px;
-margin-bottom: -2px;
-width:66.7%;
+	margin-top: 15px;
+	margin-bottom: -2px;
+	width:66.7%;
 }
 .ingredient_box{
-	background-color: #4D4D4D;
+	background-color: #3A3B3C;
 	height:400px;
 	margin-bottom: 24px;
 	margin-top: -2px;
-width: 66.7%;
-font-size: 1.3em;
-font-weight: 100;
-color:#ECECEC;
-font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-border-bottom-left-radius: 6px;
-border-bottom-right-radius: 6px;
-text-align: center;
+	width: 66.7%;
+	font-size: 1.3em;
+	font-weight: 100;
+	color:#ECECEC;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	text-align: center;
 }
 
 table {
@@ -517,7 +518,7 @@ table {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 	text-transform: uppercase;
-	color: #F3F3F3;
+	color: #3A3B3C;
 }
 
 .browse_table_row {
@@ -527,8 +528,8 @@ table {
 .thumbnail {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #7B8489 !important;
-	background-color: #7B8489 !important;
+	border-color: #CDDBE3 !important;
+	background-color: #CDDBE3 !important;
 	border-radius: 10px !important;
 	text-align: center;
 	padding-top: 20px !important;
