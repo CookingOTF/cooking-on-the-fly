@@ -5,7 +5,7 @@
 @section('content')
 
 <form action="{{ action('RecipesController@searchResults') }}" method="GET">
-{!! csrf_field() !!}
+
 <section class='text-center ingredients'>
 	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
 <img class='ingredient_head' src="/img/veghead.png">	
