@@ -18,6 +18,8 @@ class AuthController extends BaseController
 
     protected $loginPath = '/signin/';
 
+    protected $username = 'username';
+
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
