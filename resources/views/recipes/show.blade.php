@@ -8,12 +8,6 @@
 	<h1 class="recipe_name"></h1>
 </section>
 
-
-
-
-
-
-
 <div class="single_recipe_box_tab"></div>
 
 <div class="row">
@@ -27,13 +21,19 @@
 
 			<div class="single_recipe_information col-xs-7">
 			<p class="single_recipe_title">{{$recipe->name}}</p>
-			<p class="single_recipe_prep_time">Prep Time: {{$recipe->prep_time}}</p>
-			
+
+			@if($recipe->prep_time)
+				<p class="single_recipe_prep_time">Prep Time: {{$recipe->prep_time}}</p>
+			@endif
+
 			@if($recipe->cook_time)
 				<p class="single_recipe_cook_time">Cook Time: {{$recipe->cook_time}}</p>
-
-			<p class="single_recipe_total_time">Total Time: {{$recipe->total_time}}</p>
 			@endif
+
+			@if($recipe->total_time)
+				<p class="single_recipe_total_time">Total Time: {{$recipe->total_time}}</p>
+			@endif
+			
 			</div>
 		</div>
 

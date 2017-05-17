@@ -166,11 +166,6 @@ a {
 
 /*SIGN IN PAGE*/
 
-.sign_in_page {
-	background-image: url('/img/blueberries.png');
-	background-size: cover;
-}
-
 #sign_in_container {
 	background-color: #4D4D4D;
 	width: 35%;
@@ -278,6 +273,7 @@ input[type=confirm] {
 
 #sign_up_container {
 	background-color: #4D4D4D;
+	height: 0 auto;
 	font-size: 1.3em;
 	font-weight: 100;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -691,6 +687,7 @@ table {
 	color: #7B8489;
 	float: left;
 	background-color: #3A3B3C;
+	margin-top: 0 auto !important;
 }
 
 #forgot_password {
