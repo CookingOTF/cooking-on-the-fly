@@ -9,36 +9,27 @@ class Recipe extends Model
 {
     public static function getSearchResults($q)
     {
-        dd($q);
         $recipes = Recipe::select('id', 'name', 'description', 'image')
             ->with('ingredients')
-            ->get();
-        
-        $onhand = $recipes;
+            ->get()
+            ->all();
 
-        foreach ($onhand as $index => &$recipe) {
-            foreach ($recipe->ingredients as $ingredient) {
-                if (!in_array($ingredient, $q)) {
-                    unset($recipe);
-                    break;
-                }
-            }
-            if (isset($recipe)) {
-                dd('hi');
-                unset($recipes[$index]);
-            }
-        }
+        foreach ($recipes as $index => $recipe) {
+            $ingredients = $recipe
+                ->ingredients()
+                ->lists('name')
+                ->all();
 
-        dd($recipes);
+            $lacking = array_diff($ingredients, $q);
 
-        foreach ($recipes as &$recipe) {
-            foreach ($recipe->ingredient->name as $ingredient) {
-                if (!in_array($ingredient, $q)) {
-                    unset($recipe);
-                    break;
-                }
+            if (empty($lacking)) {
+                dump($recipe->name);
+                $onhand[] = $recipe;
+                continue;
             }
         }
+
+        return $onhand;
     }
 
     public static function getCard($id)
