@@ -24,6 +24,7 @@ class Recipe extends Model
                 ->all();
 
             $lacking = array_diff($ingredients, $q);
+            ksort($lacking);
 
             if (empty($lacking)) { /* Do you have all the ingredients you need? */
                 $onhand[] = $recipe;
@@ -31,13 +32,16 @@ class Recipe extends Model
                 sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
                 and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
             ) {
-                $lacking = array_keys($lacking);
-                sort($lacking);
-                $borrow[implode(' and ', $lacking)] = $recipe;
+                $borrow[implode(' and ', array_keys($lacking))] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
+
+                $borrow[] = $recipe;
+            } else {
+                $recipe->lacking = array_keys($lacking);
+                $goShopping[] = $recipe;
             }
         }
 
-        return ['onhand' => $onhand, 'borrow' => $borrow];
+        return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
     }
 
     public static function getCard($id)
