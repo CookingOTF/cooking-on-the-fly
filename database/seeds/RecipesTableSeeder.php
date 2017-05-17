@@ -185,11 +185,9 @@ class RecipesTableSeeder extends Seeder
                     'ricotta' => '3 cups ricotta cheese',
                     'mozzarella' => '12 oz shredded mozzarella cheese ',
                     'parmesan' => '3/4 cup grated parmesan',
-                    'ground beef'=> ' 1 lb ground beef',
-                    'tomato sauce'=> '1 jar (45 oz) Italian tomato sauce',
+                    'ground beef' => ' 1 lb ground beef',
+                    'tomato sauce' => '1 jar (45 oz) Italian tomato sauce',
                     'lasagna'=> '12 lasagna noodles (cooked and drained)'
-
-
                 ]
             ],
             # more as needed...
@@ -200,19 +198,26 @@ class RecipesTableSeeder extends Seeder
                     'image' => 'stirfry.png',
                     'prep_time' => '00:20:00',
                     'cook_time' => '00:13:00',
-                    'servings' =>'4'
+                    'servings' => 4
                 ],
                 'directions' => [
                     "Place 1 teaspoon of oil in a large pan and heat over medium high heat.Add the broccoli, mushrooms and bell pepper to the pan. Cook for 5-6 minutes or until vegetables are tender.",
 
-"Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
-"Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
-"Add the chicken to the pan in a single layer and season with salt and pepper to taste.
-Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
-"Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
-"In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch,
-Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
-"Serve immediately, with steamed rice if desired."
+                    "Remove the vegetables from the pan; transfer to a plate and cover with foil to keep warm.",
+
+                    "Wipe the pan clean with a paper towel, then heat the remaining tablespoon of oil over high heat.",
+
+                    "Add the chicken to the pan in a single layer and season with salt and pepper to taste.",
+
+                    "Cook for 3-4 minutes per side, or until chicken is browned and cooked through.",
+
+                    "Lower heat to medium, add the garlic and cook for 30 seconds. Add the vegetables back to the pan.",
+
+                    "In a small bowl, whisk together the chicken broth, sugar, soy sauce, sesame oil and cornstarch",
+
+                    "Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 minutes or until sauce has just thickened.",
+
+                    "Serve immediately, with steamed rice if desired."
                 ],
                 'ingredients' => [
                     'oil' => '1 teaspoon vegetable oil',
@@ -226,23 +231,21 @@ Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 mi
                     'soy'=>'1 tablespoon soy sauce',
                     'sesame oil' => '1 teaspoon sesame oil',
                     'cornstarch' => '2 teapsoons cornstarch'
-
                 ],
-
-
-    [
+            ],
+            [
                 'info' => [
                     'name' => 'Old Fashioned Pancakes',
                     'description' => 'Simple recipe for home made pancakes',
                     'image' => 'pancake.jpg',
                     'prep_time' => '00:05:00',
                     'cook_time' => '00:15:00',
-                    'servings' =>'8'
+                    'servings' => 8
                 ],
                 'directions' => [
                     "In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.",
 
-"Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot."
+                    "Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot."
                 ],
                 'ingredients' => [
                     'flour' => '1 1/2 cups all-purpose flour',
@@ -258,8 +261,8 @@ Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 mi
                 ]
             ],
 
-                [
-                            'info' => [
+            [
+                'info' => [
                     'name' => 'Mac and Cheese with Chicken and Broccoli',
                     'description' => 'A twist on classic Mac n Cheese',
                     'image' => 'mac.jpg',
@@ -269,60 +272,63 @@ Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 mi
                 ],
                 'directions' => [
                     "Place a pot of water on to boil for macaroni.",
+
                     "Heat a medium pan over medium to medium high heat. Add extra-virgin olive oil and chicken and season with salt and pepper. Saute a couple of minutes then add onion and cook another 5 to 7 minutes until onions are tender and chicken is cooked through. Turn off heat and reserve.",
+
                     "To boiling pasta water, add pasta and salt to season the cooking water. Cook 5 minutes, then add broccoli and cook 3 minutes more or until pasta is cooked to al dente and florets are just tender.",
+
                     "While pasta cooks, heat a medium sauce pot over medium heat. Add butter and melt, then add flour, cayenne and paprika and whisk together over heat until roux bubbles then cook a minute more. Whisk in milk and stock and raise heat a little to bring sauce to a quick boil. Simmer sauce to thicken about 5 minutes.",
+
                     "Drain macaroni or pasta and broccoli florets. Add back to pot and add chicken to the pasta and broccoli.",
+
                     "Add cheese to milk sauce and stir to melt it in, about a minute or so. Stir in mustard and season sauce with salt and pepper. Pour sauce over chicken and broccoli and cooked pasta and stir to combine. Adjust seasonings, transfer to a large serving platter and serve."
                 ],
 
                 'ingredients' => [
                     'oil' => '2 tablespoon extra-virgin olive oil',
                     'chicken' => '1 lb chopped chicken breast',
-                    'onion'=> '1 chopped small onion',
-                    'pasta'=>'1 lb macaroni elbows',
-                    'broccoli'=>'2 1/2 cups broccoli florets'
-                    'butter'=> '3 tablespoons butter',
-                    'flour'=> '3 tablespoons all-purpose flour',
-                    'chili'=> '1/2 teaspoon chili powder',
-                    'paprika'=> '1 teaspoons paprika',
-                    'milk'=>'3 cups whole milk',
-                    'chicken broth'=> '1 cup chicken stock',
-                    'cheddar'=> '3 cups Cheddar cheese',
-                    'mustard'=> '1 tablespoon mustard'
+                    'onion' => '1 chopped small onion',
+                    'pasta' => '1 lb macaroni elbows',
+                    'broccoli' => '2 1/2 cups broccoli florets',
+                    'butter' => '3 tablespoons butter',
+                    'flour' => '3 tablespoons all-purpose flour',
+                    'chili' => '1/2 teaspoon chili powder',
+                    'paprika' => '1 teaspoons paprika',
+                    'milk' => '3 cups whole milk',
+                    'chicken broth' => '1 cup chicken stock',
+                    'cheddar' => '3 cups Cheddar cheese',
+                    'mustard' => '1 tablespoon mustard'
 
 
                 ]
             ],
-
-
-
             [
-             'info' => [
+                'info' => [
                     'name' => 'Steak and Eggs',
                     'description' => 'Some mornings call for a rich indulgence of buttery eggs and sizzling steaks',
                     'image' => 'sande.jpg',
                     'prep_time' => '00:10:00',
                     'cook_time' => '00:10:00',
-                    'servings' =>'4'
+                    'servings' => 4
                 ],
                 'directions' => [
-                 "Prepare the grill for direct cooking over high heat
-                 (450° to 550°F).",
+                    "Prepare the grill for direct cooking over high heat (450° to 550°F).",
 
-"Lightly brush the steaks on both sides with oil and season evenly with salt, pepper, and the paprika. Allow the steaks to stand at room temperature for 15 to 30 minutes before grilling.",
-"Brush the cooking grates clean. Grill the steaks over direct high heat, with the lid closed as much as possible, until cooked to your desired doneness, 6 to 8 minutes for medium rare, turning once or twice (if flare-ups occur, move the steaks temporarily over indirect heat). When you turn the steaks, place a 12-inch cast-iron skillet on the cooking grate to preheat. Remove the steaks from the grill and let rest for 3 to 5 minutes. Lower the temperature of the grill to medium heat (350° to 450°F).",
-"Coat the skillet with the butter. Crack the eggs into the skillet and season them with salt and pepper. Cook over direct medium heat, with the lid closed as much as possible, until cooked as desired, 4 to 6 minutes for partially runny yolks. Transfer to plates and serve right away with the steak."
+                    "Lightly brush the steaks on both sides with oil and season evenly with salt, pepper, and the paprika. Allow the steaks to stand at room temperature for 15 to 30 minutes before grilling.",
+
+                    "Brush the cooking grates clean. Grill the steaks over direct high heat, with the lid closed as much as possible, until cooked to your desired doneness, 6 to 8 minutes for medium rare, turning once or twice (if flare-ups occur, move the steaks temporarily over indirect heat). When you turn the steaks, place a 12-inch cast-iron skillet on the cooking grate to preheat. Remove the steaks from the grill and let rest for 3 to 5 minutes. Lower the temperature of the grill to medium heat (350° to 450°F).",
+
+                    "Coat the skillet with the butter. Crack the eggs into the skillet and season them with salt and pepper. Cook over direct medium heat, with the lid closed as much as possible, until cooked as desired, 4 to 6 minutes for partially runny yolks. Transfer to plates and serve right away with the steak."
                 ],
                 'ingredients' => [
                     'steak' => '2 New York strip steaks (10-12 oz)',
                     'oil' => '1 tablespoon extra-virgin olive oil',
                     'salt' => 'salt (to taste)',
                     'pepper' => 'ground black pepper (to taste)',
-                    'milk'=> '1 1/4 cups milk',
-                    'paprika'=>'3/4 teaspoon paprika',
-                    'butter'=> '2 tablespoons butter',
-                    'eggs'=>'8 eggs'
+                    'milk' => '1 1/4 cups milk',
+                    'paprika' =>'3/4 teaspoon paprika',
+                    'butter' => '2 tablespoons butter',
+                    'eggs' =>'8 eggs'
 
                 ]
             ]/* no comma after the last one ofc :P */
