@@ -18,12 +18,9 @@
 			</div>
 
 			<div id="hp_two_text">
-				<p class="hp_two_paragraph"><text class="important_text">Without having to make the call!</text> Just add your ingredients and Cooking on the Fly<br>
-					will match you to recipes that you can make with ingredients you already have!<br></p>
+				<p class="col-lg-6 col-lg-offset-3 hp_two_paragraph"><text class="important_text">Without having to make the call!</text> &nbsp; Just tell us what you have on hand, and Cooking on the Fly will do the work for you! We'll match you to recipes that you can make with ingredients you already have, so you don't have to worry or stress over your next meal!</p>
 					
-					<p class="hp_two_paragraph">To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll<br>
-						show you what you can make with what you have, what you can make if you borrow something<br>
-						from a neighbor, and what you can make if you're willing to go to the store.<br></p>
+				<p class="col-lg-6 col-lg-offset-3 hp_two_paragraph">To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll show you what you can make with what you have, what you can make if you borrow something from a neighbor, and what you can make if you're willing to go to the store. And don't forget to save your recipes on your User Dashboard so you can access them later!</p>
 					</div>
 				</div>
 			</div>

@@ -185,10 +185,11 @@ class RecipesTableSeeder extends Seeder
                     'ricotta' => '3 cups ricotta cheese',
                     'mozzarella' => '12 oz shredded mozzarella cheese ',
                     'parmesan' => '3/4 cup grated parmesan',
-                    'ground beef' => ' 1 lb ground beef',
-                    'tomato sauce' => '1 jar (45 oz) Italian tomato sauce',
+
+                    'ground beef'=> ' 1 lb ground beef',
+                    'tomato sauce'=> '1 jar (45 oz) Italian tomato sauce',
                     'lasagna'=> '12 lasagna noodles (cooked and drained)'
-                ]
+
             ],
             # more as needed...
             [
@@ -231,6 +232,7 @@ class RecipesTableSeeder extends Seeder
                     'soy'=>'1 tablespoon soy sauce',
                     'sesame oil' => '1 teaspoon sesame oil',
                     'cornstarch' => '2 teapsoons cornstarch'
+
                 ],
             ],
             [
@@ -260,9 +262,10 @@ class RecipesTableSeeder extends Seeder
 
                 ]
             ],
+              [
 
-            [
-                'info' => [
+     
+                            'info' => [
                     'name' => 'Mac and Cheese with Chicken and Broccoli',
                     'description' => 'A twist on classic Mac n Cheese',
                     'image' => 'mac.jpg',
@@ -319,17 +322,17 @@ class RecipesTableSeeder extends Seeder
                     "Brush the cooking grates clean. Grill the steaks over direct high heat, with the lid closed as much as possible, until cooked to your desired doneness, 6 to 8 minutes for medium rare, turning once or twice (if flare-ups occur, move the steaks temporarily over indirect heat). When you turn the steaks, place a 12-inch cast-iron skillet on the cooking grate to preheat. Remove the steaks from the grill and let rest for 3 to 5 minutes. Lower the temperature of the grill to medium heat (350° to 450°F).",
 
                     "Coat the skillet with the butter. Crack the eggs into the skillet and season them with salt and pepper. Cook over direct medium heat, with the lid closed as much as possible, until cooked as desired, 4 to 6 minutes for partially runny yolks. Transfer to plates and serve right away with the steak."
+
                 ],
                 'ingredients' => [
                     'steak' => '2 New York strip steaks (10-12 oz)',
                     'oil' => '1 tablespoon extra-virgin olive oil',
                     'salt' => 'salt (to taste)',
                     'pepper' => 'ground black pepper (to taste)',
-                    'milk' => '1 1/4 cups milk',
-                    'paprika' =>'3/4 teaspoon paprika',
-                    'butter' => '2 tablespoons butter',
-                    'eggs' =>'8 eggs'
-
+                    'milk'=> '1 1/4 cups milk',
+                    'paprika'=>'3/4 teaspoon paprika',
+                    'butter'=> '2 tablespoons butter',
+                    'eggs'=>'8 eggs'
                 ]
             ]/* no comma after the last one ofc :P */
         ];
