@@ -11,7 +11,7 @@
 
 <div class="row">
 	@foreach($recipes as $index=>$recipe)
-		<div class="col-md-3 col-sm-4">
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 			<div class="thumbnail">
 				<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
 					<p>

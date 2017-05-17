@@ -4,6 +4,6 @@
 	<title>Test</title>
 </head>
 <body>
-	<?php var_dump($categories); ?>
+	<a href="{{ action('RecipesController@searchResults', ['q' => ['potato']]) }}"></a>
 </body>
 </html>
