@@ -34,65 +34,51 @@ if (    isset($_SERVER['REQUEST_URI'])
 */
 
 /*
-|---------------------------------------------
-| Note
-|---------------------------------------------
-| All routes with closures are placeholders
-| until a proper controller is made.
-|
-*/
-
-Route::get('test', 'RecipesController@search');
-
-/*
-|------------
-| Home page
-|------------
+|-----------
+| ~ HOME ~
+|-----------
 */
 
 Route::get('/', 'MainController@welcome');
 
 
 /*
-|---------------------
-| User-related pages
-|---------------------
+|------------
+| ~ USERS ~
+|------------
 */
 
-Route::get('dashboard', /*['middleware' => 'auth'], */function () {
-    return view('users.dashboard');
-});
+Route::get('dashboard', 'UsersController@dashboard');
 
-Route::get('account', function () {
-    return view('users.account');
-});
+Route::get('account', 'UsersController@account');
 
-Route::get('fridge', function () {
-    return view('users.fridge');
-});
+Route::get('account/edit', 'UsersController@edit');
+Route::put('account/edit', 'UsersController@update');
 
 
 /*
-|-----------------------
-| Recipe-related pages
-|-----------------------
+|--------------
+| ~ RECIPES ~
+|--------------
 */
 
 Route::get('recipes/browse', 'RecipesController@browse');
-Route::get('recipes/search/', 'RecipesController@search');
+Route::get('recipes/search', 'RecipesController@search');
 Route::get('recipes/search/{q}', 'RecipesController@searchResults');
 
 Route::resource('recipes', 'RecipesController');
 
 
 /*
-|----------------------
-| Signin/Signup pages
-|----------------------
+|------------------------
+| ~ SIGNING IN/UP/OUT ~
+|------------------------
 */
 
 Route::get('signin', 'Auth\AuthController@getLogin');
 Route::post('signin', 'Auth\AuthController@postLogin');
+
+Route::get('signout', 'Auth\AuthController@getLogout');
 
 Route::get('signup', 'Auth\AuthController@getRegister');
 Route::post('signup', 'Auth\AuthController@postRegister');
