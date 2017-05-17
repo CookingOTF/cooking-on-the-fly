@@ -131,14 +131,8 @@ class Recipe extends Model
 
         $totalTime = $this->attributes['cook_time'] + $this->attributes['prep_time'];
 
-<<<<<<< HEAD
         if ($totalTime < 0) {
             return 'You\'ll somehow finish before you started.';
-=======
-        
-        if ($totalTime < 0) {
-            return 'You\'ll somehow finish ' . preg_replace('~(\d+ (?:hours?|minutes?|hours?, \d{1,2} minutes?,)),? (\d{1,2} (?:minutes?|seconds?))$~', '$1 and $2', $this->secondsToHours($totalTime)) . ' before you started.';
->>>>>>> 9d5b1c7ec694d6e2678b671877f2086f7499014b
         } else {
             return $this->secondsToHours($totalTime);
         }
