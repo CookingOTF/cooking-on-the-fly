@@ -33,7 +33,7 @@ class Recipe extends Model
             ) {
                 $lacking = array_keys($lacking);
                 sort($lacking);
-                $borrow[implode('and ', $lacking)] = $recipe;
+                $borrow[implode(' and ', $lacking)] = $recipe;
             }
         }
 
