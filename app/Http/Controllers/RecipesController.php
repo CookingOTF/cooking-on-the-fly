@@ -37,23 +37,9 @@ class RecipesController extends BaseController
         return view('recipes.search', ['ingredients' => $ingredients]);
     }
 
-    public function searchResults($q = NULL)
+    public function searchResults(Request $request)
     {
-        if (!isset($q)) {
-            return redirect('recipes/search');
-        }
-
-        $recipes = Recipe::select('id', 'name', 'description', 'image')
-            ->with('ingredients')
-            ->paginate(20);
-        foreach ($recipes as &$recipe) {
-            foreach ($recipe->ingredient->name as $ingredient) {
-                if (!in_array($ingredient, $q)) {
-                    unset($recipe);
-                    break;
-                }
-            }
-        }
+        Recipe::getSearchResults($request->q);
 
         return $this->view('recipes.browse', get_defined_vars());
     }

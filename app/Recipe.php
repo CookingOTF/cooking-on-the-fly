@@ -7,6 +7,40 @@ use DB;
 
 class Recipe extends Model
 {
+    public static function getSearchResults($q)
+    {
+        dd($q);
+        $recipes = Recipe::select('id', 'name', 'description', 'image')
+            ->with('ingredients')
+            ->get();
+        
+        $onhand = $recipes;
+
+        foreach ($onhand as $index => &$recipe) {
+            foreach ($recipe->ingredients as $ingredient) {
+                if (!in_array($ingredient, $q)) {
+                    unset($recipe);
+                    break;
+                }
+            }
+            if (isset($recipe)) {
+                dd('hi');
+                unset($recipes[$index]);
+            }
+        }
+
+        dd($recipes);
+
+        foreach ($recipes as &$recipe) {
+            foreach ($recipe->ingredient->name as $ingredient) {
+                if (!in_array($ingredient, $q)) {
+                    unset($recipe);
+                    break;
+                }
+            }
+        }
+    }
+
     public static function getCard($id)
     {
         return [
