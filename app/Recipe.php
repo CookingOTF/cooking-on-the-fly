@@ -14,6 +14,9 @@ class Recipe extends Model
             ->get()
             ->all();
 
+        $onhand = $borrow = [];
+
+        // Here's where the real action starts!
         foreach ($recipes as $index => $recipe) {
             $ingredients = $recipe
                 ->ingredients()
@@ -24,9 +27,9 @@ class Recipe extends Model
 
             if (empty($lacking)) { /* Do you have all the ingredients you need? */
                 $onhand[] = $recipe;
-            } elseif ( /* Would you have what you needed if you borrowed a little this or that from a neighbor? */
-                sizeof($lacking) <= 2 /* We don't recommend you ask to borrow too many things at once */
-                and array_diff($lacking, Ingredient::BORROWABLE) /* We also don't recommend you try asking for something like a flying, polka-dotted slice of cherry pie with a moustache */
+            } elseif ( /* What if you borrowed a little this or that from a neighbor? */
+                sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
+                and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
             ) {
                 $lacking = array_keys($lacking);
                 sort($lacking);
