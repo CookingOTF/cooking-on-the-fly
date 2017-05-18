@@ -66,8 +66,6 @@ class Recipe extends Model
             ->where('recipe_id', $id)
             ->lists('display_in_recipe');
 
-        dd($recipe);
-
         return $recipe;
     }
 
