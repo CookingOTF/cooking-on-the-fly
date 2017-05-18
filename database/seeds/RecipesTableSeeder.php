@@ -190,7 +190,6 @@ class RecipesTableSeeder extends Seeder
                     'tomato sauce'=> '1 jar (45 oz) Italian tomato sauce',
                     'lasagna'=> '12 lasagna noodles (cooked and drained)'
                 ]
-
             ],
             # more as needed...
             [
@@ -260,13 +259,10 @@ class RecipesTableSeeder extends Seeder
                     'chicken broth'=>'3/4 cup chicken broth',
                     'eggs'=> '1 egg',
                     'butter'=>'3 tbsp melted butter'
-
                 ]
             ],
-              [
-
-     
-                            'info' => [
+            [
+                'info' => [
                     'name' => 'Mac and Cheese with Chicken and Broccoli',
                     'description' => 'A twist on classic Mac n Cheese',
                     'image' => 'mac.jpg',
@@ -287,7 +283,6 @@ class RecipesTableSeeder extends Seeder
 
                     "Add cheese to milk sauce and stir to melt it in, about a minute or so. Stir in mustard and season sauce with salt and pepper. Pour sauce over chicken and broccoli and cooked pasta and stir to combine. Adjust seasonings, transfer to a large serving platter and serve."
                 ],
-
                 'ingredients' => [
                     'oil' => '2 tablespoon extra-virgin olive oil',
                     'chicken' => '1 lb chopped chicken breast',
@@ -302,8 +297,6 @@ class RecipesTableSeeder extends Seeder
                     'chicken broth' => '1 cup chicken stock',
                     'cheddar' => '3 cups Cheddar cheese',
                     'mustard' => '1 tablespoon mustard'
-
-
                 ]
             ],
             [
