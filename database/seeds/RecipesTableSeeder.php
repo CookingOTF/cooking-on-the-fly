@@ -189,6 +189,7 @@ class RecipesTableSeeder extends Seeder
                     'ground beef'=> ' 1 lb ground beef',
                     'tomato sauce'=> '1 jar (45 oz) Italian tomato sauce',
                     'lasagna'=> '12 lasagna noodles (cooked and drained)'
+                ]
 
             ],
             # more as needed...
