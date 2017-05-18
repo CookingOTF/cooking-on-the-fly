@@ -1,0 +1,17 @@
+.inpt {
+	height: 30px;
+	width: 50%;
+	color: #F4F4F4;
+	border: none;
+	border-bottom: 2px solid #CDDBE3;
+	background-color: #3A3B3C;
+	color: white;
+	font-size: 1.2vw;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+#forgot_password {
+	font-size: 1.6vw;
+	color: white;
+	text-decoration: none;
+}
