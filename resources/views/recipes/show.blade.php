@@ -16,10 +16,10 @@
 			<br><br>
 
 			<div class="row">
-			<div class="col-xs-4"><img class="single_recipe_photo" src="/img/{{$recipe->image}}">
+			<div class="col-xs-5"><img class="single_recipe_photo" src="/img/{{$recipe->image}}">
 			</div>
 
-			<div class="single_recipe_information col-xs-7">
+			<div class="single_recipe_information col-xs-6">
 			<p class="single_recipe_title">{{$recipe->name}}</p>
 
 			@if($recipe->prep_time)
