@@ -14,22 +14,34 @@ class Recipe extends Model
             ->get()
             ->all();
 
+        $onhand = $borrow = [];
+
+        // Here's where the real action starts!
         foreach ($recipes as $index => $recipe) {
             $ingredients = $recipe
                 ->ingredients()
-                ->lists('name')
+                ->lists('name', 'display_name')
                 ->all();
 
             $lacking = array_diff($ingredients, $q);
+            ksort($lacking);
 
-            if (empty($lacking)) {
-                dump($recipe->name);
+            if (empty($lacking)) { /* Do you have all the ingredients you need? */
                 $onhand[] = $recipe;
-                continue;
+            } elseif ( /* What if you borrowed a little this or that from a neighbor? */
+                sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
+                and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
+            ) {
+                $borrow[implode(' and ', array_keys($lacking))] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
+
+                $borrow[] = $recipe;
+            } else {
+                $recipe->lacking = array_keys($lacking);
+                $goShopping[] = $recipe;
             }
         }
 
-        return $onhand;
+        return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
     }
 
     public static function getCard($id)
