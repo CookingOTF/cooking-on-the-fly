@@ -41,32 +41,34 @@ class Recipe extends Model
             }
         }
 
-        return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
+        return ['recipes' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
     }
 
     public static function getCard($id)
     {
-        return [
-            'recipe' => self::select(
-                'name',
-                'description',
-                'image',
-                'servings',
-                'prep_time',
-                'cook_time'
-            )->where('id', $id)
-                ->first(),
+        $recipe = self::select(
+            'name',
+            'description',
+            'image',
+            'servings',
+            'prep_time',
+            'cook_time'
+        )->where('id', $id)
+        ->first();
 
-            'directions' => Directions::select('content')
-                ->where('recipe_id', $id)
-                ->orderBy('step_no')
-                ->lists('content'),
+        $recipe->directions = Directions::select('content')
+            ->where('recipe_id', $id)
+            ->orderBy('step_no')
+            ->lists('content')->all();
 
-            'ingredients' => DB::table('recipe_ingredients')
-                ->select('display_in_recipe')
-                ->where('recipe_id', $id)
-                ->lists('display_in_recipe')
-        ];
+        $recipe->ingredients = DB::table('recipe_ingredients')
+            ->select('display_in_recipe')
+            ->where('recipe_id', $id)
+            ->lists('display_in_recipe');
+
+        dd($recipe);
+
+        return $recipe;
     }
 
     protected $table = 'recipes';
