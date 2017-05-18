@@ -35,7 +35,7 @@ class RecipesController extends BaseController
 
     public function searchResults(Request $request)
     {
-        return view('recipes.browse', Recipe::getSearchResults($request->q));
+        return view('recipes.results', Recipe::getSearchResults($request->q));
     }
 
     /**
@@ -67,7 +67,7 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        return view('recipes.show', Recipe::getCard($id));
+        return view('recipes.show', ['recipe' => Recipe::getCard($id)]);
     }
 
     /**
