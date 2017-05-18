@@ -456,15 +456,20 @@ input[type=password] {
 }
 
 /*INGREDIENT PAGE*/
-.ingredient_title{
-	padding-top:40px;
-	color:#ECECEC;
-	font-size:20px;
-
+.search_ingredient_title {
+	padding-top: 40px;
+	color: #ECECEC;
+	font-size: 4rem;
 }
 
-.single_ingredient{
-	margin-right:20%;
+.ingredient_list{
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 100;
+}
+
+.ingredient_box {
+	width: 30%;
 }
 
 /*BROWSE PAGE*/

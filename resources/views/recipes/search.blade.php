@@ -7,21 +7,20 @@
 <form action="{{ action('RecipesController@searchResults') }}" method="GET">
 
 <section class='text-center ingredients'>
-	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
+	<h3 class='search_ingredient_title'> SELECT YOUR INGREDIENTS </h3>
 <img class='ingredient_head' src="/img/veghead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
 
 <fieldset>
 
 	@foreach ($ingredients['vegetable'] as $ingredient)
-
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
@@ -29,33 +28,33 @@
 
 
 <img class='ingredient_head' src="/img/fruithead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
 <fieldset>
 	@foreach ($ingredients['fruit'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
 
 </div>
 <img class='ingredient_head' src="/img/dairyhead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
 
 <fieldset>
 	@foreach ($ingredients['dairy'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
@@ -63,15 +62,15 @@
 
 </div>
 <img class='ingredient_head' src="/img/meathead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 <fieldset>
 	@foreach ($ingredients['meats'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
@@ -80,17 +79,17 @@
 
 
 <img class='ingredient_head' src="/img/breadhead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
 
  <fieldset>
 	@foreach ($ingredients['grains'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
@@ -99,16 +98,16 @@
 
 
 <img class='ingredient_head' src="/img/oilhead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
  <fieldset>
 	@foreach ($ingredients['oils'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
@@ -117,78 +116,81 @@
 
 
 <img class='ingredient_head' src="/img/seasoninghead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
  
  <fieldset>
 	@foreach ($ingredients['seasonings'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
 	@foreach ($ingredients['condiments'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </div>
 
 <img class='ingredient_head' src="/img/snackhead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
 <fieldset>
 	@foreach ($ingredients['snacks'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
 
 <fieldset>
 	@foreach ($ingredients['nuts'] as $ingredient)
-		<label>
+		<label class="ingredient_list">
 			<input
 				type="checkbox"
 				name="q[]"
 				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
+			{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</label>
 	@endforeach
 </fieldset>
 </div>
 
 <img class='ingredient_head' src="/img/beverageshead.png">	
-<div class="ingredient_box col-xs-8 col-xs-offset-2">
+<div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
-<fieldset>
-	@foreach ($ingredients['beverages'] as $ingredient)
-		<label>
-			<input
-				type="checkbox"
-				name="q[]"
-				value="{{ $ingredient->name }}">
-			{{ $ingredient->display_name }}
-		</label>
-	@endforeach
-</fieldset>
-
+	<fieldset>
+		@foreach ($ingredients['beverages'] as $ingredient)
+			<label class="ingredient_list">
+				<input
+					type="checkbox"
+					name="q[]"
+					value="{{ $ingredient->name }}">
+				{{ $ingredient->display_name }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</label>
+		@endforeach
+	</fieldset>
 
 </div>
-
-   <input type="submit" value="Submit">
+<br>
+<section>
+	<div class="row">
+	   <input type="submit" value="Submit">
+	</div>
+</section>
 </form>   
 
 
