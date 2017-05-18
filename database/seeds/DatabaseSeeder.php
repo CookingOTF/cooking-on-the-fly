@@ -14,9 +14,9 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-         // DB::table('users')->truncate();
+        // DB::table('users')->truncate();
 
-         DB::table('ingredients')->truncate();
+        DB::table('ingredients')->truncate();
 
         // All 3 of these are for Recipes table seeder
         DB::table('recipe_ingredients')->truncate();
