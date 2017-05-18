@@ -546,7 +546,7 @@ table {
 }
 
 .single_recipe_box {
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	height: 0 auto;
 	width: 68%;
 	border-radius: 10px;
@@ -557,7 +557,7 @@ table {
 }
 
 .single_recipe_box_tab {
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	height: 200px;
 	width: 18%;
 	border-radius: 33px;
@@ -567,10 +567,10 @@ table {
 }
 
 .single_recipe_photo {
-	height: 22vw;
-	width: 22vw;
+	height: 21vw;
+	width: 26vw;
 	margin-left: 5.3%;
-	border: solid #F3F3F3 2px;
+	/*border: solid #F3F3F3 2px;*/
 }
 
 .single_recipe_title {
@@ -582,21 +582,21 @@ table {
 }
 
 .single_recipe_prep_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
 }
 
 .single_recipe_cook_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
 }
 
 .single_recipe_total_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
@@ -621,14 +621,14 @@ table {
 }
 
 .recipe_ingredients {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 	text-align: left;
 }
 
 .single_recipe_directions {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 }
