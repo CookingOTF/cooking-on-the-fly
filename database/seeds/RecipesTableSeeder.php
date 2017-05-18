@@ -269,7 +269,7 @@ Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 mi
                 ],
                 'directions' => [
                     "Place a pot of water on to boil for macaroni.",
-                    "Heat a medium pan over medium to medium high heat. Add extra-virgin olive oil and chicken and season with salt and pepper. Saute a couple of minutes then add onion and cook another 5 to 7 minutes until onions are tender and chicken is cooked through. Turn off heat and reserve.",
+                    "Heat a medium pan over medium to medium high heat. Add extra-virgin olive oil and chicken and season with salt and pepper. Saute a couple of minut`es then add onion and cook another 5 to 7 minutes until onions are tender and chicken is cooked through. Turn off heat and reserve.",
                     "To boiling pasta water, add pasta and salt to season the cooking water. Cook 5 minutes, then add broccoli and cook 3 minutes more or until pasta is cooked to al dente and florets are just tender.",
                     "While pasta cooks, heat a medium sauce pot over medium heat. Add butter and melt, then add flour, cayenne and paprika and whisk together over heat until roux bubbles then cook a minute more. Whisk in milk and stock and raise heat a little to bring sauce to a quick boil. Simmer sauce to thicken about 5 minutes.",
                     "Drain macaroni or pasta and broccoli florets. Add back to pot and add chicken to the pasta and broccoli.",
@@ -325,7 +325,390 @@ Pour the sauce over the chicken mixture and bring to a simmer. Simmer for 1-2 mi
                     'eggs'=>'8 eggs'
 
                 ]
-            ]/* no comma after the last one ofc :P */
+            ],
+
+            [
+             'info' => [
+                    'name' => 'Classic Mashed Potatoes',
+                    'description' => 'This is the perfect recipe for old fashioned mashed potatoes. Simple and delicious.',
+                    'image' => 'potato.jpg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Bring a pot of salted water to a boil. Add potatoes and cook until tender but still firm, about 15 minutes; drain.",
+
+"In a small saucepan heat butter and milk over low heat until butter is melted. Using a potato masher or electric beater, slowly blend milk mixture into potatoes until smooth and creamy. Season with salt and pepper to taste."
+
+                ],
+                'ingredients' => [
+                    'potato' => '2 lbs potatoes peeled and boiled',
+                    'milk'=> '1 cup milk',
+                    'butter'=> '2 tablespoons butter'
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Steamed Broccoli',
+                    'description' => 'How to steam broccoli perfectly every time',
+                    'image' => 'sande.jpg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:07:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Cut the crowns away from the large stems of the broccoli. Break the crown up into bite-sized florets. Rinse the broccoli florets thoroughly. Peel and discard the thick outer skin of the stems. Slice the stems or cut them into quarters lengthwise.",
+                "Place 3/4 to 1 inch of water in a saucepan with a steamer and bring to a boil. (Note that is you don't have a steamer, you can simply put the broccoli directly into an inch of boiling water.",
+                "Add the broccoli to the steamer and cover; reduce heat to medium and let cook for 5-6 minutes. The broccoli is done when you can pierce it with a fork. As soon as it is pierce-able, remove from heat, place in serving dish.",
+
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '1 bunch of broccoli'
+
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Quick and Easy Shrimp Scampi',
+                    'description' => 'A delicious and quick way to enjoy shrimp - even on a busy weeknight!',
+                    'image' => 'shrimp.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:25:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C)",
+                "Bring a large pot of salted water to a boil, add pasta, and cook until al dente. Drain pasta, and set aside",
+                "In a large skillet, melt butter over medium heat. Add most of the garlic, keeping some for later. Coat the garlic completely with butter. Do not let the garlic brown. Add shrimp, and toss to coat. Immediately remove pan from heat; shrimp will not be cooked yet.",
+                "Sprinkle the shrimp with breadcrumbs (enough to coat the shrimp), and transfer the entire mixture to a medium casserole dish. Pour wine and the lemon juice over the shrimp. Cover, and bake at 350 degrees F (175 degrees C) for 10 minutes."
+
+
+                ],
+                'ingredients' => [
+                    'pasta' => '1 pound linguini pasta',
+                    'butter' => '1/4 cup butter',
+                    'garlic' => '5 cloves garlic, minced',
+                    'shrimp' => '1 pound medium shrimp - peeled and deveined',
+                    'bread crumbs' => '1 cup bread crumbs',
+                    'wine' => '1/2 cup white wine',
+                    'lemon' => '1 lemon, juiced',
+                    'oil' => '1/4 cup light olive oil'
+
+                ]
+            ],
+
+
+
+            [
+             'info' => [
+                    'name' => 'Banana bread',
+                    'description' => 'his banana bread is moist and delicious with loads of banana flavor!',
+                    'image' => 'bananabread.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '01:05:00',
+                    'servings' =>'12'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x5 inch loaf pan.",
+                "In a large bowl, combine flour, baking soda and salt. In a separate bowl, cream together butter and brown sugar. Stir in eggs and mashed bananas until well blended. Stir banana mixture into flour mixture; stir just to moisten. Pour batter into prepared loaf pan.",
+                "Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack."
+
+
+                ],
+                'ingredients' => [
+                    'flour' => '2 cups all-purpose flour',
+                    'baking soda' => '1 teaspoon baking soda',
+                    'salt' => '1/4 teaspoon salt',
+                    'butter' => '1/2 cup butter',
+                    'brown sugar' => '3/4 cup brown sugar',
+                    'eggs' => '2 eggs, beaten',
+                    'banana' => '2 1/3 cups mashed overripe bananas'
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Meatloaf',
+                    'description' => 'This is a very easy and no fail recipe for meatloaf',
+                    'image' => 'loaf.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '01:00:00',
+                    'servings' =>'8'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x5 inch loaf pan.",
+                "In a large bowl, combine the beef, egg, onion, milk and bread OR cracker crumbs. Season with salt and pepper to taste and place in a lightly greased 5x9 inch loaf pan, OR form into a loaf and place in a lightly greased 9x13 inch baking dish.",
+                "n a separate small bowl, combine the brown sugar, mustard and ketchup. Mix well and pour over the meatloaf",
+                "Bake at 350 degrees F (175 degrees C) for 1 hour"
+
+
+                ],
+                'ingredients' => [
+                    'beef' => '1 1/2 pounds ground beef',
+                    'eggs' => '1 egg',
+                    'onion' => '1 onion, chopped',
+                    'milk' => '1 cup milk',
+                    'bread crumbs' => '1 cup dried bread crumbs',
+                    'brown sugar' => '2 tablespoons brown sugar',
+                    'mustard' => '2 tablespoons prepared mustard',
+                    'ketchup' => '1/3 cup ketchup'
+
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Baked Honey Mustard Chicken',
+                    'description' => 'A quick and easy to prepare, and the kids love it too!',
+                    'image' => 'shrimp.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:45:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C)",
+                "Sprinkle chicken breasts with salt and pepper to taste, and place in a lightly greased 9x13 inch baking dish. In a small bowl, combine the honey, mustard, basil, paprika, and parsley. Mix well. Pour 1/2 of this mixture over the chicken, and brush to cover.",
+                "Bake in the preheated oven for 30 minutes. Turn chicken pieces over and brush with the remaining 1/2 of the honey mustard mixture. Bake for an additional 10 to 15 minutes, or until chicken is no longer pink and juices run clear. Let cool 10 minutes before serving."
+
+                ],
+                'ingredients' => [
+                    'chicken' => '6 skinless, boneless chicken breast halves',
+                    'honey' => '1/2 cup honey',
+                    'mustard' => 'mustard',
+                    'paprika' => 'paprika'
+       
+
+                ]
+            ],
+
+
+
+            [
+             'info' => [
+                    'name' => 'Quick and Easy Chicken Noodle Soup',
+                    'description' => "When you don't have time to make your soup totally from scratch, this is a very easy, very good substitute"
+                    'image' => 'soup.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                "In a large pot over medium heat, melt butter. Cook onion and celery in butter until just tender, 5 minutes. Pour in chicken and vegetable broths and stir in chicken, noodles, carrots, basil, oregano, salt and pepper. Bring to a boil, then reduce heat and simmer 20 minutes before serving."
+
+                ],
+                'ingredients' => [
+                    'butter' => '1 tablespoon butter',
+                    'onion' => '1/2 cup chopped onion',
+                    'celery' => 'mustard',
+                    'chicken broth' => '4 (14.5 ounce) cans chicken broth',
+                    'chicken' => '1/2 pound chopped cooked chicken breast',
+                    'pasta' => '1 1/2 cups egg noodles',
+                    'carrot' => '1 cup sliced carrots'
+       
+
+                ]
+            ],
+
+
+
+            [
+             'info' => [
+                    'name' => 'Oven-Fried Pork Chops',
+                    'description' => 'This is a quick, simple, and above all, a cheap way to make pork chops',
+                    'image' => 'chops.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat oven to 425 degrees F (220 degrees C). Pour butter into a 9x13 inch baking pan.",
+                "Stir together egg, milk and pepper. Dip pork chops in egg mixture, coat with stuffing mix and place in pan.",
+                "Bake in preheated oven for 10 minutes. Turn chops and bake for another 10 minutes, or until no pink remains in the meat and juices run clear."
+
+                ],
+                'ingredients' => [
+                    'pork chops' => '4 pork chops, trimmed',
+                    'butter' => '2 tablespoons butter, melted',
+                    'egg' => '1 egg',
+                    'milk' => '2 tablespoons milk',
+                    'bread crumbs' => '1 cup herb-seasoned dry bread stuffing mix',
+       
+
+                ]
+            ],
+
+
+
+              [
+             'info' => [
+                    'name' => 'Garlic Broiled Chicken',
+                    'description' => 'This very easy dish works with any cut of chicken, skin on or off...even with whole split chickens',
+                    'image' => 'garlic.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C)",
+                "In a microwave safe bowl, mix the butter, garlic, soy sauce, pepper, and parsley. Cook 2 minutes on High in the microwave, or until butter is melted.",
+                "Bake in the preheated oven for 30 minutes. Turn chicken pieces over and brush with the remaining 1/2 of the honey mustard mixture. Bake for an additional 10 to 15 minutes, or until chicken is no longer pink and juices run clear. Let cool 10 minutes before serving."
+
+                ],
+                'ingredients' => [
+                    'butter' => '1/2 cup butter',
+                    'garlic' => '3 tablespoons minced garlic',
+                    'soy' => '3 tablespoons soy sauce',
+                    'chicken' => 'chicken thighs'
+       
+
+                ]
+            ],
+
+                [
+             'info' => [
+                    'name' => 'Sirloin Steak with Garlic Butter',
+                    'description' => 'The butter makes this steak melt in your mouth wonderfuls',
+                    'image' => 'steak.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'8'
+                ],
+                'directions' => [
+                 "In a small saucepan, melt butter over medium-low heat with garlic powder and minced garlic. Set aside.",
+                "Sprinkle both sides of each steak with salt and pepper",
+                "Grill steaks 4 to 5 minutes per side, or to desired doneness. When done, transfer to warmed plates. Brush tops liberally with garlic butter, and allow to rest for 2 to 3 minutes before serving."
+
+                ],
+                'ingredients' => [
+                    'butter' => '1/2 cup butter',
+                    'garlic' => '3 tablespoons minced garlic',
+                    'steak' => '4 pounds beef top sirloin steaks'
+
+                ]
+            ],
+
+
+
+                [
+             'info' => [
+                    'name' => 'Easy Asparagus',
+                    'description' => 'Asparagus cooked right in the frying pan, drizzled with an onion-wine glaze and parmesan cheese',
+                    'image' => 'asp.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:10:00',
+                    'servings' =>'2'
+                ],
+                'directions' => [
+                 "Heat the olive oil in a skillet over medium-high heat. Mix in onion and garlic, and season with salt and  pepper. Cook and stir until tender. Place asparagus in the skillet, and cook 8 minutes, turning occasionally to coat with seasonings. Sprinkle wine into the skillet, and scrape up any browned bits.",
+                "Transfer asparagus to a shallow dish. Drizzle with remaining mixture in skillet, and dust evenly with Parmesan cheese and crushed whole wheat crackers."
+
+                ],
+                'ingredients' => [
+                    'oil' => 'olive oil',
+                    'onion' => '1/4 cup sliced purple onion',
+                    'asparagus' => '10 spears fresh asparagus',
+                    'parmesan' => '1 tablespoon Parmesan cheese',
+                    'garlic' => 'garlic ',
+                    'bread crumbs' => '1 tablespoon crushed whole wheat crackers'
+
+
+                ]
+            ],
+
+
+
+             [
+             'info' => [
+                    'name' => 'Home-made Biscuits',
+                    'description' => 'This three-ingredient recipe gets biscuits on your table in a quick and easy manner for when you need biscuits now!',
+                    'image' => 'bisc.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:25:00',
+                    'servings' =>'12'
+                ],
+                'directions' => [
+                 "Combine and mix ingredients together. Pour out on floured waxed paper. Pat the dough out with your hands until dough is not sticky (add a little flour if necessary). Fold double. Cut biscuits with a biscuit cutter.",
+                "Bake on a cookie sheet at 425 degrees F (220 degrees C) for 20-25 minutes."
+
+                ],
+                'ingredients' => [
+                    'flour' => '2 1/4 cups self-rising flour',
+                    'oil' => '3/4 cup shortening',
+                    'milk' => '1 cup milk'
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => ' Polenta with Tomato Sauce',
+                    'description' => .' A quick baked polenta topped with red sauce.',
+                    'image' => 'polenta.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat the oven to 350 degrees F (175 degrees C). Grease a 9 inch square baking dish.",
+                "In a large pot, combine the milk and chicken stock. Bring to a boil over medium-high heat. When it is at a rolling boil, gradually whisk in the cornmeal, making sure there are no lumps. Reduce heat to low and simmer, stirring constantly until thick, about 5 minutes. Remove from the heat and stir in the Parmesan cheese.",
+                "Pour the polenta into the prepared baking dish, and spread spaghetti sauce over the top.",
+                "Bake for 10 minutes in the preheated oven, or until sauce is bubbling."
+
+                ],
+                'ingredients' => [
+                    'parmesan' => '1 cup Parmesan cheese',
+                    'chicken broth' => '2 cups chicken stock',
+                    'milk' => '2 cups milk',
+                    'tomato sauce' => '2 cups spaghetti sauce, or your favorite recipe'
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Salsa Chicken',
+                    'description' => .'A household favorite. You can use mild, medium or hot salsa depending on your taste.',
+                    'image' => 'polenta.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat the oven to 350 degrees F (175 degrees C). Grease a 9 inch square baking dish.",
+                "In a large pot, combine the milk and chicken stock. Bring to a boil over medium-high heat. When it is at a rolling boil, gradually whisk in the cornmeal, making sure there are no lumps. Reduce heat to low and simmer, stirring constantly until thick, about 5 minutes. Remove from the heat and stir in the Parmesan cheese.",
+                "Pour the polenta into the prepared baking dish, and spread spaghetti sauce over the top.",
+                "Bake for 10 minutes in the preheated oven, or until sauce is bubbling."
+
+                ],
+                'ingredients' => [
+                    'parmesan' => '1 cup Parmesan cheese',
+                    'chicken broth' => '2 cups chicken stock',
+                    'milk' => '2 cups milk',
+                    'tomato sauce' => '2 cups spaghetti sauce, or your favorite recipe'
+
+
+                ]
+            ]
+
+
+            /* no comm/* no co/* no comm/* no comma after the last one ofc :P */
         ];
 
         /*
