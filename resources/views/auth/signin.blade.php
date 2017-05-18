@@ -5,6 +5,7 @@
 
 
 @section('custom_css')
+	<link rel="stylesheet" href="/css/auth.css">
 	<style type="text/css">
 		body {
 			position: relative;
@@ -39,32 +40,69 @@
 
 		<div class="sign_in_content">
 
-			<form action="/signin/" method="post">
-			{!! csrf_field() !!}
-			{{-- <br> --}}
-				{{-- <label for="email" id="signin_email">Your email</label> --}}
-				<input type="username" name="username" id="signin_username" class="inpt" required="required" placeholder="USERNAME" value="{{old('username')}}">
+			<form action="{{ action('Auth\AuthController@postLogin') }}/" method="post">
+				{!! csrf_field() !!}
+				<div>
+					<label class="sr-only" for="username">Username</label>
+					<input
+						type="text"
+						name="username"
+						id="username"
+						class="inpt"
+						placeholder="USERNAME"
+						value="{{old('username')}}"
+						{{ $errors->has('username') ? 'aria-describedby="error-username"' : '' }}
+						required>
+
+					@if ($errors->has('username'))
+						<span class="help-block" id="error-username">
+							{{ $errors->first('username') }}
+						</span>
+					@endif
+				</div>
 
 				<br><br>
-
-				{{-- <label for="password" id="signin_password">Your password</label> --}}
-				<input type="password" name="password" id="signin_password" class="inpt" required="required" placeholder="PASSWORD">
+				
+				<div>
+					<label for="password" class="sr-only">Password</label>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						class="inpt"
+						placeholder="PASSWORD"
+						{{ $errors->has('password') ? 'aria-describedby="error-password"' : '' }}
+						required>
+					@if ($errors->has('password'))
+						<span class="help-block" id="error-password">
+							{{ $errors->first('username') }}
+						</span>
+					@endif
+				</div>
 
 				<br>
 
-				<div class="sign_in_remember_me">
+				<div>
 					<input type="checkbox" id="signin_checkbox" class="checkbox" checked>
-						<label for="remember" id="signin_remember_me">Remember me</label>
+					<label id="signin_remember_me" for="signin_checkbox">Remember me</label>
 				</div>
-				<br><br>
-
-				<button type="submit" class="btn btn-default">Submit</button>
 
 				<br><br>
 
-				<a href="#" class="more" id="signin_forgot_password">Forgot your password?</a><br>
+				<div>
+					<button type="submit" class="btn btn-default">Submit</button>
 				</div>
-				<br>
+
+				<br><br>
+				
+				<div>
+					<a href="#" class="more" id="forgot_password">
+						Forgot your password?
+					</a>
+				</div>
+
+				<br><br>
+
 			</form>
 		</div>
 	</div>
