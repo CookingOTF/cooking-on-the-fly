@@ -194,18 +194,6 @@ a {
 	margin-top: 8%;
 }
 
-#signin_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signin_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
 #signin_remember_me {
 	font-size: 1.3vw;
 	text-align: center;
@@ -223,12 +211,6 @@ a {
 	margin-bottom: 10px;
 }
 
-#signin_forgot_password {
-	font-size: 1.6vw;
-	color: white;
-	text-decoration: none;
-}
-
 .signin_submit {
 	width: 100px;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -240,34 +222,6 @@ a {
 
 .or_sign_in {
 	text-align: right;
-}
-
-
-input[type=email] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=password] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=confirm] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 }
 
 /*SIGN UP PAGE*/
@@ -298,46 +252,10 @@ input[type=confirm] {
 	margin-top: 5%;
 }
 
-#signup_name {
-	/*height: 30px;*/
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_email {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_confirm_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
 #signup_remember_me {
 	font-size: 1.3vw;
 	text-align: left;
 	color: #F4F4F4;
-}
-
-#signup_forgot_password {
-	font-size: 1.3vw;
-	color: white;
-	text-decoration: none;
 }
 
 .signup_submit {
@@ -348,45 +266,6 @@ input[type=confirm] {
 .signup_button {
 	width: 10%;
 }
-
-input[type=name] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=email] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=username] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=password] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
 
 /*DASHBOARD*/
 .dashboard {
@@ -694,11 +573,6 @@ table {
 	float: left;
 	background-color: #3A3B3C;
 	margin-top: 0 auto !important;
-}
-
-#forgot_password {
-	color: #F4F4F4;
-	text-decoration: none;
 }
 
 .content_container {

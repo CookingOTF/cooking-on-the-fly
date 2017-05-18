@@ -32,16 +32,14 @@ class Recipe extends Model
                 sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
                 and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
             ) {
-                $borrow[implode(' and ', array_keys($lacking))] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
-
-                $borrow[] = $recipe;
+                $borrow[implode(' and ', array_keys($lacking))][] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
             } else {
                 $recipe->lacking = array_keys($lacking);
                 $goShopping[] = $recipe;
             }
         }
 
-        return ['recipes' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
+        return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
     }
 
     public static function getCard($id)

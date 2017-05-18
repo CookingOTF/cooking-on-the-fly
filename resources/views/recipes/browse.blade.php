@@ -1,30 +1,28 @@
 @extends('layouts.master')
+
 @section('navbar')
-@include('partials.nav')
+	@include('partials.nav')
 @stop
 
 @section('content')
-
-<section>
-	<h3 class="all_recipes"> Browse All Recipes </h3>
-</section>
-
-<div class="row">
-	@foreach($recipes as $index=>$recipe)
-		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-			<div class="thumbnail">
-				<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
-					<p>
-						<img class="browse_image" src="/img/{{$recipe->image}}"></p>
-					<p class="browse_name"> {{$recipe->name}}</p>
-					{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
-					{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
-				</a>
-			</div>
+	<section>
+		<header>
+			<h3 class="all_recipes">Browse All Recipes</h3>
+		</header>
+		<div class="row">
+			@foreach($recipes as $index => $recipe)
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail">
+						<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
+							<p>
+								<img class="browse_image" src="/img/{{$recipe->image}}"></p>
+							<p class="browse_name"> {{$recipe->name}}</p>
+							{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
+							{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
+						</a>
+					</div>
+				</div>
+			@endforeach
 		</div>
-	@endforeach
-</div>
-
-
-
+	</section>
 @stop
