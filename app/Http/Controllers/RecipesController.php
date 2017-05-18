@@ -25,21 +25,17 @@ class RecipesController extends BaseController
      */
     public function browse()
     {
-        $recipes = Recipe::paginate(20);
-
-        return view('recipes.browse', ['recipes' => $recipes]);
+        return view('recipes.browse', ['recipes' => Recipe::paginate(20)]);
     }
 
     public function search()
     {
-        $ingredients = Ingredient::byCategory();
-
-        return view('recipes.search', ['ingredients' => $ingredients]);
+        return view('recipes.search', ['ingredients' => Ingredient::byCategory()]);
     }
 
     public function searchResults(Request $request)
     {
-        return view('recipes.results', Recipe::getSearchResults($request->q));
+        return view('recipes.browse', Recipe::getSearchResults($request->q));
     }
 
     /**
