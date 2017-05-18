@@ -1,7 +1,4 @@
 @extends('layouts.master')
-@section('navbar')
-@include('partials.nav')
-@stop
 
 @section('custom_css')
 	<style type="text/css">
@@ -16,9 +13,9 @@
 		    top: 0;
 		    left: 0;
 			background-image: url('/img/404oops.jpeg') !important;
-			background-size: cover;
+			background-size: contain;
 			width: 100%;
-    		height: 100%;
+    		height: 1500px;
 			opacity: 0.4;
 			z-index: -1;
 		}
