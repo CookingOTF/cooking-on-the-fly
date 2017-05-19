@@ -103,7 +103,9 @@ class IngredientTableSeeder extends Seeder
             Ingredient::create(['name' => 'whipped cream', 'display_name' => 'Whipped Cream', 'category' => 'dairy']),
             Ingredient::create(['name' => 'cottage cheese', 'display_name' => 'Cottage Cheese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'ricotta', 'display_name' => 'Ricotta', 'category' => 'dairy']),
+            Ingredient::create(['name' => 'cheese', 'display_name' => 'Processed Cheese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'ice cream', 'display_name' => 'Ice Cream', 'category' => 'dairy']),
+            Ingredient::create(['name' => 'romano', 'display_name' => 'Romano Cheese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'swiss', 'display_name' => 'Swiss Chese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'chicken breast', 'display_name' => 'Chicken Breast', 'category' => 'meats']),
             Ingredient::create(['name' => 'ground beef', 'display_name' => 'Ground Beef', 'category' => 'meats']),
@@ -168,6 +170,7 @@ class IngredientTableSeeder extends Seeder
             Ingredient::create(['name' => 'ketchup', 'display_name' => 'Ketchup', 'category' => 'condiments']),
             Ingredient::create(['name' => 'jelly', 'display_name' => 'Jelly', 'category' => 'condiments']),
             Ingredient::create(['name' => 'mayonnaise', 'display_name' => 'Mayonnaise', 'category' => 'condiments']),
+            Ingredient::create(['name' => 'pesto', 'display_name' => 'Pesto', 'category' => 'condiments']),
             Ingredient::create(['name' => 'sriracha', 'display_name' => 'Sriracha', 'category' => 'condiments']),
             Ingredient::create(['name' => 'salsa', 'display_name' => 'Salsa', 'category' => 'condiments']),
             Ingredient::create(['name' => 'soy', 'display_name' => 'Soy Sauce', 'category' => 'condiments']),
@@ -185,8 +188,9 @@ class IngredientTableSeeder extends Seeder
             Ingredient::create(['name' => 'chicken broth', 'display_name' => 'Chicken Broth', 'category' => 'beverages']),
             Ingredient::create(['name' => 'oregano', 'display_name' => 'Oregano', 'category' => 'seasonings']),
             Ingredient::create(['name' => 'italian seasoning', 'display_name' => 'Italian Seasoning', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'paprika', 'display_name' => 'Paprika', 'category' => 'seasonings'])
+            Ingredient::create(['name' => 'paprika', 'display_name' => 'Paprika', 'category' => 'seasonings']),
             Ingredient::create(['name' => 'chili', 'display_name' => 'Chili Powder', 'category' => 'seasonings']),
+            Ingredient::create(['name' => 'pepper flakes', 'display_name' => 'Red Pepper Flakes', 'category' => 'seasonings']),
             Ingredient::create(['name' => 'taco seasoning', 'display_name' => 'Taco Seasoning', 'category' => 'seasonings']),
             Ingredient::create(['name' => 'vanilla', 'display_name' => 'Vanilla', 'category' => 'seasonings'])
 
