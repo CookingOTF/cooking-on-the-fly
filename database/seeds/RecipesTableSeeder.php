@@ -252,11 +252,9 @@ class RecipesTableSeeder extends Seeder
                 'ingredients' => [
                     'flour' => '1 1/2 cups all-purpose flour',
                     'baking powder' => '3 1/2 cups baking powder',
-                    'mushrooms' => ' 1 cup sliced mushrooms',
                     'salt' => '1 teaspoon salt',
                     'sugar' => '1 tablespoon sugar',
                     'milk'=> '1 1/4 cups milk',
-                    'chicken broth'=>'3/4 cup chicken broth',
                     'eggs'=> '1 egg',
                     'butter'=>'3 tbsp melted butter'
                 ]
@@ -708,7 +706,114 @@ class RecipesTableSeeder extends Seeder
 
 
                 ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => ' Polenta with Tomato Sauce',
+                    'description' => .' A quick baked polenta topped with red sauce.',
+                    'image' => 'polenta.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat the oven to 350 degrees F (175 degrees C). Grease a 9 inch square baking dish.",
+                "In a large pot, combine the milk and chicken stock. Bring to a boil over medium-high heat. When it is at a rolling boil, gradually whisk in the cornmeal, making sure there are no lumps. Reduce heat to low and simmer, stirring constantly until thick, about 5 minutes. Remove from the heat and stir in the Parmesan cheese.",
+                "Pour the polenta into the prepared baking dish, and spread spaghetti sauce over the top.",
+                "Bake for 10 minutes in the preheated oven, or until sauce is bubbling."
+
+                ],
+                'ingredients' => [
+                    'parmesan' => '1 cup Parmesan cheese',
+                    'chicken broth' => '2 cups chicken stock',
+                    'milk' => '2 cups milk',
+                    'tomato sauce' => '2 cups spaghetti sauce, or your favorite recipe'
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Broccoli Pie',
+                    'description' =>'Good served both warm and cold',
+                    'image' => 'brocpie.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:35:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Preheat oven to 350 degrees F (175 degrees C). Grease a 2 quart casserole dish",
+                "Combine broccoli, onions and cheese in prepared dish.",
+                "In a small bowl whisk together baking mix, egg, milk, salt and pepper. Pour over broccoli mixture.",
+                "Bake in preheated oven for 35 minutes, or until lightly browned."
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '2 (10 ounce) packages chopped frozen broccoli, thawed',
+                    'onion' => '1/2 cup diced onion',
+                    'cheddar' => '2 cups shredded Cheddar cheese',
+                    'pancake mix' => '1/2 cup baking mix',
+                    'eggs' => '1 egg',
+                    'milk' => '1 cup milk'
+
+
+                ]
+            ],
+
+
+            [
+             'info' => [
+                    'name' => 'Fried Broccoli',
+                    'description' =>'Quick and easy household favorite',
+                    'image' => 'fried.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:05:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Rinse and pat dry the broccoli.",
+                "Heat the olive oil in a large skillet over medium heat, add crushed red pepper and heat 1 minute. Cook and stir the broccoli in the skillet until it begins to get crispy, 5 to 7 minutes. Season with salt to serve."
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '1 (16 ounce) package frozen broccoli, thawed',
+                    'oil' => '1 tablespoon olive oil'
+
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Broccoli Pasta Salad',
+                    'description' =>'A quick and tasty pasta salad that can be served warm or cold."',
+                    'image' => 'brocpasta.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Bring a large pot of lightly salted water to a boil; cook the linguine at a boil until tender yet firm to the bite, about 11 minutes; drain and return to pot.",
+                "Place a steamer insert into a saucepan and fill with water to just below the bottom of the steamer. Bring water to a boil. Add broccoli, cover, and steam until tender, 3 to 5 minutes.",
+                "Heat olive oil in a small saucepan over medium heat; cook and stir garlic and red pepper flakes until garlic is fragrant, 1 to 3 minutes. Add garlic mixture and broccoli to linguine; gently toss to coat. Add Romano cheese, parsley, black pepper, and salt; toss to combine."
+
+                ],
+                'ingredients' => [
+                    'pasta' => '1 (8 ounce) package linguine pasta',
+                    'broccoli' => '1 (12 ounce) bag broccoli florets, cut into bite-size pieces',
+                    'oil' => '1/4 cup olive oil',
+                    'garlic' => '4 teaspoons minced garlic',
+                    'garlic' => '1/2 cup finely shredded Romano cheese',
+
+
+
+                ]
             ]
+
 
 
             /* no comm/* no co/* no comm/* no comma after the last one ofc :P */
