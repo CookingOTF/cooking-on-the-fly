@@ -263,7 +263,7 @@ class RecipesTableSeeder extends Seeder
                 'info' => [
                     'name' => 'Mac and Cheese with Chicken and Broccoli',
                     'description' => 'A twist on classic Mac n Cheese',
-                    'image' => 'mac.jpg',
+                    'image' => 'macnbroc.jpg',
                     'prep_time' => '00:10:00',
                     'cook_time' => '00:25:00',
                     'servings' =>'6'
@@ -356,7 +356,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => 'Steamed Broccoli',
                     'description' => 'How to steam broccoli perfectly every time',
-                    'image' => 'sande.jpg',
+                    'image' => 'steamed.jpeg',
                     'prep_time' => '00:05:00',
                     'cook_time' => '00:07:00',
                     'servings' =>'4'
@@ -474,7 +474,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => 'Baked Honey Mustard Chicken',
                     'description' => 'A quick and easy to prepare, and the kids love it too!',
-                    'image' => 'shrimp.jpeg',
+                    'image' => 'honey.jpeg',
                     'prep_time' => '00:15:00',
                     'cook_time' => '00:45:00',
                     'servings' =>'6'

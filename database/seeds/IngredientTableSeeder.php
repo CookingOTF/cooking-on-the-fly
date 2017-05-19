@@ -107,6 +107,7 @@ class IngredientTableSeeder extends Seeder
             Ingredient::create(['name' => 'ice cream', 'display_name' => 'Ice Cream', 'category' => 'dairy']),
             Ingredient::create(['name' => 'romano', 'display_name' => 'Romano Cheese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'swiss', 'display_name' => 'Swiss Chese', 'category' => 'dairy']),
+            Ingredient::create(['name' => 'cheddar', 'display_name' => 'Swiss Cheese', 'category' => 'dairy']),
             Ingredient::create(['name' => 'chicken breast', 'display_name' => 'Chicken Breast', 'category' => 'meats']),
             Ingredient::create(['name' => 'ground beef', 'display_name' => 'Ground Beef', 'category' => 'meats']),
             Ingredient::create(['name' => 'bacon', 'display_name' => 'Bacon', 'category' => 'meats']),
