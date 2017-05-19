@@ -1040,12 +1040,66 @@ class RecipesTableSeeder extends Seeder
                 "Grill zucchinis on preheated grill until tender, 3 to 4 minutes per side."
 
                 ],
-         'ingredients' => [
+                    'ingredients' => [
                     'zucchini' => '3 zucchinis, sliced 1/4-inch thick, lengthwise',
-                    'oil'=>'tablespoon olive oil',
+                    'oil'=>'tablespoon olive oil'
 
                 ]
             ],
+
+             [
+             'info' => [
+                    'name' => 'Steak Sandwich',
+                    'description' => "Freezing the steak the day before makes it easy to cut into very thin slices.",
+                    'image' => 'sandy.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'1'
+                ],
+                'directions' => [
+                 "Melt 1 tablespoon of butter in a large skillet over medium heat. Add the onion; cook and stir until tender. Push onion to the side of the pan, and add the mushrooms. Cook and stir until softened, then add the bell pepper and cook just until tender, about 3 minutes. Remove from the pan with a slotted spoon, and set aside.",
+                "Add the remaining butter to the skillet. No need to clean the pan, just let it heat up a little bit. Place the steak in the skillet along with the pickled peppers. Season with salt and pepper. The steak cooks really fast, just a couple of minutes. Once the steak is mostly browned, return the onion and pepper to the pan. Cook until heated through.",
+                "Turn off the heat, and place the slices of cheese over the top of the pile so they can melt. Scoop the whole pile into the awaiting bread, making sure to pour some of the juices onto that wonderful sandwich."
+
+                ],
+                    'ingredients' => [
+                    'butter' => '2 tablespoons butter',
+                    'onion'=>'1/4 medium onion, sliced',
+                    'mushroom'=>'4 large fresh mushrooms, sliced',
+                    'bell pepper'=>'1/4 green bell pepper, sliced into long strips',
+                    'steak'=>'1 (1/2 pound) well-marbled beef steak of any type, sliced as thinly as possible',
+                    'cheddar'=>'2 slices sharp Cheddar cheese',
+                    'bread'=>'1/3 French baguette, cut in half lengthwise'
+
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Spicy Roasted Potatoes',
+                    'description' => "Slight twist to an old favorite. Chili powder gives the potatoes and onions in this recipe some zing",
+                    'image' => 'spicyt.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:40:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat the oven to 450 degrees F (220 degrees C)",
+                "Arrange the potatoes and onions in a greased 9x13 inch baking dish so that they are evenly distributed. Season with garlic powder, salt and chili powder. Drizzle with olive oil. Stir to coat potatoes and onions with oil and spices.",
+                "Bake for 35 to 40 minutes in the preheated oven, until potatoes are fork tender and slightly crispy. Stir every 10 minutes. When done, sprinkle with cheese. Wait about 5 minutes for the cheese to melt before serving.."
+
+                ],
+                    'ingredients' => [
+                    'potato' => '5 medium red potatoes, diced with peel',
+                    'onion'=>'1/4 medium onion, sliced',
+                    'garlic'=>'garlic powder',
+                    'chili powder'=>'2 teaspoons chili powder',
+                    'cheddar'=>'1 cup shredded Cheddar cheese'
+
+                ]
+            ]
+
 
 
 
