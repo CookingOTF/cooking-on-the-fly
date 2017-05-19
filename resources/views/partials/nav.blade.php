@@ -15,7 +15,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 				<li class="active"><a href="/">HOME</a></li>
-				<li><a href="/dashboard/">DASHBOARD</a></li>
+				{{-- <li><a href="/dashboard/">DASHBOARD</a></li> --}}
 				<li><a href="/recipes/browse/">BROWSE</a></li>
 				<li><a href="/recipes/search/">SEARCH</a></li>
 			</ul>

@@ -104,7 +104,7 @@
 					<br><br>
 					
 					<div>
-						<label for="password" class="sr-only">Password</label>
+						<label for="password" class="row sr-only">Password</label>
 						<input
 							type="password"
 							name="password_confirmation"
@@ -123,8 +123,8 @@
 					<br><br>
 
 					<div class="submit-area">
-						<button type="submit" class="btn btn-default">Submit</button>
-						<br>
+						<button type="submit" class="btn btn-default">SUBMIT</button>
+						<br><br>
 						<a class="or_sign_in" href="/signin/">(OR SIGN IN)</a>
 						<br><br>
 					</div>
@@ -132,7 +132,11 @@
 			</div>
 		</div>
 	</section>
+@stop
+@section('content')
 
-	<section class="row sign_up_bottom">
-	</section>
+
+	<div class="row sign_up_bottom">
+	</div>
+
 @stop

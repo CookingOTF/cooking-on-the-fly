@@ -6,6 +6,7 @@
 
 @section('custom_css')
 	<style>
+
 	.directions {
 		list-style: none; /* Removes default numbering */
 		counter-reset: step; /* Creates counter */
@@ -42,7 +43,7 @@
 					<img class="single_recipe_photo" src="/img/{{$recipe->image}}">
 				</div>
 
-				<div class="single_recipe_information col-xs-6">
+				<div class="single_recipe_information col-xs-5 col-xs-offset-1">
 					<p class="single_recipe_title">{{$recipe->name}}</p>
 
 					@if($recipe->prep_time)
@@ -61,8 +62,8 @@
 		</div>
 
 		<div class="row">
-			<div class="recipe_ingredients col-xs-5 col-xs-offset-1">
-				<h2 class="ingredients_title">Ingredients:</h2>
+			<div class="recipe_ingredients col-xs-3 col-xs-offset-1">
+				<h2 class="ingredients_title">Ingredients</h2>
 				<ul class="ingredients_list">
 					@foreach ($recipe->ingredients as $ingredient)
 						<li>{{ $ingredient }}</li>
@@ -70,8 +71,8 @@
 				</ul>
 			</div>
 
-			<div class="recipe_directions col-xs-5 col-xs-offset-1">
-				<h2 class="directions_title">Directions:</h2>
+			<div class="row recipe_directions col-xs-7 col-xs-offset-1">
+				<h2 class="directions_title">Directions</h2>
 				<div class="single_recipe_directions">
 					@if(sizeof($recipe->directions) === 1)
 						<p>
