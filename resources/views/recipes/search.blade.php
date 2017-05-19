@@ -7,7 +7,9 @@
 <form action="{{ action('RecipesController@searchResults') }}" method="GET">
 
 <section class='text-center ingredients'>
+
 	<h3 class='search_ingredient_title'> SELECT YOUR INGREDIENTS </h3>
+
 <img class='ingredient_head' src="/img/veghead.png">	
 <div class="row search_ingredient_box col-xs-10 col-xs-offset-2">
 
