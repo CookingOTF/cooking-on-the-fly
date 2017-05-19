@@ -8,7 +8,7 @@ body {
 }
 
 p {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
 
 h2 {
 	font-family: 'Sofia', cursive;
-	font-size: 3.6em;
+	font-size: 4.5em;
 	font-weight: 100;
 	color: #3A3B3C;
 }
@@ -125,8 +125,13 @@ a {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif; 
 }
 
+.hp_two_paragraph {
+	width: 50%;
+}
+
 .important_text {
-	/*font-size: 2.2vw;*/
+	font-size: 3rem;
+	font-style: italic;
 }
 
 /*HOME PAGE THREE*/
@@ -166,11 +171,6 @@ a {
 
 /*SIGN IN PAGE*/
 
-.sign_in_page {
-	background-image: url('/img/blueberries.png');
-	background-size: cover;
-}
-
 #sign_in_container {
 	background-color: #4D4D4D;
 	width: 35%;
@@ -194,18 +194,6 @@ a {
 	margin-top: 8%;
 }
 
-#signin_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signin_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
 #signin_remember_me {
 	font-size: 1.3vw;
 	text-align: center;
@@ -223,12 +211,6 @@ a {
 	margin-bottom: 10px;
 }
 
-#signin_forgot_password {
-	font-size: 1.6vw;
-	color: white;
-	text-decoration: none;
-}
-
 .signin_submit {
 	width: 100px;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -242,34 +224,6 @@ a {
 	text-align: right;
 }
 
-
-input[type=email] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=password] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=confirm] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
 /*SIGN UP PAGE*/
 
 .sign_up {
@@ -278,6 +232,7 @@ input[type=confirm] {
 
 #sign_up_container {
 	background-color: #4D4D4D;
+	height: 0 auto;
 	font-size: 1.3em;
 	font-weight: 100;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -297,46 +252,10 @@ input[type=confirm] {
 	margin-top: 5%;
 }
 
-#signup_name {
-	/*height: 30px;*/
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_email {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_username {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
-#signup_confirm_password {
-	height: 30px;
-	width: 50%;
-	color: #F4F4F4;
-}
-
 #signup_remember_me {
 	font-size: 1.3vw;
 	text-align: left;
 	color: #F4F4F4;
-}
-
-#signup_forgot_password {
-	font-size: 1.3vw;
-	color: white;
-	text-decoration: none;
 }
 
 .signup_submit {
@@ -348,45 +267,6 @@ input[type=confirm] {
 	width: 10%;
 }
 
-input[type=name] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=email] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-input[type=username] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-
-}
-
-input[type=password] {
-	border: none;
-	border-bottom: 2px solid #CDDBE3;
-	background-color: #3A3B3C;
-	color: white;
-	font-size: 1.2vw;
-	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-}
-
-
 /*DASHBOARD*/
 .dashboard {
 
@@ -396,7 +276,7 @@ input[type=password] {
 }
 
 .user_account_info {
-	color: #F3F3F3;
+	color: #3A3B3C;
 }
 
 .my_account {
@@ -418,7 +298,7 @@ input[type=password] {
 #favorites {
 	height: 300px;
 	width: 85%;
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	border-radius: 10px;
 	margin-bottom: 4%;
 }
@@ -444,6 +324,7 @@ input[type=password] {
 	font-size: 3vw;
 	font-weight: lighter;
 	text-align: left;
+	color: #3A3B3C;
 }
 
 .my_fridge {
@@ -468,23 +349,23 @@ input[type=password] {
 /*BROWSE PAGE*/
 
 .ingredient_head {
-margin-top: 15px;
-margin-bottom: -2px;
-width:66.7%;
+	margin-top: 15px;
+	margin-bottom: -2px;
+	width:66.7%;
 }
 .ingredient_box{
-	background-color: #4D4D4D;
+	background-color: #3A3B3C;
 	height:400px;
 	margin-bottom: 24px;
 	margin-top: -2px;
-width: 66.7%;
-font-size: 1.3em;
-font-weight: 100;
-color:#ECECEC;
-font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-border-bottom-left-radius: 6px;
-border-bottom-right-radius: 6px;
-text-align: center;
+	width: 66.7%;
+	font-size: 1.3em;
+	font-weight: 100;
+	color:#ECECEC;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	text-align: center;
 }
 
 table {
@@ -516,7 +397,7 @@ table {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 	text-transform: uppercase;
-	color: #F3F3F3;
+	color: #3A3B3C;
 }
 
 .browse_table_row {
@@ -526,8 +407,8 @@ table {
 .thumbnail {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #7B8489 !important;
-	background-color: #7B8489 !important;
+	border-color: #CDDBE3 !important;
+	background-color: #CDDBE3 !important;
 	border-radius: 10px !important;
 	text-align: center;
 	padding-top: 20px !important;
@@ -544,7 +425,7 @@ table {
 }
 
 .single_recipe_box {
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	height: 0 auto;
 	width: 68%;
 	border-radius: 10px;
@@ -555,7 +436,7 @@ table {
 }
 
 .single_recipe_box_tab {
-	background-color: #7B8489;
+	background-color: #CDDBE3;
 	height: 200px;
 	width: 18%;
 	border-radius: 33px;
@@ -565,10 +446,10 @@ table {
 }
 
 .single_recipe_photo {
-	height: 22vw;
-	width: 22vw;
+	height: 21vw;
+	width: 26vw;
 	margin-left: 5.3%;
-	border: solid #F3F3F3 2px;
+	/*border: solid #F3F3F3 2px;*/
 }
 
 .single_recipe_title {
@@ -580,21 +461,21 @@ table {
 }
 
 .single_recipe_prep_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
 }
 
 .single_recipe_cook_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
 }
 
 .single_recipe_total_time {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2vw;
 	text-align: center;
@@ -619,14 +500,14 @@ table {
 }
 
 .recipe_ingredients {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 	text-align: left;
 }
 
 .single_recipe_directions {
-	color: #F3F3F3;
+	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
 }
@@ -691,11 +572,7 @@ table {
 	color: #7B8489;
 	float: left;
 	background-color: #3A3B3C;
-}
-
-#forgot_password {
-	color: #F4F4F4;
-	text-decoration: none;
+	margin-top: 0 auto !important;
 }
 
 .content_container {

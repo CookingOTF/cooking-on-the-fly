@@ -25,37 +25,17 @@ class RecipesController extends BaseController
      */
     public function browse()
     {
-        $recipes = Recipe::paginate(20);
-
-        return view('recipes.browse', ['recipes' => $recipes]);
+        return view('recipes.browse', ['recipes' => Recipe::paginate(20)]);
     }
 
     public function search()
     {
-        $ingredients = Ingredient::byCategory();
-
-        return view('recipes.search', ['ingredients' => $ingredients]);
+        return view('recipes.search', ['ingredients' => Ingredient::byCategory()]);
     }
 
-    public function searchResults($q = NULL)
+    public function searchResults(Request $request)
     {
-        if (!isset($q)) {
-            return redirect('recipes/search');
-        }
-
-        $recipes = Recipe::select('id', 'name', 'description', 'image')
-            ->with('ingredients')
-            ->paginate(20);
-        foreach ($recipes as &$recipe) {
-            foreach ($recipe->ingredient->name as $ingredient) {
-                if (!in_array($ingredient, $q)) {
-                    unset($recipe);
-                    break;
-                }
-            }
-        }
-
-        return $this->view('recipes.browse', get_defined_vars());
+        return view('recipes.results', Recipe::getSearchResults($request->q));
     }
 
     /**
@@ -87,7 +67,7 @@ class RecipesController extends BaseController
      */
     public function show($id)
     {
-        return view('recipes.show', Recipe::getCard($id));
+        return view('recipes.show', ['recipe' => Recipe::getCard($id)]);
     }
 
     /**

@@ -33,6 +33,10 @@ if (    isset($_SERVER['REQUEST_URI'])
 |
 */
 
+Route::get('test', function () {
+    return view('test');
+});
+
 /*
 |-----------
 | ~ HOME ~

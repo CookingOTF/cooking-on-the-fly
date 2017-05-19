@@ -1,65 +1,96 @@
 @extends('layouts.master')
+
 @section('navbar')
-@include('partials.nav')
+	@include('partials.nav')
 @stop
+
+@section('custom_css')
+	<style>
+	.directions {
+		list-style: none; /* Removes default numbering */
+		counter-reset: step; /* Creates counter */
+		padding-left: 24px; /* You can (and probably sould) play with this, especially if you change the font size/weight/etc */
+	}
+
+	.directions>li::before {
+		counter-increment: step; /* Tells our counter how to work */
+		content: "Step" counter(step) ":"; /* I'll explain how this works. */
+		user-select: none; /* Not necessary; makes the "Step {x}:" text more like the default numbering by disallowing the user to select it with their cursor */
+		padding-right: 4px; /* Again, you probably SHOULD mess around with this */
+	}
+
+	.ingredients_list {
+		list-style: none;
+		padding: 0;
+	}
+	</style>
+@stop
+
 @section('content')
 
-<section>
-	<h1 class="recipe_name"></h1>
-</section>
-
-
-
-
-
-
+<div class="recipe_name"></div>
 
 <div class="single_recipe_box_tab"></div>
 
 <div class="row">
-<section class="single_recipe_box col-xs-10 col-xs-offset-2">
+	<section class="single_recipe_box col-xs-10 col-xs-offset-2">
 		<div class="recipe_info">
 			<br><br>
 
 			<div class="row">
-			<div class="col-xs-4"><img class="single_recipe_photo" src="/img/{{$recipe->image}}">
-			</div>
+				<div class="col-xs-5">
+					<img class="single_recipe_photo" src="/img/{{$recipe->image}}">
+				</div>
 
-			<div class="single_recipe_information col-xs-7">
-			<p class="single_recipe_title">{{$recipe->name}}</p>
-			<p class="single_recipe_prep_time">Prep Time: {{$recipe->prep_time}}</p>
-			
-			@if($recipe->cook_time)
-				<p class="single_recipe_cook_time">Cook Time: {{$recipe->cook_time}}</p>
+				<div class="single_recipe_information col-xs-6">
+					<p class="single_recipe_title">{{$recipe->name}}</p>
 
-			<p class="single_recipe_total_time">Total Time: {{$recipe->total_time}}</p>
-			@endif
+					@if($recipe->prep_time)
+						<p class="single_recipe_prep_time">Prep Time: {{$recipe->prep_time}}</p>
+					@endif
+
+					@if($recipe->cook_time)
+						<p class="single_recipe_cook_time">Cook Time: {{$recipe->cook_time}}</p>
+					@endif
+
+					@if($recipe->total_time)
+						<p class="single_recipe_total_time">Total Time: {{$recipe->total_time}}</p>
+					@endif
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-		<div class="recipe_ingredients col-xs-5 col-xs-offset-1">
-			<div class="ingredients_title">Ingredients:</div>
-			<div class="ingredients_list">
-			1. Chicken<br>
-			2. Lemon<br>
-			3. Garlic<br>
-			4. Oil
+			<div class="recipe_ingredients col-xs-5 col-xs-offset-1">
+				<h2 class="ingredients_title">Ingredients:</h2>
+				<ul class="ingredients_list">
+					@foreach ($recipe->ingredients as $ingredient)
+						<li>{{ $ingredient }}</li>
+					@endforeach
+				</ul>
+			</div>
+
+			<div class="recipe_directions col-xs-5 col-xs-offset-1">
+				<h2 class="directions_title">Directions:</h2>
+				<div class="single_recipe_directions">
+					@if(sizeof($recipe->directions) === 1)
+						<p>
+							{{ $recipe->directions[0] }}
+						</p>
+					@else
+						<ol>
+							@foreach ($recipe->directions as $step)
+								<li>{{ $step }}</li>
+							@endforeach
+						</ol>
+					@endif
+				</div>
 			</div>
 		</div>
+	</section>
+</div>
 
-		<div class="recipe_directions col-xs-5 col-xs-offset-1">
-			<div class="directions_title">Directions:</div>
-			<div class="single_recipe_directions">
-			1.HERE<br>
-			2.ARE<br>
-			3.THE<br>
-			4.DIRECTIONS!<br>
-			</div>
-		</div>
-</section>
-
-			<br><br>
+<br><br>
 	
 
 @stop

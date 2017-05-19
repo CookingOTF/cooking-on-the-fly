@@ -5,10 +5,13 @@
 @section('content')
 
 <form action="{{ action('RecipesController@searchResults') }}" method="GET">
-{!! csrf_field() !!}
+
 <section class='text-center ingredients'>
 	<h3 class='ingredient_title'> SELECT YOUR INGREDIENTS </h3>
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 <img class='ingredient_head' src="/img/veghead.png">	
 <div class="ingredient_box col-xs-8 col-xs-offset-2">
 

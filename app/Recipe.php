@@ -7,29 +7,64 @@ use DB;
 
 class Recipe extends Model
 {
+    public static function getSearchResults($q)
+    {
+        $recipes = Recipe::select('id', 'name', 'description', 'image')
+            ->with('ingredients')
+            ->get()
+            ->all();
+
+        $onhand = $borrow = [];
+
+        // Here's where the real action starts!
+        foreach ($recipes as $index => $recipe) {
+            $ingredients = $recipe
+                ->ingredients()
+                ->lists('name', 'display_name')
+                ->all();
+
+            $lacking = array_diff($ingredients, $q);
+            ksort($lacking);
+
+            if (empty($lacking)) { /* Do you have all the ingredients you need? */
+                $onhand[] = $recipe;
+            } elseif ( /* What if you borrowed a little this or that from a neighbor? */
+                sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
+                and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
+            ) {
+                $borrow[implode(' and ', array_keys($lacking))][] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
+            } else {
+                $recipe->lacking = array_keys($lacking);
+                $goShopping[] = $recipe;
+            }
+        }
+
+        return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
+    }
+
     public static function getCard($id)
     {
-        return [
-            'recipe' => self::select(
-                'name',
-                'description',
-                'image',
-                'servings',
-                'prep_time',
-                'cook_time'
-            )->where('id', $id)
-                ->first(),
+        $recipe = self::select(
+            'name',
+            'description',
+            'image',
+            'servings',
+            'prep_time',
+            'cook_time'
+        )->where('id', $id)
+        ->first();
 
-            'directions' => Directions::select('content')
-                ->where('recipe_id', $id)
-                ->orderBy('step_no')
-                ->lists('content'),
+        $recipe->directions = Directions::select('content')
+            ->where('recipe_id', $id)
+            ->orderBy('step_no')
+            ->lists('content')->all();
 
-            'ingredients' => DB::table('recipe_ingredients')
-                ->select('display_in_recipe')
-                ->where('recipe_id', $id)
-                ->lists('display_in_recipe')
-        ];
+        $recipe->ingredients = DB::table('recipe_ingredients')
+            ->select('display_in_recipe')
+            ->where('recipe_id', $id)
+            ->lists('display_in_recipe');
+
+        return $recipe;
     }
 
     protected $table = 'recipes';

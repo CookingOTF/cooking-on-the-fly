@@ -14,7 +14,7 @@ class IngredientTableSeeder extends Seeder
      * ================================================================
      *
      * Just replace "NAME" and "DISPLAY_NAME" with the appropriate
-     * values. Copy the Ingredient::create() function as many times
+     * values. Copy the arrays as many times
      * as you need.
      *
      * ---
@@ -45,158 +45,871 @@ class IngredientTableSeeder extends Seeder
     public function run()
     {
         $ingredients = [
-            Ingredient::create(['name' => 'garlic', 'display_name' => 'Garlic', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'onion', 'display_name' => 'Onion', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'tomato sauce', 'display_name' => 'Tomato Sauce', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'tomato paste', 'display_name' => 'Tomato Paste', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'tomato', 'display_name' => 'Tomato', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'potato', 'display_name' => 'Potato', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'lettuce', 'display_name' => 'Salad Greens','category' => 'vegetable']),
-            Ingredient::create(['name' => 'olives', 'display_name' => 'Olives', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'carrot', 'display_name' => 'Carrot', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'basil', 'display_name' => 'Basil', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'peas', 'display_name' => 'Peas', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'beans', 'display_name' => 'Beans', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'parsley', 'display_name' => 'Parsley', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'rosemary', 'display_name' => 'Rosemary', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'cucumber', 'display_name' => 'Cucumber','category' => 'vegetable']),
-            Ingredient::create(['name' => 'bell pepper', 'display_name' => 'Bell Pepper', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'spinach', 'display_name' => 'Spinach', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'broccoli', 'display_name' => 'Broccoli', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'scallions', 'display_name' => 'Scallions', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'zucchini', 'display_name' => 'Zucchini', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'cabbage', 'display_name' => 'Cabbage', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'cauliflower', 'display_name' => 'Cauliflower', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'avocado', 'display_name' => 'Avocado', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'asparagus', 'display_name' => 'Asparagus', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'snow peas', 'display_name' => 'Snow Peas', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'celery', 'display_name' => 'Celery', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'jalapeno', 'display_name' => 'Jalapeno', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'sweet potato', 'display_name' => 'Sweet Potato', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'kale', 'display_name' => 'Kale', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'corn', 'display_name' => 'Corn', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'green beans', 'display_name' => 'Green Beans', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'squash', 'display_name' => 'Squash', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'mushroom', 'display_name' => 'Mushroom', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'mixed', 'display_name' => 'Mixed Vegetable', 'category' => 'vegetable']),
-            Ingredient::create(['name' => 'ginger', 'display_name' => 'Ginger','category' => 'vegetable']),
-            Ingredient::create(['name' => 'lemon', 'display_name' => 'Lemon', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'banana', 'display_name' => 'Banana', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'apple', 'display_name' => 'Apple', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'coconut', 'display_name' => 'Coconut', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'mango', 'display_name' => 'Mango', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'pineapple', 'display_name' => 'Pineapple', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'strawberry', 'display_name' => 'Strawberry', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'grape', 'display_name' => 'Grape', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'blueberry', 'display_name' => 'Blueberry', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'peach', 'display_name' => 'Peach', 'category' => 'fruit']),
-            Ingredient::create(['name' => 'butter', 'display_name' => 'Butter', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'eggs', 'display_name' => 'Egg', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'milk', 'display_name' => 'Milk', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'cream', 'display_name' => 'Cream', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'sour cream', 'display_name' => 'Sour Cream', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'parmesan', 'display_name' => 'Parmesan', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'cream cheese', 'display_name' => 'Cream Cheese', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'mozzarella', 'display_name' => 'Mozzarella', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'yogurt', 'display_name' => 'Yogurt', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'sliced cheese', 'display_name' => 'Sliced Cheese', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'whipped cream', 'display_name' => 'Whipped Cream', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'cottage cheese', 'display_name' => 'Cottage Cheese', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'ricotta', 'display_name' => 'Ricotta', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'ice cream', 'display_name' => 'Ice Cream', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'swiss', 'display_name' => 'Swiss Chese', 'category' => 'dairy']),
-            Ingredient::create(['name' => 'chicken breast', 'display_name' => 'Chicken Breast', 'category' => 'meats']),
-            Ingredient::create(['name' => 'ground beef', 'display_name' => 'Ground Beef', 'category' => 'meats']),
-            Ingredient::create(['name' => 'bacon', 'display_name' => 'Bacon', 'category' => 'meats']),
-            Ingredient::create(['name' => 'chicken', 'display_name' => 'Chicken', 'category' => 'meats']),
-            Ingredient::create(['name' => 'sausage', 'display_name' => 'Sausage', 'category' => 'meats']),
-            Ingredient::create(['name' => 'ham', 'display_name' => 'Ham', 'category' => 'meats']),
-            Ingredient::create(['name' => 'steak', 'display_name' => 'Beef Steak', 'category' => 'meats']),
-            Ingredient::create(['name' => 'hot dog', 'display_name' => 'Hot Dog', 'category' => 'meats']),
-            Ingredient::create(['name' => 'pork chops', 'display_name' => 'Pork Chops', 'category' => 'meats']),
-            Ingredient::create(['name' => 'chicken leg', 'display_name' => 'Chicken Leg', 'category' => 'meats']),
-            Ingredient::create(['name' => 'chicken wing', 'display_name' => 'Chicken Wing', 'category' => 'meats']),
-            Ingredient::create(['name' => 'turkey', 'display_name' => 'Turkey', 'category' => 'meats']),
-            Ingredient::create(['name' => 'pepperoni', 'display_name' => 'Pepperoni', 'category' => 'meats']),
-            Ingredient::create(['name' => 'pork ribs', 'display_name' => 'Pork Ribs', 'category' => 'meats']),
-            Ingredient::create(['name' => 'chorizo', 'display_name' => 'Chorizo', 'category' => 'meats']),
-            Ingredient::create(['name' => 'duck', 'display_name' => 'Duck', 'category' => 'meats']),
-            Ingredient::create(['name' => 'canned tuna', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
-            Ingredient::create(['name' => 'salmon', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
-            Ingredient::create(['name' => 'fish fillets', 'display_name' => 'Fish Fillets', 'category' => 'meats']),
-            Ingredient::create(['name' => 'anchovies', 'display_name' => 'Anchovies', 'category' => 'meats']),
-            Ingredient::create(['name' => 'crab', 'display_name' => 'Crab', 'category' => 'meats']),
-            Ingredient::create(['name' => 'Lobster', 'display_name' => 'Lobster', 'category' => 'meats']),
-            Ingredient::create(['name' => 'scallop', 'display_name' => 'Scallop', 'category' => 'meats']),
-            Ingredient::create(['name' => 'halibut', 'display_name' => 'Halibut', 'category' => 'meats']),
-            Ingredient::create(['name' => 'flounder', 'display_name' => 'Flounder', 'category' => 'meats']),
-            Ingredient::create(['name' => 'tilapia', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
-            Ingredient::create(['name' => 'flour', 'display_name' => 'Flour', 'category' => 'grains']),
-            Ingredient::create(['name' => 'rice', 'display_name' => 'Rice', 'category' => 'grains']),
-            Ingredient::create(['name' => 'pasta', 'display_name' => 'Pasta', 'category' => 'grains']),
-            Ingredient::create(['name' => 'baking powder', 'display_name' => 'baking powder', 'category' => 'grains']),
-            Ingredient::create(['name' => 'baking soda', 'display_name' => 'Baking soda', 'category' => 'grains']),
-            Ingredient::create(['name' => 'lasagna', 'display_name' => 'Lasagna Noodles', 'category' => 'grains']),
-            Ingredient::create(['name' => 'bread', 'display_name' => 'Sliced Bread', 'category' => 'grains']),
-            Ingredient::create(['name' => 'bread crumbs', 'display_name' => 'Bread Crumbs', 'category' => 'grains']),
-            Ingredient::create(['name' => 'cornstarch', 'display_name' => 'Cornstarch', 'category' => 'grains']),
-            Ingredient::create(['name' => 'pizza dough', 'display_name' => 'Pizza Dough', 'category' => 'grains']),
-            Ingredient::create(['name' => 'ramen', 'display_name' => 'Ramen', 'category' => 'grains']),
-            Ingredient::create(['name' => 'bagel', 'display_name' => 'Bagel', 'category' => 'grains']),
-            Ingredient::create(['name' => 'hot dog bun', 'display_name' => 'Hot Dog Bun', 'category' => 'grains']),
-            Ingredient::create(['name' => 'tortillas', 'display_name' => 'Tortillas', 'category' => 'grains']),
-            Ingredient::create(['name' => 'croutons', 'display_name' => 'Croutons', 'category' => 'grains']),
-            Ingredient::create(['name' => 'pancake mix', 'display_name' => 'Pancake Mix', 'category' => 'grains']),
-            Ingredient::create(['name' => 'olive oil', 'display_name' => 'Olive Oil', 'category' => 'oils']),
-            Ingredient::create(['name' => 'vegetable oil', 'display_name' => 'Olive Oil', 'category' => 'oils']),
-            Ingredient::create(['name' => 'peanut oil', 'display_name' => 'Peanut Oil', 'category' => 'oils']),
-            Ingredient::create(['name' => 'sesame oil', 'display_name' => 'Sesame Oil', 'category' => 'oils']),
-            Ingredient::create(['name' => 'cooking spray', 'display_name' => 'Cooking Spray', 'category' => 'oils']),
-            Ingredient::create(['name' => 'oil', 'display_name' => 'Other Oils', 'category' => 'oils']),
-            Ingredient::create(['name' => 'honey', 'display_name' => 'Honey', 'category' => 'sweeteners']),
-            Ingredient::create(['name' => 'maple', 'display_name' => 'Maple Syrup', 'category' => 'sweeteners']),
-            Ingredient::create(['name' => 'brown sugar', 'display_name' => 'Brown Sugar', 'category' => 'sweeteners']),
-            Ingredient::create(['name' => 'splenda', 'display_name' => 'Splenda', 'category' => 'sweeteners']),
-            Ingredient::create(['name' => 'sugar', 'display_name' => 'Sugar', 'category' => 'sweeteners']),
-            Ingredient::create(['name' => 'salt', 'display_name' => 'Salt', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'pepper', 'display_name' => 'Black Pepper', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'peanut butter', 'display_name' => 'Peanut Butter', 'category' => 'nuts']),
-            Ingredient::create(['name' => 'peanuts', 'display_name' => 'Peanuts', 'category' => 'nuts']),
-            Ingredient::create(['name' => 'almonds', 'display_name' => 'Almonds', 'category' => 'nuts']),
-            Ingredient::create(['name' => 'cashews', 'display_name' => 'Cashews', 'category' => 'nuts']),
-            Ingredient::create(['name' => 'pecan', 'display_name' => 'Pecan', 'category' => 'nuts']),
-            Ingredient::create(['name' => 'ketchup', 'display_name' => 'Ketchup', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'jelly', 'display_name' => 'Jelly', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'mayonnaise', 'display_name' => 'Mayonnaise', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'sriracha', 'display_name' => 'Sriracha', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'salsa', 'display_name' => 'Salsa', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'soy', 'display_name' => 'Soy Sauce', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'mustard', 'display_name' => 'Mustard', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'vineagar', 'display_name' => 'Ketchup', 'category' => 'condiments']),
-            Ingredient::create(['name' => 'chocolate', 'display_name' => 'Chocolate', 'category' => 'snacks']),
-            Ingredient::create(['name' => 'marshmellow', 'display_name' => 'Marshmellow', 'category' => 'snacks']),
-            Ingredient::create(['name' => 'potato chips', 'display_name' => 'Potato Chips', 'category' => 'snacks']),
-            Ingredient::create(['name' => 'chocolate syrup', 'display_name' => 'Chocolate Syrup', 'category' => 'snacks']),
-            Ingredient::create(['name' => 'apple juice', 'display_name' => 'Apple Juice', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'tea', 'display_name' => 'Tea', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'orange juice', 'display_name' => 'Orange Juice', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'wine', 'display_name' => 'Wine', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'coffee', 'display_name' => 'Coffee', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'chicken broth', 'display_name' => 'Chicken Broth', 'category' => 'beverages']),
-            Ingredient::create(['name' => 'oregano', 'display_name' => 'Oregano', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'italian seasoning', 'display_name' => 'Italian Seasoning', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'paprika', 'display_name' => 'Paprika', 'category' => 'seasonings'])
-            Ingredient::create(['name' => 'chili', 'display_name' => 'Chili Powder', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'taco seasoning', 'display_name' => 'Taco Seasoning', 'category' => 'seasonings']),
-            Ingredient::create(['name' => 'vanilla', 'display_name' => 'Vanilla', 'category' => 'seasonings'])
+// <<<<<<< HEAD
+//             Ingredient::create(['name' => 'garlic', 'display_name' => 'Garlic', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'onion', 'display_name' => 'Onion', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'tomato sauce', 'display_name' => 'Tomato Sauce', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'tomato paste', 'display_name' => 'Tomato Paste', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'tomato', 'display_name' => 'Tomato', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'potato', 'display_name' => 'Potato', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'lettuce', 'display_name' => 'Salad Greens','category' => 'vegetable']),
+//             Ingredient::create(['name' => 'olives', 'display_name' => 'Olives', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'carrot', 'display_name' => 'Carrot', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'basil', 'display_name' => 'Basil', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'peas', 'display_name' => 'Peas', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'beans', 'display_name' => 'Beans', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'parsley', 'display_name' => 'Parsley', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'rosemary', 'display_name' => 'Rosemary', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'cucumber', 'display_name' => 'Cucumber','category' => 'vegetable']),
+//             Ingredient::create(['name' => 'bell pepper', 'display_name' => 'Bell Pepper', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'spinach', 'display_name' => 'Spinach', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'broccoli', 'display_name' => 'Broccoli', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'scallions', 'display_name' => 'Scallions', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'zucchini', 'display_name' => 'Zucchini', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'cabbage', 'display_name' => 'Cabbage', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'cauliflower', 'display_name' => 'Cauliflower', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'avocado', 'display_name' => 'Avocado', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'asparagus', 'display_name' => 'Asparagus', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'snow peas', 'display_name' => 'Snow Peas', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'celery', 'display_name' => 'Celery', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'jalapeno', 'display_name' => 'Jalapeno', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'sweet potato', 'display_name' => 'Sweet Potato', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'kale', 'display_name' => 'Kale', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'corn', 'display_name' => 'Corn', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'green beans', 'display_name' => 'Green Beans', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'squash', 'display_name' => 'Squash', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'mushroom', 'display_name' => 'Mushroom', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'mixed', 'display_name' => 'Mixed Vegetable', 'category' => 'vegetable']),
+//             Ingredient::create(['name' => 'ginger', 'display_name' => 'Ginger','category' => 'vegetable']),
+//             Ingredient::create(['name' => 'lemon', 'display_name' => 'Lemon', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'banana', 'display_name' => 'Banana', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'apple', 'display_name' => 'Apple', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'coconut', 'display_name' => 'Coconut', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'mango', 'display_name' => 'Mango', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'pineapple', 'display_name' => 'Pineapple', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'strawberry', 'display_name' => 'Strawberry', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'grape', 'display_name' => 'Grape', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'blueberry', 'display_name' => 'Blueberry', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'peach', 'display_name' => 'Peach', 'category' => 'fruit']),
+//             Ingredient::create(['name' => 'butter', 'display_name' => 'Butter', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'eggs', 'display_name' => 'Egg', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'milk', 'display_name' => 'Milk', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'cream', 'display_name' => 'Cream', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'sour cream', 'display_name' => 'Sour Cream', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'parmesan', 'display_name' => 'Parmesan', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'cream cheese', 'display_name' => 'Cream Cheese', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'mozzarella', 'display_name' => 'Mozzarella', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'yogurt', 'display_name' => 'Yogurt', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'sliced cheese', 'display_name' => 'Sliced Cheese', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'whipped cream', 'display_name' => 'Whipped Cream', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'cottage cheese', 'display_name' => 'Cottage Cheese', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'ricotta', 'display_name' => 'Ricotta', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'ice cream', 'display_name' => 'Ice Cream', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'swiss', 'display_name' => 'Swiss Chese', 'category' => 'dairy']),
+//             Ingredient::create(['name' => 'chicken breast', 'display_name' => 'Chicken Breast', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'ground beef', 'display_name' => 'Ground Beef', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'bacon', 'display_name' => 'Bacon', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'chicken', 'display_name' => 'Chicken', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'sausage', 'display_name' => 'Sausage', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'ham', 'display_name' => 'Ham', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'steak', 'display_name' => 'Beef Steak', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'hot dog', 'display_name' => 'Hot Dog', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'pork chops', 'display_name' => 'Pork Chops', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'chicken leg', 'display_name' => 'Chicken Leg', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'chicken wing', 'display_name' => 'Chicken Wing', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'turkey', 'display_name' => 'Turkey', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'pepperoni', 'display_name' => 'Pepperoni', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'pork ribs', 'display_name' => 'Pork Ribs', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'chorizo', 'display_name' => 'Chorizo', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'duck', 'display_name' => 'Duck', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'canned tuna', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'salmon', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'fish fillets', 'display_name' => 'Fish Fillets', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'anchovies', 'display_name' => 'Anchovies', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'crab', 'display_name' => 'Crab', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'Lobster', 'display_name' => 'Lobster', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'scallop', 'display_name' => 'Scallop', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'halibut', 'display_name' => 'Halibut', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'flounder', 'display_name' => 'Flounder', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'tilapia', 'display_name' => 'Canned Tuna', 'category' => 'meats']),
+//             Ingredient::create(['name' => 'flour', 'display_name' => 'Flour', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'rice', 'display_name' => 'Rice', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'pasta', 'display_name' => 'Pasta', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'baking powder', 'display_name' => 'baking powder', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'baking soda', 'display_name' => 'Baking soda', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'lasagna', 'display_name' => 'Lasagna Noodles', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'bread', 'display_name' => 'Sliced Bread', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'bread crumbs', 'display_name' => 'Bread Crumbs', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'cornstarch', 'display_name' => 'Cornstarch', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'pizza dough', 'display_name' => 'Pizza Dough', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'ramen', 'display_name' => 'Ramen', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'bagel', 'display_name' => 'Bagel', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'hot dog bun', 'display_name' => 'Hot Dog Bun', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'tortillas', 'display_name' => 'Tortillas', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'croutons', 'display_name' => 'Croutons', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'pancake mix', 'display_name' => 'Pancake Mix', 'category' => 'grains']),
+//             Ingredient::create(['name' => 'olive oil', 'display_name' => 'Olive Oil', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'vegetable oil', 'display_name' => 'Olive Oil', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'peanut oil', 'display_name' => 'Peanut Oil', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'sesame oil', 'display_name' => 'Sesame Oil', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'cooking spray', 'display_name' => 'Cooking Spray', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'oil', 'display_name' => 'Other Oils', 'category' => 'oils']),
+//             Ingredient::create(['name' => 'honey', 'display_name' => 'Honey', 'category' => 'sweeteners']),
+//             Ingredient::create(['name' => 'maple', 'display_name' => 'Maple Syrup', 'category' => 'sweeteners']),
+//             Ingredient::create(['name' => 'brown sugar', 'display_name' => 'Brown Sugar', 'category' => 'sweeteners']),
+//             Ingredient::create(['name' => 'splenda', 'display_name' => 'Splenda', 'category' => 'sweeteners']),
+//             Ingredient::create(['name' => 'sugar', 'display_name' => 'Sugar', 'category' => 'sweeteners']),
+//             Ingredient::create(['name' => 'salt', 'display_name' => 'Salt', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'pepper', 'display_name' => 'Black Pepper', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'peanut butter', 'display_name' => 'Peanut Butter', 'category' => 'nuts']),
+//             Ingredient::create(['name' => 'peanuts', 'display_name' => 'Peanuts', 'category' => 'nuts']),
+//             Ingredient::create(['name' => 'almonds', 'display_name' => 'Almonds', 'category' => 'nuts']),
+//             Ingredient::create(['name' => 'cashews', 'display_name' => 'Cashews', 'category' => 'nuts']),
+//             Ingredient::create(['name' => 'pecan', 'display_name' => 'Pecan', 'category' => 'nuts']),
+//             Ingredient::create(['name' => 'ketchup', 'display_name' => 'Ketchup', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'jelly', 'display_name' => 'Jelly', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'mayonnaise', 'display_name' => 'Mayonnaise', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'sriracha', 'display_name' => 'Sriracha', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'salsa', 'display_name' => 'Salsa', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'soy', 'display_name' => 'Soy Sauce', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'mustard', 'display_name' => 'Mustard', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'vineagar', 'display_name' => 'Ketchup', 'category' => 'condiments']),
+//             Ingredient::create(['name' => 'chocolate', 'display_name' => 'Chocolate', 'category' => 'snacks']),
+//             Ingredient::create(['name' => 'marshmellow', 'display_name' => 'Marshmellow', 'category' => 'snacks']),
+//             Ingredient::create(['name' => 'potato chips', 'display_name' => 'Potato Chips', 'category' => 'snacks']),
+//             Ingredient::create(['name' => 'chocolate syrup', 'display_name' => 'Chocolate Syrup', 'category' => 'snacks']),
+//             Ingredient::create(['name' => 'apple juice', 'display_name' => 'Apple Juice', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'tea', 'display_name' => 'Tea', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'orange juice', 'display_name' => 'Orange Juice', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'wine', 'display_name' => 'Wine', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'coffee', 'display_name' => 'Coffee', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'chicken broth', 'display_name' => 'Chicken Broth', 'category' => 'beverages']),
+//             Ingredient::create(['name' => 'oregano', 'display_name' => 'Oregano', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'italian seasoning', 'display_name' => 'Italian Seasoning', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'paprika', 'display_name' => 'Paprika', 'category' => 'seasonings'])
+//             Ingredient::create(['name' => 'chili', 'display_name' => 'Chili Powder', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'taco seasoning', 'display_name' => 'Taco Seasoning', 'category' => 'seasonings']),
+//             Ingredient::create(['name' => 'vanilla', 'display_name' => 'Vanilla', 'category' => 'seasonings'])
 
 
 
 
+// =======
+            [
+                'name' => 'garlic',
+                'display_name' => 'Garlic',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'onion',
+                'display_name' => 'Onion',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'tomato sauce',
+                'display_name' => 'Tomato Sauce',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'tomato paste',
+                'display_name' => 'Tomato Paste',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'tomato',
+                'display_name' => 'Tomato',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'potato',
+                'display_name' => 'Potato',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'lettuce',
+                'display_name' => 'Salad Greens',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'olives',
+                'display_name' => 'Olives',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'carrot',
+                'display_name' => 'Carrot',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'basil',
+                'display_name' => 'Basil',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'peas',
+                'display_name' => 'Peas',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'beans',
+                'display_name' => 'Beans',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'parsley',
+                'display_name' => 'Parsley',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'rosemary',
+                'display_name' => 'Rosemary',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'cucumber',
+                'display_name' => 'Cucumber',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'bell pepper',
+                'display_name' => 'Bell Pepper',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'spinach',
+                'display_name' => 'Spinach',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'broccoli',
+                'display_name' => 'Broccoli',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'scallions',
+                'display_name' => 'Scallions',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'zucchini',
+                'display_name' => 'Zucchini',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'cabbage',
+                'display_name' => 'Cabbage',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'cauliflower',
+                'display_name' => 'Cauliflower',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'avocado',
+                'display_name' => 'Avocado',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'asparagus',
+                'display_name' => 'Asparagus',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'snow peas',
+                'display_name' => 'Snow Peas',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'celery',
+                'display_name' => 'Celery',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'jalapeno',
+                'display_name' => 'Jalapeno',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'sweet potato',
+                'display_name' => 'Sweet Potato',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'kale',
+                'display_name' => 'Kale',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'corn',
+                'display_name' => 'Corn',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'green beans',
+                'display_name' => 'Green Beans',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'squash',
+                'display_name' => 'Squash',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'mushroom',
+                'display_name' => 'Mushroom',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'mixed',
+                'display_name' => 'Mixed Vegetable',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'ginger',
+                'display_name' => 'Ginger',
+                'category' => 'vegetable'
+            ],
+            [
+                'name' => 'lemon',
+                'display_name' => 'Lemon',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'banana',
+                'display_name' => 'Banana',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'apple',
+                'display_name' => 'Apple',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'coconut',
+                'display_name' => 'Coconut',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'mango',
+                'display_name' => 'Mango',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'pineapple',
+                'display_name' => 'Pineapple',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'strawberry',
+                'display_name' => 'Strawberry',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'grape',
+                'display_name' => 'Grape',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'blueberry',
+                'display_name' => 'Blueberry',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'peach',
+                'display_name' => 'Peach',
+                'category' => 'fruit'
+            ],
+            [
+                'name' => 'butter',
+                'display_name' => 'Butter',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'eggs',
+                'display_name' => 'Egg',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'milk',
+                'display_name' => 'Milk',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'cream',
+                'display_name' => 'Cream',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'sour cream',
+                'display_name' => 'Sour Cream',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'parmesan',
+                'display_name' => 'Parmesan',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'cream cheese',
+                'display_name' => 'Cream Cheese',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'mozzarella',
+                'display_name' => 'Mozzarella',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'yogurt',
+                'display_name' => 'Yogurt',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'sliced cheese',
+                'display_name' => 'Sliced Cheese',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'whipped cream',
+                'display_name' => 'Whipped Cream',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'cottage cheese',
+                'display_name' => 'Cottage Cheese',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'ricotta',
+                'display_name' => 'Ricotta',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'ice cream',
+                'display_name' => 'Ice Cream',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'swiss',
+                'display_name' => 'Swiss Chese',
+                'category' => 'dairy'
+            ],
+            [
+                'name' => 'chicken breast',
+                'display_name' => 'Chicken Breast',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'ground beef',
+                'display_name' => 'Ground Beef',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'bacon',
+                'display_name' => 'Bacon',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'chicken',
+                'display_name' => 'Chicken',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'sausage',
+                'display_name' => 'Sausage',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'ham',
+                'display_name' => 'Ham',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'steak',
+                'display_name' => 'Beef Steak',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'hot dog',
+                'display_name' => 'Hot Dog',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'pork chops',
+                'display_name' => 'Pork Chops',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'chicken leg',
+                'display_name' => 'Chicken Leg',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'chicken wing',
+                'display_name' => 'Chicken Wing',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'turkey',
+                'display_name' => 'Turkey',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'pepperoni',
+                'display_name' => 'Pepperoni',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'pork ribs',
+                'display_name' => 'Pork Ribs',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'chorizo',
+                'display_name' => 'Chorizo',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'duck',
+                'display_name' => 'Duck',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'canned tuna',
+                'display_name' => 'Canned Tuna',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'salmon',
+                'display_name' => 'Canned Tuna',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'fish fillets',
+                'display_name' => 'Fish Fillets',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'anchovies',
+                'display_name' => 'Anchovies',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'crab',
+                'display_name' => 'Crab',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'Lobster',
+                'display_name' => 'Lobster',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'scallop',
+                'display_name' => 'Scallop',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'halibut',
+                'display_name' => 'Halibut',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'flounder',
+                'display_name' => 'Flounder',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'tilapia',
+                'display_name' => 'Canned Tuna',
+                'category' => 'meats'
+            ],
+            [
+                'name' => 'flour',
+                'display_name' => 'Flour',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'rice',
+                'display_name' => 'Rice',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'pasta',
+                'display_name' => 'Pasta',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'baking powder',
+                'display_name' => 'baking powder',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'baking soda',
+                'display_name' => 'Baking soda',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'lasagna',
+                'display_name' => 'Lasagna Noodles',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'bread crumbs',
+                'display_name' => 'Bread Crumbs',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'cornstarch',
+                'display_name' => 'Cornstarch',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'pizza dough',
+                'display_name' => 'Pizza Dough',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'ramen',
+                'display_name' => 'Ramen',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'bagel',
+                'display_name' => 'Bagel',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'hot dog bun',
+                'display_name' => 'Hot Dog Bun',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'tortillas',
+                'display_name' => 'Tortillas',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'croutons',
+                'display_name' => 'Croutons',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'pancake mix',
+                'display_name' => 'Pancake Mix',
+                'category' => 'grains'
+            ],
+            [
+                'name' => 'olive oil',
+                'display_name' => 'Olive Oil',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'vegetable oil',
+                'display_name' => 'Olive Oil',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'peanut oil',
+                'display_name' => 'Peanut Oil',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'sesame oil',
+                'display_name' => 'Sesame Oil',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'cooking spray',
+                'display_name' => 'Cooking Spray',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'oil',
+                'display_name' => 'Other Oils',
+                'category' => 'oils'
+            ],
+            [
+                'name' => 'honey',
+                'display_name' => 'Honey',
+                'category' => 'sweeteners'
+            ],
+            [
+                'name' => 'maple',
+                'display_name' => 'Maple Syrup',
+                'category' => 'sweeteners'
+            ],
+            [
+                'name' => 'brown sugar',
+                'display_name' => 'Brown Sugar',
+                'category' => 'sweeteners'
+            ],
+            [
+                'name' => 'splenda',
+                'display_name' => 'Splenda',
+                'category' => 'sweeteners'
+            ],
+            [
+                'name' => 'sugar',
+                'display_name' => 'Sugar',
+                'category' => 'sweeteners'
+            ],
+            [
+                'name' => 'salt',
+                'display_name' => 'Salt',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'pepper',
+                'display_name' => 'Black Pepper',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'peanut butter',
+                'display_name' => 'Peanut Butter',
+                'category' => 'nuts'
+            ],
+            [
+                'name' => 'peanuts',
+                'display_name' => 'Peanuts',
+                'category' => 'nuts'
+            ],
+            [
+                'name' => 'almonds',
+                'display_name' => 'Almonds',
+                'category' => 'nuts'
+            ],
+            [
+                'name' => 'cashews',
+                'display_name' => 'Cashews',
+                'category' => 'nuts'
+            ],
+            [
+                'name' => 'pecan',
+                'display_name' => 'Pecan',
+                'category' => 'nuts'
+            ],
+            [
+                'name' => 'ketchup',
+                'display_name' => 'Ketchup',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'jelly',
+                'display_name' => 'Jelly',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'mayonnaise',
+                'display_name' => 'Mayonnaise',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'sriracha',
+                'display_name' => 'Sriracha',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'soy',
+                'display_name' => 'Soy Sauce',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'mustard',
+                'display_name' => 'Mustard',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'vineagar',
+                'display_name' => 'Ketchup',
+                'category' => 'condiments'
+            ],
+            [
+                'name' => 'chocolate',
+                'display_name' => 'Chocolate',
+                'category' => 'snacks'
+            ],
+            [
+                'name' => 'marshmellow',
+                'display_name' => 'Marshmellow',
+                'category' => 'snacks'
+            ],
+            [
+                'name' => 'potato chips',
+                'display_name' => 'Potato Chips',
+                'category' => 'snacks'
+            ],
+            [
+                'name' => 'chocolate syrup',
+                'display_name' => 'Chocolate Syrup',
+                'category' => 'snacks'
+            ],
+            [
+                'name' => 'apple juice',
+                'display_name' => 'Apple Juice',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'tea',
+                'display_name' => 'Tea',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'orange juice',
+                'display_name' => 'Orange Juice',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'wine',
+                'display_name' => 'Wine',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'coffee',
+                'display_name' => 'Coffee',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'chicken broth',
+                'display_name' => 'Chicken Broth',
+                'category' => 'beverages'
+            ],
+            [
+                'name' => 'oregano',
+                'display_name' => 'Oregano',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'italian seasoning',
+                'display_name' => 'Italian Seasoning',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'paprika',
+                'display_name' => 'Paprika',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'chili',
+                'display_name' => 'Chili Powder',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'taco seasoning',
+                'display_name' => 'Taco Seasoning',
+                'category' => 'seasonings'
+            ],
+            [
+                'name' => 'vanilla',
+                'display_name' => 'Vanilla',
+                'category' => 'seasonings'
+            ]
+>>>>>>> master
         ];
 
         foreach ($ingredients as $ingredient) {
-            $ingredient->save();
+            Ingredient::create($ingredient);
         }
     }
 }

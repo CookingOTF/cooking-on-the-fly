@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 
         // DB::table('users')->truncate();
 
-        // DB::table('ingredients')->truncate();
+        DB::table('ingredients')->truncate();
 
         // All 3 of these are for Recipes table seeder
         DB::table('recipe_ingredients')->truncate();
@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
 
         // $this->call(UserTableSeeder::class);
 
-        // $this->call(IngredientTableSeeder::class);
+        $this->call(IngredientTableSeeder::class);
 
         $this->call(RecipesTableSeeder::class);
 
