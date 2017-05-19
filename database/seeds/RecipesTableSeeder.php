@@ -500,7 +500,7 @@ class RecipesTableSeeder extends Seeder
             [
              'info' => [
                     'name' => 'Quick and Easy Chicken Noodle Soup',
-                    'description' => "When you don't have time to make your soup totally from scratch, this is a very easy, very good substitute"
+                    'description' => "When you don't have time to make your soup totally from scratch, this is a very easy, very good substitute",
                     'image' => 'soup.jpeg',
                     'prep_time' => '00:10:00',
                     'cook_time' => '00:20:00',
@@ -657,25 +657,22 @@ class RecipesTableSeeder extends Seeder
 
             [
              'info' => [
-                    'name' => ' Polenta with Tomato Sauce',
-                    'description' => .' A quick baked polenta topped with red sauce.',
-                    'image' => 'polenta.jpeg',
-                    'prep_time' => '00:05:00',
-                    'cook_time' => '00:15:00',
-                    'servings' =>'6'
+                    'name' => 'Tangy Broccoli',
+                    'description' =>'Cheesy broccoli with a kick!',
+                    'image' => 'tang.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:10:00',
+                    'servings' =>'4'
                 ],
                 'directions' => [
-                 "Preheat the oven to 350 degrees F (175 degrees C). Grease a 9 inch square baking dish.",
-                "In a large pot, combine the milk and chicken stock. Bring to a boil over medium-high heat. When it is at a rolling boil, gradually whisk in the cornmeal, making sure there are no lumps. Reduce heat to low and simmer, stirring constantly until thick, about 5 minutes. Remove from the heat and stir in the Parmesan cheese.",
-                "Pour the polenta into the prepared baking dish, and spread spaghetti sauce over the top.",
-                "Bake for 10 minutes in the preheated oven, or until sauce is bubbling."
+                 "Steam broccoli until tender-crisp.",
+                "Toss broccoli with mustard, then melt the cheese over the broccoli in a microwave for 1 minute on HIGH. Stir and serve."
 
                 ],
                 'ingredients' => [
-                    'parmesan' => '1 cup Parmesan cheese',
-                    'chicken broth' => '2 cups chicken stock',
-                    'milk' => '2 cups milk',
-                    'tomato sauce' => '2 cups spaghetti sauce, or your favorite recipe'
+                    'broccoli' => '1 large head broccoli, cut into florets',
+                    'mustard' => '2 tablespoons prepared Dijon-style mustard',
+                    'cheddar' => '4 ounces cheddar'
 
 
                 ]
@@ -685,8 +682,8 @@ class RecipesTableSeeder extends Seeder
             [
              'info' => [
                     'name' => 'Salsa Chicken',
-                    'description' => .'A household favorite. You can use mild, medium or hot salsa depending on your taste.',
-                    'image' => 'polenta.jpeg',
+                    'description' =>'A household favorite. You can use mild, medium or hot salsa depending on your taste.',
+                    'image' => 'salsa.jpeg',
                     'prep_time' => '00:05:00',
                     'cook_time' => '00:15:00',
                     'servings' =>'6'
@@ -702,7 +699,7 @@ class RecipesTableSeeder extends Seeder
                     'parmesan' => '1 cup Parmesan cheese',
                     'chicken broth' => '2 cups chicken stock',
                     'milk' => '2 cups milk',
-                    'tomato sauce' => '2 cups spaghetti sauce, or your favorite recipe'
+                    'salsa' => 'Mild Salsa'
 
 
                 ]
@@ -711,8 +708,8 @@ class RecipesTableSeeder extends Seeder
 
             [
              'info' => [
-                    'name' => ' Polenta with Tomato Sauce',
-                    'description' => .' A quick baked polenta topped with red sauce.',
+                    'name' => 'Polenta with Tomato Sauce',
+                    'description' =>'A quick baked polenta topped with red sauce.',
                     'image' => 'polenta.jpeg',
                     'prep_time' => '00:05:00',
                     'cook_time' => '00:15:00',
@@ -790,7 +787,7 @@ class RecipesTableSeeder extends Seeder
              [
              'info' => [
                     'name' => 'Broccoli Pasta Salad',
-                    'description' =>'A quick and tasty pasta salad that can be served warm or cold."',
+                    'description' =>'A quick and tasty pasta salad that can be served warm or cold.',
                     'image' => 'brocpasta.jpeg',
                     'prep_time' => '00:15:00',
                     'cook_time' => '00:20:00',
@@ -807,12 +804,305 @@ class RecipesTableSeeder extends Seeder
                     'broccoli' => '1 (12 ounce) bag broccoli florets, cut into bite-size pieces',
                     'oil' => '1/4 cup olive oil',
                     'garlic' => '4 teaspoons minced garlic',
-                    'garlic' => '1/2 cup finely shredded Romano cheese',
+                    'romano' => '1/2 cup finely shredded Romano cheese',
 
 
 
                 ]
+            ],
+
+
+
+             [
+             'info' => [
+                    'name' => 'Pasta, Broccoli and Chicken',
+                    'description' =>'A mixture of pasta, broccoli, pesto, tomatoes and cheese that is practically a meal in itself, especially with the cooked chicken.',
+                    'image' => 'chickpasta.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "In a large pot with boiling salted water cook rigatoni pasta until al dente. Drain.",
+                "Meanwhile, blanch broccoli florets in a medium size saucepan, remove with slotted spoon. In same pan saute the minced garlic and pesto sauce in the olive oil for 2 minutes. Add the chopped tomatoes and set aside.",
+                "In a large bowl toss cooked pasta with blanched broccoli, cooked chicken, and garlic/tomato mixture. Add grated Parmesan cheese, salt, and ground black pepper and mix well. Serve warm."
+
+                ],
+                'ingredients' => [
+                    'pasta' => '12 ounces rigatoni pasta',
+                    'broccoli' => '1 bag broccoli florets, cut into bite-size pieces',
+                    'oil' => '1/4 cup olive oil',
+                    'garlic' => '1 tablespoon minced garlic',
+                    'pesto' => '2 tablespoons pesto',
+                    'tomato' => '1 cup chopped tomatoes',
+                    'parmesan' => '3/4 cup grated Parmesan cheese',
+                    'chicken' => '1 pound boneless chicken breast halves, cooked and chopped',
+                    'tomato' => '1 cup chopped tomatoes'
+
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Alfredo Sauce',
+                    'description' =>'a quick, cheap, and easy Alfredo sauce combination',
+                    'image' => 'alfredo.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:05:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Melt butter in a medium, non-stick saucepan over medium heat. Add cream cheese and garlic powder, stirring with wire whisk until smooth. Add milk, a little at a time, whisking to smooth out lumps. Stir in Parmesan and pepper. Remove from heat when sauce reaches desired consistency. Sauce will thicken rapidly, thin with milk if cooked too long. Toss with hot pasta to serve."
+
+                ],
+                'ingredients' => [
+                    'butter' => '1/2 cup butter',
+                    'cream cheese' => '1 (8 ounce) package cream cheese',
+                    'garlic' => '2 teaspoons garlic powder',
+                    'milk' => '2 cups milk',
+                    'pesto' => '2 tablespoons pesto',
+                    'tomato' => '1 cup chopped tomatoes',
+                    'parmesan' => '6 ounces grated Parmesan cheese'
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Quiche',
+                    'description' =>'This is an easy mix-it-up-in-one-bowl-and-cook recipe',
+                    'image' => 'quiche.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:50:00',
+                    'servings' =>'8'
+                ],
+                'directions' => [
+                 "Preheat oven to 375 degrees F (190 degrees C). Lightly grease a 10 inch quiche dish.",
+                 "In a large bowl, beat together milk, eggs, baking mix, butter and parmesan cheese. Batter will be lumpy. Stir in broccoli, ham and Cheddar cheese. Pour into prepared quiche dish.",
+                 "Bake in preheated oven for 50 minutes, until eggs are set and top is golden brown."
+
+                ],
+                'ingredients' => [
+                    'milk' => '2 cups milk',
+                    'eggs' => '4 eggs',
+                    'pancake mix' => '3/4 cup biscuit baking mix',
+                    'butter' => '1/4 cup butter, softened',
+                    'parmesan' => '1 cup grated Parmesan cheese',
+                    'broccoli' => '1 (10 ounce) package chopped frozen broccoli, thawed and drained',
+                    'ham' => '1 cup cubed cooked ham',
+                    'cheddar' => '8 ounces shredded Cheddar cheese'
+                ]
+            ],
+
+            [
+             'info' => [
+                    'name' => 'Roasted Broccoli',
+                    'description' => 'Easy roasted broccoli',
+                    'image' => 'roast.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat oven to 400 degrees F (200 degrees C).",
+                "Cut broccoli florets from the stalk. Peel the stalk and slice into 1/4-inch slices. Mix florets and stem pieces with olive oil in a bowl and transfer to a baking sheet; season with salt and pepper.",
+                "Roast in the preheated oven until broccoli is tender and lightly browned, about 18 minutes.",
+
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '14 ounces broccoli',
+                    'oil'=>'1 tablespoon olive oil'
+
+                ]
+            ],
+
+            [
+             'info' => [
+                    'name' => 'Baked Italian Chicken Dinner',
+                    'description' => "It's simple to make, and the ingredients are easy to find!",
+                    'image' => 'italian.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:45:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat oven to 400 degrees F (200 degrees C).",
+                "Spread chicken pieces, broccoli, and potatoes into the prepared baking dish, respectively. Drizzle melted butter over ingredients in the dish and season with the Italian dressing mix.",
+                "Bake in preheated oven until the chicken is cooked through and potatoes are tender, 45 to 60 minutes."
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '14 ounces broccoli',
+                    'chicken'=>'1 pound skinless, boneless chicken breast, cut into cubes',
+                    'potato'=>'4 potatoes, diced',
+                    'butter'=>'1/4 cup butter, melted',
+                    'italian seasoning'=>'1 (.7 ounce) package Italian dressing mix',
+
+                ]
+            ],
+
+            [
+             'info' => [
+                    'name' => 'Baked Tilapia',
+                    'description' => "This easy recipe for tilapia only takes a few minutes to prepare, uses few ingredients, and is flavorful.",
+                    'image' => 'tila.jpeg',
+                    'prep_time' => '00:05:00',
+                    'cook_time' => '00:30:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat the oven to 375 degrees F (190 degrees F). Lightly grease a 9x13-inch baking dish.",
+                "Place tilapia fillets in the bottom of the baking dish and season with seafood seasoning. Melt butter with garlic in a small bowl in the microwave, about 30 seconds on medium; pour over fish. Top each fillet with a slice or two of lemon. Arrange the frozen mixed vegetables around the fish, and season lightly with salt and pepper. Cover the dish with aluminum foil.",
+                "Bake in preheated oven until the fish is cooked through and veggies are tender, 30 minutes."
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '14 ounces broccoli',
+                    'tilapia'=>'4 (4 ounce) fillets tilapia',
+                    'potato'=>'4 potatoes, diced',
+                    'butter'=>'2 teaspoons butter, melted',
+                    'garlic'=>'1 clove garlic, minced',
+                    'lemon'=>'1 lemon, sliced',
+                    'cauliflower'=>'1 (16 ounce) package frozen cauliflower with broccoli and red pepper',
+                ]
+            ],
+
+            [
+             'info' => [
+                    'name' => 'Tomato and Broccoli Soup',
+                    'description' => "This soup is delicious!",
+                    'image' => 'tomatosoup.jpeg',
+                    'prep_time' => '00:20:00',
+                    'cook_time' => '00:40:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Heat olive oil in a stockpot over medium heat. Cook and stir onion in hot oil until softened, about 5 minutes.",
+                "Stir garlic through the onion; cook and stir until garlic is fragrant and slightly soft, another 1 to 2 minutes",
+                "Place broccoli, diced tomatoes, and chicken broth into the stockpot. Reduce heat to medium-low, bring the mixture to a simmer, and cook until the broccoli is completely softened, 30 to 40 minutes.",
+                "Stir milk into the soup and return to a simmer.",
+                "Pour the soup into a blender, filling the pitcher no more than halfway. Hold the lid of the blender firmly in place and carefully start the blender, using a few quick pulses to get the soup moving before leaving it on to puree. Puree in batches until smooth and pour into a serving dish. Season with salt and black pepper to serve."
+
+                ],
+                'ingredients' => [
+                    'broccoli' => '1 pound broccoli crowns, coarsely chopped',
+                    'tomato'=>'2 (14.5 ounce) cans diced tomatoes',
+                    'onion'=>'1 large onion, chopped',
+                    'milk'=>'1/2 cup low-fat milk',
+                    'garlic'=>'1 clove garlic, minced',
+                    'chicken broth'=>'1 (15 ounce) can chicken broth',
+                    'cauliflower'=>'1 (16 ounce) package frozen cauliflower with broccoli and red pepper',
+                ]
+            ],
+
+             [
+             'info' => [
+                    'name' => 'Creamed Spinach',
+                    'description' => "This soup is delicious!",
+                    'image' => 'creamed.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:20:00',
+                    'servings' =>'6'
+                ],
+                'directions' => [
+                 "Heat olive oil in a stockpot over medium heat. Cook and stir onion in hot oil until softened, about 5 minutes.",
+                "Stir garlic through the onion; cook and stir until garlic is fragrant and slightly soft, another 1 to 2 minutes",
+                "Place broccoli, diced tomatoes, and chicken broth into the stockpot. Reduce heat to medium-low, bring the mixture to a simmer, and cook until the broccoli is completely softened, 30 to 40 minutes.",
+                "Stir milk into the soup and return to a simmer.",
+                "Pour the soup into a blender, filling the pitcher no more than halfway. Hold the lid of the blender firmly in place and carefully start the blender, using a few quick pulses to get the soup moving before leaving it on to puree. Puree in batches until smooth and pour into a serving dish. Season with salt and black pepper to serve."
+
+                ],
+         'ingredients' => [
+                    'spinach' => '2 (16 ounce) bags fresh spinach',
+                    'shallot'=>'2 tablespoons minced shallot',
+                    'cream'=>'3/4 cup heavy whipping cream',
+                    'parmesan'=>'2 tablespoons finely shredded Parmesan',
+                    'lemon'=>'1 teaspoon freshly grated lemon zest',
+                    'butter'=>'1 tablespoon butter'
+                ]
+            ],
+
+             [
+             'info' => [
+                    'name' => 'Grilled Zucchini',
+                    'description' => "Great summer vegetable to go along side your burgers.",
+                    'image' => 'zucc.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:10:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat grill for medium heat and lightly oil the grate.",
+                "Drizzle zucchini slices on both sides with olive oil and season with grill seasoning.",
+            
+                "Grill zucchinis on preheated grill until tender, 3 to 4 minutes per side."
+
+                ],
+                    'ingredients' => [
+                    'zucchini' => '3 zucchinis, sliced 1/4-inch thick, lengthwise',
+                    'oil'=>'tablespoon olive oil'
+
+                ]
+            ],
+
+             [
+             'info' => [
+                    'name' => 'Steak Sandwich',
+                    'description' => "Freezing the steak the day before makes it easy to cut into very thin slices.",
+                    'image' => 'sandy.jpeg',
+                    'prep_time' => '00:10:00',
+                    'cook_time' => '00:15:00',
+                    'servings' =>'1'
+                ],
+                'directions' => [
+                 "Melt 1 tablespoon of butter in a large skillet over medium heat. Add the onion; cook and stir until tender. Push onion to the side of the pan, and add the mushrooms. Cook and stir until softened, then add the bell pepper and cook just until tender, about 3 minutes. Remove from the pan with a slotted spoon, and set aside.",
+                "Add the remaining butter to the skillet. No need to clean the pan, just let it heat up a little bit. Place the steak in the skillet along with the pickled peppers. Season with salt and pepper. The steak cooks really fast, just a couple of minutes. Once the steak is mostly browned, return the onion and pepper to the pan. Cook until heated through.",
+                "Turn off the heat, and place the slices of cheese over the top of the pile so they can melt. Scoop the whole pile into the awaiting bread, making sure to pour some of the juices onto that wonderful sandwich."
+
+                ],
+                    'ingredients' => [
+                    'butter' => '2 tablespoons butter',
+                    'onion'=>'1/4 medium onion, sliced',
+                    'mushroom'=>'4 large fresh mushrooms, sliced',
+                    'bell pepper'=>'1/4 green bell pepper, sliced into long strips',
+                    'steak'=>'1 (1/2 pound) well-marbled beef steak of any type, sliced as thinly as possible',
+                    'cheddar'=>'2 slices sharp Cheddar cheese',
+                    'bread'=>'1/3 French baguette, cut in half lengthwise'
+
+                ]
+            ],
+
+
+             [
+             'info' => [
+                    'name' => 'Spicy Roasted Potatoes',
+                    'description' => "Slight twist to an old favorite. Chili powder gives the potatoes and onions in this recipe some zing",
+                    'image' => 'spicyt.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:40:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat the oven to 450 degrees F (220 degrees C)",
+                "Arrange the potatoes and onions in a greased 9x13 inch baking dish so that they are evenly distributed. Season with garlic powder, salt and chili powder. Drizzle with olive oil. Stir to coat potatoes and onions with oil and spices.",
+                "Bake for 35 to 40 minutes in the preheated oven, until potatoes are fork tender and slightly crispy. Stir every 10 minutes. When done, sprinkle with cheese. Wait about 5 minutes for the cheese to melt before serving.."
+
+                ],
+                    'ingredients' => [
+                    'potato' => '5 medium red potatoes, diced with peel',
+                    'onion'=>'1/4 medium onion, sliced',
+                    'garlic'=>'garlic powder',
+                    'chili powder'=>'2 teaspoons chili powder',
+                    'cheddar'=>'1 cup shredded Cheddar cheese'
+
+                ]
             ]
+
+
+
+
 
 
 
