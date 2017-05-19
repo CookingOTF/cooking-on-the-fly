@@ -14,15 +14,16 @@
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-xs-6">
 					<div class="thumbnail">
 						<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
-							<p>
-								<img class="browse_image" src="/img/{{$recipe->image}}"></p>
+								<img class="img-responsive browse_image" src="/img/{{$recipe->image}}">
 							<p class="browse_name"> {{$recipe->name}}</p>
 							{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
-							{{-- <p class="browse_prep_time">{{$recipe->prep_time}}</p> --}}
+							<p class="browse_cook_time">total cook time: {{$recipe->cook_time}}</p>
 						</a>
 					</div>
 				</div>
 			@endforeach
 		</div>
 	</section>
+
+	{!! $recipes->render() !!}
 @stop

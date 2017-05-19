@@ -79,9 +79,9 @@
 							{{ $recipe->directions[0] }}
 						</p>
 					@else
-						<ol>
+						<ol class="directions">
 							@foreach ($recipe->directions as $step)
-								<li>{{ $step }}</li>
+								<li> &nbsp;{{ $step }}</li>
 							@endforeach
 						</ol>
 					@endif

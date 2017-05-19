@@ -356,7 +356,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => 'Steamed Broccoli',
                     'description' => 'How to steam broccoli perfectly every time',
-                    'image' => 'sande.jpg',
+                    'image' => 'broc.jpg',
                     'prep_time' => '00:05:00',
                     'cook_time' => '00:07:00',
                     'servings' =>'4'
