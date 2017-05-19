@@ -40,6 +40,7 @@ a {
 	font-size: 1.3em;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	margin-bottom: 0px !important;
+	border-radius: 0px !important;
 }
 
 .navbar li {
@@ -163,7 +164,7 @@ a {
 }
 
 #sign_in_button {
-	margin-top: 13%;
+	margin: 23%;
 
 }
 
@@ -192,6 +193,10 @@ a {
 
 .sign_in_top {
 	margin-top: 8%;
+}
+
+.sign_in_bottom {
+	margin-bottom: 12%;
 }
 
 #signin_username {
@@ -282,7 +287,7 @@ input[type=confirm] {
 	font-size: 1.3em;
 	font-weight: 100;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	border-radius: 10px;
+	border-radius: 5px;
 	text-align: center;
 }
 
@@ -295,6 +300,10 @@ input[type=confirm] {
 }
 
 .sign_up_top {
+	margin-top: 8%;
+}
+
+.sign_up_bottom {
 	margin-top: 5%;
 }
 
@@ -412,7 +421,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #7B8489;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 4%;
 }
 
@@ -420,7 +429,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #CDDBE3;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 4%;
 }
 
@@ -428,7 +437,7 @@ input[type=password] {
 	height: 300px;
 	width: 85%;
 	background-color: #7B8489;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 4%;
 }
 
@@ -459,7 +468,7 @@ input[type=password] {
 .search_ingredient_title {
 	padding-top: 40px;
 	color: #ECECEC;
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
 .ingredient_list{
@@ -534,7 +543,7 @@ table {
 	border-width: 2px;
 	border-color: #CDDBE3 !important;
 	background-color: #CDDBE3 !important;
-	border-radius: 10px !important;
+	border-radius: 5px !important;
 	text-align: center;
 	padding-top: 20px !important;
 }
@@ -553,7 +562,7 @@ table {
 	background-color: #CDDBE3;
 	height: 0 auto;
 	width: 68%;
-	border-radius: 10px;
+	border-radius: 5px;
 	position: relative;
 	color: #F3F3F3;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -564,7 +573,7 @@ table {
 	background-color: #CDDBE3;
 	height: 200px;
 	width: 18%;
-	border-radius: 33px;
+	border-radius: 5px;
 	position: absolute;
 	margin-left: 25%;
 	margin-top: -37px;
@@ -579,9 +588,9 @@ table {
 
 .single_recipe_title {
 	font-family: 'Sofia', cursive;
-	font-size: 5vw;
+	font-size: 6rem;
 	text-align: center;
-	font-weight: 100;
+	/*font-weight: bold;*/
 	color: #3A3B3C;
 }
 
@@ -610,31 +619,37 @@ table {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 4vw;
 	color: #3A3B3C;
-	font-weight: 100px;
-	margin-top: 5%;
-	text-align: left;
+	font-weight: bold;
+	text-align: center;
 }
 
 .ingredients_title {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 4vw;
 	color: #3A3B3C;
-	font-weight: 100px;
-	margin-top: 5%;
-	text-align: left;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ingredients_list {
+	color: #3A3B3C;
+	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+	font-size: 2vw;
+	text-align: center;
 }
 
 .recipe_ingredients {
 	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.5vw;
-	text-align: left;
+	font-size: 2vw;
+	text-align: center;
 }
 
 .single_recipe_directions {
 	color: #3A3B3C;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
 	font-size: 2.5vw;
+	text-align: center;
 }
 
 .recipe_info {
@@ -657,7 +672,7 @@ table {
 
 .tier_one {
 	background-color: #7B8489;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -667,7 +682,7 @@ table {
 
 .tier_two {
 	background-color: #7B8489;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -677,7 +692,7 @@ table {
 
 .tier_three {
 	background-color: #7B8489;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 1%;
 	font-size: 2vw;
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
@@ -697,7 +712,7 @@ table {
 	color: #7B8489;
 	float: left;
 	background-color: #3A3B3C;
-	margin-top: 0 auto !important;
+	margin-top: 0 !important;
 }
 
 #forgot_password {
@@ -705,6 +720,69 @@ table {
 	text-decoration: none;
 }
 
+/*INPUT BUTTONS*/
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 3rem;
+    line-height: inherit;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    width: 20%;
+    background: #CDDBE3; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.btn-default {
+    width: 20%;
+    background: #3F3F3F;
+    color: #CDDBE3;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: inherit;
+}
+
+buttons.less:14
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*CONTENT CONTAINER*/
+
 .content_container {
-	min-height: 37vw;
+	min-height: 50vw;
 }

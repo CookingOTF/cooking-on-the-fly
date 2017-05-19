@@ -185,11 +185,11 @@
 	</fieldset>
 
 </div>
-<br><br>
 <section>
+<br><br><br><br>
 	<div class="row col-xs-12">
-	   <input type="submit" value="Submit">
-	   <br><br>
+	   <input class="submit_text" type="submit" value="SUBMIT">
+	   <br><br><br>
 	</div>
 </section>
 </form>   
