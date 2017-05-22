@@ -34,6 +34,7 @@
 								<img class="browse_image" src="/img/{{ $recipe->image }}">
 							</p>
 							<p class="browse_name">{{ $recipe->name }}</p>
+							<p class="browse_cook_time">total cook time: {{$recipe->cook_time}}</p>
 						</a>
 					</li>
 				@endforeach
@@ -59,6 +60,7 @@
 										<img class="browse_image" src="/img/{{ $recipe->image }}">
 									</p>
 									<p class="browse_name">{{ $recipe->name }}</p>
+									<p class="browse_cook_time">total cook time: {{$recipe->cook_time}}</p>
 								</a>
 							</li>
 						@endforeach
@@ -81,6 +83,7 @@
 								<img class="browse_image" src="/img/{{ $recipe->image }}">
 							</p>
 							<p class="browse_name">{{ $recipe->name }}</p>
+							<p class="browse_cook_time">total cook time: {{$recipe->cook_time}}</p>
 						</a>
 					</li>
 				@endforeach
