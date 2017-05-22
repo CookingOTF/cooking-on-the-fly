@@ -11,7 +11,7 @@ class Ingredient extends Model
         'milk',
         'sugar',
         'flour',
-        'oil'
+        'olive oil'
     ];
 
     public static function byCategory()
