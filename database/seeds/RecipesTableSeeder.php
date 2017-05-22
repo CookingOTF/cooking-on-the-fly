@@ -474,7 +474,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => 'Baked Honey Mustard Chicken',
                     'description' => 'A quick and easy to prepare, and the kids love it too!',
-                    'image' => 'honey.jpeg',
+                    'image' => 'honeygit .jpeg',
                     'prep_time' => '00:15:00',
                     'cook_time' => '00:45:00',
                     'servings' =>'6'
@@ -778,7 +778,7 @@ class RecipesTableSeeder extends Seeder
                 ],
                 'ingredients' => [
                     'broccoli' => '1 (16 ounce) package frozen broccoli, thawed',
-                    'oil' => '1 tablespoon olive oil'
+                    'olive oil' => '1 tablespoon olive oil'
 
                 ]
             ],
@@ -802,7 +802,7 @@ class RecipesTableSeeder extends Seeder
                 'ingredients' => [
                     'pasta' => '1 (8 ounce) package linguine pasta',
                     'broccoli' => '1 (12 ounce) bag broccoli florets, cut into bite-size pieces',
-                    'oil' => '1/4 cup olive oil',
+                    'olive oil' => '1/4 cup olive oil',
                     'garlic' => '4 teaspoons minced garlic',
                     'romano' => '1/2 cup finely shredded Romano cheese',
 
@@ -831,7 +831,7 @@ class RecipesTableSeeder extends Seeder
                 'ingredients' => [
                     'pasta' => '12 ounces rigatoni pasta',
                     'broccoli' => '1 bag broccoli florets, cut into bite-size pieces',
-                    'oil' => '1/4 cup olive oil',
+                    'olive oil' => '1/4 cup olive oil',
                     'garlic' => '1 tablespoon minced garlic',
                     'pesto' => '2 tablespoons pesto',
                     'tomato' => '1 cup chopped tomatoes',
@@ -913,7 +913,7 @@ class RecipesTableSeeder extends Seeder
                 ],
                 'ingredients' => [
                     'broccoli' => '14 ounces broccoli',
-                    'oil'=>'1 tablespoon olive oil'
+                    'olive oil'=>'1 tablespoon olive oil'
 
                 ]
             ],
@@ -1042,7 +1042,7 @@ class RecipesTableSeeder extends Seeder
                 ],
                     'ingredients' => [
                     'zucchini' => '3 zucchinis, sliced 1/4-inch thick, lengthwise',
-                    'oil'=>'tablespoon olive oil'
+                    'olive oil'=>'tablespoon olive oil'
 
                 ]
             ],
@@ -1096,6 +1096,30 @@ class RecipesTableSeeder extends Seeder
                     'garlic'=>'garlic powder',
                     'chili powder'=>'2 teaspoons chili powder',
                     'cheddar'=>'1 cup shredded Cheddar cheese'
+
+                ]
+            ],
+
+            [
+             'info' => [
+                    'name' => ' Simple Broccoli and Cheese',
+                    'description' => "Slight twist to an old favorite. Chili powder gives the potatoes and onions in this recipe some zing",
+                    'image' => 'spicyt.jpeg',
+                    'prep_time' => '00:15:00',
+                    'cook_time' => '00:40:00',
+                    'servings' =>'4'
+                ],
+                'directions' => [
+                 "Preheat the oven to 450 degrees F (220 degrees C)",
+                "Arrange the potatoes and onions in a greased 9x13 inch baking dish so that they are evenly distributed. Season with garlic powder, salt and chili powder. Drizzle with olive oil. Stir to coat potatoes and onions with oil and spices.",
+                "Bake for 35 to 40 minutes in the preheated oven, until potatoes are fork tender and slightly crispy. Stir every 10 minutes. When done, sprinkle with cheese. Wait about 5 minutes for the cheese to melt before serving.."
+
+                ],
+                    'ingredients' => [
+                    'broccoli' => '1 (10 ounce) package frozen broccoli florets, thawed',
+                    'cheddar' => '1/2 cup shredded Cheddar cheese',
+                    'butter'=>'3 tablespoons butter, melted'
+
 
                 ]
             ]
