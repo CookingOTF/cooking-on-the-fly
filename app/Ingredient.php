@@ -11,6 +11,7 @@ class Ingredient extends Model
         'milk',
         'sugar',
         'flour',
+        'butter',
         'olive oil'
     ];
 
