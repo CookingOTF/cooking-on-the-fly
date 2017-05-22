@@ -7,6 +7,18 @@ use DB;
 
 class Recipe extends Model
 {
+    public static function compareRelevancy($a, $b)
+    {
+        $a_ratio = (sizeof($a->ingredients) - sizeof($a->lacking)) / sizeof($a->ingredients);
+        $b_ratio = (sizeof($b->ingredients) - sizeof($b->lacking)) / sizeof($b->ingredients);
+
+        if ($a_ratio === $b_ratio) {
+            return sizeof($a->lacking) < sizeof($b->lacking) ? -1 : 1;
+        } else {
+            return $a_ratio < $b_ratio ? 1 : -1;
+        }
+    }
+
     public static function getSearchResults($q)
     {
         $recipes = Recipe::select('id', 'name', 'description', 'image')
@@ -25,6 +37,7 @@ class Recipe extends Model
 
             $lacking = array_diff($ingredients, $q);
             ksort($lacking);
+            $recipe->lacking = $lacking;
 
             if (empty($lacking)) { /* Do you have all the ingredients you need? */
                 $onhand[] = $recipe;
@@ -32,11 +45,27 @@ class Recipe extends Model
                 sizeof($lacking) <= 2 /* Don't try to borrow too many things at once */
                 and !array_diff($lacking, Ingredient::BORROWABLE) /* Also, don't ask for anything crazy */
             ) {
-                $borrow[implode(' and ', array_keys($lacking))][] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
+                $borrow[implode(' and ', $recipe->lacking)][] = $recipe; /* Each recipe in the array will be indexed by a string denoting the ingredients lacked */
             } else {
-                $recipe->lacking = array_keys($lacking);
                 $goShopping[] = $recipe;
             }
+        }
+        // Now we do some sorting.
+        usort($onhand, 'self::compareRelevancy');
+        usort($goShopping, 'self::compareRelevancy');
+
+        // Need some special sorting for this one.
+        uksort($borrow, function ($a, $b) {
+            $pattern = '~^.+ and .+$~';
+            if ((preg_match($pattern, $a) xor preg_match($pattern, $b))) {
+                return preg_match($pattern, $a) ? 1 : -1;
+            } else {
+                return 0;
+            }
+        });
+        // ...and we'll also apply the previous sorting method to each array in it.
+        foreach ($borrow as $recipes) {
+            usort($recipes, 'self::compareRelevancy');
         }
 
         return ['onhand' => $onhand, 'borrow' => $borrow, 'goShopping' => $goShopping];
