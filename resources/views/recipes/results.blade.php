@@ -7,8 +7,9 @@
 @section('custom_css')
 	<style>
 		h3, h4 {
-			color: white;
+			color: #F3F3F3	;
 			text-align: initial;
+			font-size: 3rem;
 		}
 		ul {
 			list-style: none;
@@ -18,16 +19,16 @@
 
 @section('content')
 	<header>
-		<h1 class="all_recipes">You currently can make...</h1>
+		<h1 class="all_recipes">HERE'S WHAT YOU CAN MAKE...</h1>
 	</header>
 
 	@if($onhand)
 		<section class="container">
 			<header class="row">
-				<h3>With what you have onhand...</h3>
+				<h3>WITH WHAT YOU ALREADY HAVE...</h3>
 			</header>
 			<ul class="row">
-				@foreach($onhand as $index => $recipe)
+				@foreach($onhand as $recipe)
 					<li class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 						<a class="thumbnail" href="{{ action("RecipesController@show", $recipe->id) }}/">
 							<p>
@@ -41,11 +42,11 @@
 			</ul>
 		</section>
 	@endif
-		
+	<hr>	
 	@if($borrow)
 		<section class="container">
 			<header class="row">
-				<h3>If you ask a neighbor for...</h3>		
+				<h3>IF YOU ASK A NEIGHBOR FOR...</h3>		
 			</header>
 			@foreach ($borrow as $lacking => $recipes)
 				<section class="row container">
@@ -69,11 +70,11 @@
 			@endforeach
 		</section>
 	@endif
-		
+	<hr>
 	@if($goShopping)
 		<section class="container">
 			<header class="row">
-				<h3>If you go to the store...</h3>
+				<h3>IF YOU GO TO THE STORE...</h3>
 			</header>
 			<ul class="row">
 				@foreach($goShopping as $recipe)

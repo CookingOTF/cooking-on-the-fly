@@ -4,25 +4,37 @@
 	@include('partials.nav')
 @stop
 
+@section('custom_css')
+	<style>
+		h3, h4 {
+			color: white;
+			text-align: initial;
+		}
+
+		ul {
+			list-style: none;
+		}
+	</style>
+@stop
+
 @section('content')
 	<section>
 		<header>
 			<h3 class="all_recipes">Browse All Recipes</h3>
 		</header>
-		<div class="row">
-			@foreach($recipes as $index => $recipe)
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-xs-6">
-					<div class="thumbnail">
-						<a href="{{action("RecipesController@show", ['id' => $recipe->id])}}/">
-								<img class="img-responsive browse_image" src="/img/{{$recipe->image}}">
-							<p class="browse_name"> {{$recipe->name}}</p>
-							{{-- <p class="browse_description">{{$recipe->description}}</p> --}}
-							<p class="browse_cook_time">total cook time: {{$recipe->cook_time}}</p>
-						</a>
-					</div>
-				</div>
+		<ul class="row">
+			@foreach($recipes as $recipe)
+				<li class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<a class="thumbnail" href="{{ action("RecipesController@show", $recipe->id) }}/">
+						<p>
+							<img class="browse_image" src="/img/{{ $recipe->image }}">
+						</p>
+						<p class="browse_name">{{ $recipe->name }}</p>
+						<p class="browse_cook_time">total cook time: {{$recipe->total_time}}</p>
+					</a>
+				</li>
 			@endforeach
-		</div>
+		</ul>
 	</section>
 
 	{!! $recipes->render() !!}
