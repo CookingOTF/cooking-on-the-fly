@@ -12,7 +12,13 @@ use App\Ingredient;
 
 class RecipesController extends BaseController
 {
-    
+    public function __construct()
+    {
+        // $this->middleware('auth', ['except' => [
+        //     'browse'
+        // ]]);
+    }
+
     public function index()
     {
         return redirect('recipes/browse');
