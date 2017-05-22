@@ -538,13 +538,14 @@ table {
 
 .browse_name {
 	font-family: 'BenchNine', 'Arial Narrow', sans-serif;
-	font-size: 2.6rem;
+	font-size: 3.5rem;
 	text-transform: uppercase;
 	color: #3A3B3C;
 }
 
 .browse_cook_time {
-	font-size: 1.6rem;
+	margin-top: -4%;
+	font-size: 2.2rem;
 	color: #3A3B3C;
 }
 
