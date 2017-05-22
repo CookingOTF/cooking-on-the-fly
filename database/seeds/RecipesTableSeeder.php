@@ -474,7 +474,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => 'Baked Honey Mustard Chicken',
                     'description' => 'A quick and easy to prepare, and the kids love it too!',
-                    'image' => 'honeygit .jpeg',
+                    'image' => 'honey.jpg',
                     'prep_time' => '00:15:00',
                     'cook_time' => '00:45:00',
                     'servings' =>'6'
@@ -1104,7 +1104,7 @@ class RecipesTableSeeder extends Seeder
              'info' => [
                     'name' => ' Simple Broccoli and Cheese',
                     'description' => "Slight twist to an old favorite. Chili powder gives the potatoes and onions in this recipe some zing",
-                    'image' => 'spicyt.jpeg',
+                    'image' => 'simple.jpeg',
                     'prep_time' => '00:15:00',
                     'cook_time' => '00:40:00',
                     'servings' =>'4'
