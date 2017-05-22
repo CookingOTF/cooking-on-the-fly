@@ -21,7 +21,7 @@ class Recipe extends Model
 
     public static function getSearchResults($q)
     {
-        $recipes = Recipe::select('id', 'name', 'description', 'image')
+        $recipes = Recipe::select('id', 'name', 'description', 'image', 'prep_time', 'cook_time')
             ->with('ingredients')
             ->get()
             ->all();
