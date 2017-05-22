@@ -18,6 +18,7 @@
 		    top: 0;
 		    left: 0;
 			background-image: url('/img/pasta.png') !important;
+			/*object-fit:cover*/
 			background-size: cover;
 			width: 100%;
     		height: 100%;
@@ -36,7 +37,7 @@
 <section id="sign_in_container" class="col-xs-5 col-xs-offset-7">
 
 	<h2 class="sign_in_heading">SIGN IN</h2>
-	<div class="sign_in">
+	<div class="row sign_in">
 
 		<div class="sign_in_content">
 
@@ -90,23 +91,27 @@
 				<br><br>
 
 				<div>
-					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="submit" class="btn btn-default">SUBMIT</button>
 				</div>
 
 				<br><br>
 				
-				<div>
+				<div class="row">
 					<a href="#" class="more" id="forgot_password">
-						Forgot your password?
+						FORGOT YOUR PASSWORD?
 					</a>
 				</div>
 
-				<br><br>
 
 			</form>
 		</div>
 	</div>
 </section>
+@stop
+@section('content')
 
+
+<div class="row sign_in_bottom">
+</div>
 
 @stop

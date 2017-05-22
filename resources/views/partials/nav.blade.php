@@ -10,12 +10,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand glyphicon glyphicon-cutlery" href="#"></a>
+				<a class="navbar-brand glyphicon glyphicon-cutlery" href="/"></a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 				<li class="active"><a href="/">HOME</a></li>
-				<li><a href="/dashboard/">DASHBOARD</a></li>
+				{{-- <li><a href="/dashboard/">DASHBOARD</a></li> --}}
 				<li><a href="/recipes/browse/">BROWSE</a></li>
 				<li><a href="/recipes/search/">SEARCH</a></li>
 			</ul>

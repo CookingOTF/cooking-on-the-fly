@@ -11,16 +11,16 @@
 </section>
 
 <section class="row" id="hp_two">
-	<div class="col-xs-12" class="two">
+	<div class="col-xl-12 col-md-12 col-sm-12 col-xs-12" class="two">
 		<div class="hp_two_text_box">
 			<div class="hp_two_title">
 				<h2 class="about_COTF">It's like calling a chef...</h2>
 			</div>
 
 			<div id="hp_two_text">
-				<p class="col-xs-6 col-xs-offset-3 hp_two_paragraph"><text class="important_text">Without having to make the call!</text> &nbsp; Just tell us what you have on hand, and Cooking on the Fly will do the work for you! We'll match you to recipes that you can make with ingredients you already have, so you don't have to worry or stress over your next meal!</p>
+				<p class="col-xs-11 col-xs-offset-1 hp_two_paragraph"><text class="important_text">Without having to make the call!</text> &nbsp; Just tell us what you have on hand, and Cooking on the Fly will do the work for you! We'll match you to recipes that you can make with ingredients you already have, so you don't have to worry or stress over your next meal!</p>
 					
-				<p class="col-xs-6 col-xs-offset-3 hp_two_paragraph">To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll show you what you can make with what you have, what you can make if you borrow something from a neighbor, and what you can make if you're willing to go to the store. And don't forget to save your recipes on your User Dashboard so you can access them later!</p>
+				<p class="col-xs-11 col-xs-offset-1 hp_two_paragraph">To get started, sign in or sign up, and tell us what ingredients you have. Then, we'll show you what you can make with what you have, what you can make if you borrow something from a neighbor, and what you can make if you're willing to go to the store. And don't forget to save your recipes on your User Dashboard so you can access them later!</p>
 					</div>
 				</div>
 			</div>
